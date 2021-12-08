@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ota2-0400:TextCategory
+    xmlns:ota2-0400="http://www.opentravel.org/OTM/Common/v4"
+    caption="Example String Value" category="2" removalInd="true"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/Common/v4 ../../Common_4_0_0.xsd">
+    <ota2-0400:Text language="en" textFormat="PlainText">Formatted text example.</ota2-0400:Text>
+</ota2-0400:TextCategory>

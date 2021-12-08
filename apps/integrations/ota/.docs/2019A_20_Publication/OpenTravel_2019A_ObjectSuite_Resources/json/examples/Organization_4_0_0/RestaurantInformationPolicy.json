@@ -1,0 +1,9 @@
+{
+  "RestaurantInformationPolicy" : {
+    "RestaurantPolicy" : [ {
+      "value" : "Accepted only for large groups"
+    }, {
+      "value" : "Accepted only for large groups"
+    } ]
+  }
+}

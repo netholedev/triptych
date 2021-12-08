@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ota2-0500:ErrorMessage_Enum
+    xmlns:ota2-0500="http://www.opentravel.org/OTM/Common/v5" extension="Other_Value">OTA version not supported</ota2-0500:ErrorMessage_Enum>

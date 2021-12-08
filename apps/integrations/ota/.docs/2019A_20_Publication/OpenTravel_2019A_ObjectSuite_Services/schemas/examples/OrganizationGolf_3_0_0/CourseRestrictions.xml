@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orggf-0300:CourseRestrictions
+    xmlns:orggf-0300="http://www.opentravel.org/OTM/organization/golf/v3"
+    description="Example String Value" type="Example String Value"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/organization/golf/v3 ../../OrganizationGolf_3_0_0.xsd">
+    <orggf-0300:TimeSpan end="2016-08-28T04:32:52Z" start="2016-08-22T19:32:52Z"/>
+</orggf-0300:CourseRestrictions>

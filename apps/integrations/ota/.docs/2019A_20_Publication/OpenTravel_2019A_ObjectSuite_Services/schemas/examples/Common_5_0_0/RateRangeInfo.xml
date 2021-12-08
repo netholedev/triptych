@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ota2-0500:RateRangeInfo
+    xmlns:ota2-0500="http://www.opentravel.org/OTM/Common/v5"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/Common/v5 ../../Common_5_0_0.xsd">
+    <ota2-0500:RateRange currencyCode="USD" fixedRate="100.0000"
+        maxRate="100.0000" minRate="100.0000" rateTimeUnit="Day"/>
+    <ota2-0500:DateTimeSpanWindows>
+        <ota2-0500:TimeSpan end="2016-08-28T04:32:52Z" start="2016-08-22T19:32:52Z"/>
+    </ota2-0500:DateTimeSpanWindows>
+</ota2-0500:RateRangeInfo>

@@ -1,0 +1,9 @@
+{
+  "AccessibilityFeature" : {
+    "quantity" : 2,
+    "description" : "Door locks at wheelchair height.",
+    "AccessibilityFeature" : {
+      "value" : "Accessibility to goods and services"
+    }
+  }
+}

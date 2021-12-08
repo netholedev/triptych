@@ -1,0 +1,8 @@
+{
+  "Gratuity" : {
+    "mandatoryInd" : true,
+    "AmountOrPercent" : {
+      "@type" : "AmountOrPercent"
+    }
+  }
+}

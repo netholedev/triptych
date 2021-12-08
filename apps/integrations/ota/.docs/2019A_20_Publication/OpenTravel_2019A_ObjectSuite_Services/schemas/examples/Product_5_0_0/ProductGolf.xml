@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prod-0500:ProductGolf
+    xmlns:prod-0500="http://www.opentravel.org/OTM/product/v5"
+    objID="product_1"
+    xmlns:orggf-0300="http://www.opentravel.org/OTM/organization/golf/v3"
+    xmlns:ota2-0500="http://www.opentravel.org/OTM/Common/v5"
+    xmlns:pg-0300="http://www.opentravel.org/OTM/product/golf/v3"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/product/v5 ../../Product_5_0_0.xsd">
+    <prod-0500:Identifier organization="Acme" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</prod-0500:Identifier>
+    <prod-0500:ProductRef>product_1</prod-0500:ProductRef>
+    <prod-0500:AssociatedProductIdentifier objID="associatedProduct_1">
+        <prod-0500:Identifier organization="Acme" system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</prod-0500:Identifier>
+        <prod-0500:ProductRef>product_1</prod-0500:ProductRef>
+    </prod-0500:AssociatedProductIdentifier>
+    <pg-0300:TeeTime carQty="1" numberOfHoles="18"
+        packageID="Example String Value" replayRoundQty="2" roundID="12181631">
+        <ota2-0500:DateTimeSpanWindows>
+            <ota2-0500:TimeSpan end="2016-08-28T04:32:52Z" start="2016-08-22T19:32:52Z"/>
+        </ota2-0500:DateTimeSpanWindows>
+        <pg-0300:Discount code="Example String Value"
+            description="Example String Value"
+            rateAuthorizationCode="Example String Value"
+            rateID="Example String Value" ratePeriod="Hourly">Example String Value</pg-0300:Discount>
+        <ota2-0500:LoyaltyProgram id="Example String Value"
+            loyaltyLevel="Platinum" primaryInd="true">
+            <ota2-0500:ProgramCode codeContext="Example String Value"
+                description="Example String Value"
+                listURI="Example String Value" quantity="1234">Example String Value</ota2-0500:ProgramCode>
+            <ota2-0500:TravelSector>Air</ota2-0500:TravelSector>
+        </ota2-0500:LoyaltyProgram>
+        <pg-0300:GolferCount accessibleInd="true"
+            ageQualifyingCode="Junior"
+            ageQualifyingCodeExtension="ageQualifyingCode_Other_Value"
+            golferType="ClubMember" handicap="18">1234</pg-0300:GolferCount>
+        <orggf-0300:CourseIdentifier objID="course_1">
+            <orggf-0300:Identifier organization="Acme"
+                system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</orggf-0300:Identifier>
+            <orggf-0300:CourseRef>course_1</orggf-0300:CourseRef>
+        </orggf-0300:CourseIdentifier>
+    </pg-0300:TeeTime>
+</prod-0500:ProductGolf>

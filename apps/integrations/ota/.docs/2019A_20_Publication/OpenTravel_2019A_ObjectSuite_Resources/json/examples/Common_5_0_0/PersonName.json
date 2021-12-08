@@ -1,0 +1,8 @@
+{
+  "PersonNameSummary" : {
+    "Prefix" : [ "Mr." ],
+    "Given" : [ "John" ],
+    "Middle" : [ "Example String Value" ],
+    "Surname" : "Smith"
+  }
+}

@@ -1,0 +1,1 @@
+go run cmd/supplier_api/main.go --config configs/triptych.dev.json

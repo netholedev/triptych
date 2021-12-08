@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fin-0400:SignatureOnFile
+    xmlns:fin-0400="http://www.opentravel.org/OTM/finance/v4"
+    signatureOnFileInd="true"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/finance/v4 ../../Finance_4_0_0.xsd">
+    <fin-0400:Date_EffectiveExpire effective="2011-01-24"
+        expire="2011-07-04" expireDateExclusiveInd="true"/>
+</fin-0400:SignatureOnFile>

@@ -1,0 +1,10 @@
+{
+  "GolferCount" : {
+    "value" : 1234,
+    "ageQualifyingCode" : "Junior",
+    "ageQualifyingCodeExtension" : "ageQualifyingCode_Other_Value",
+    "golferType" : "ClubMember",
+    "handicap" : 18,
+    "accessibleInd" : true
+  }
+}

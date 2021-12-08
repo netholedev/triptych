@@ -1,0 +1,46 @@
+version: '3.8'
+
+# networks:
+#   app_network:
+#     external: true
+
+volumes:
+  arango_volume:
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NODE_VERSION: 16
+        VARIANT: '1.17-buster'
+        USER_UID: 1000
+        USER_GID: 1000
+    command: sleep infinity
+    volumes:
+      - ..:/triptych:delegated
+
+  rabbitmq:
+    image: 'rabbitmq:management-alpine'
+    restart: always
+    network_mode: "service:app"
+
+  arangodb:
+    image: arangodb/arangodb:latest
+    restart: unless-stopped
+    environment:
+      ARANGO_ROOT_PASSWORD: 'example'
+    network_mode: "service:app"
+    # volumes:
+    #   - arango_volume:/var/lib/arangodb3
+
+  # redis:
+  #   image: "redis:alpine"
+  #   command: redis-server --requirepass sOmE_sEcUrE_pAsS
+  #   # volumes:
+  #   #  - $PWD/redis-data:/var/lib/redis
+  #   #  - $PWD/redis.conf:/usr/local/etc/redis/redis.conf
+  #   environment:
+  #    - REDIS_REPLICATION_MODE=master
+  #   network_mode: "service:app"

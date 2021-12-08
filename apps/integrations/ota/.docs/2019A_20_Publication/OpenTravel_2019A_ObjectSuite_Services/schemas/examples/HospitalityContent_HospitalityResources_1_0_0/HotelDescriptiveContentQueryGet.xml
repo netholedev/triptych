@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rh:HotelDescriptiveContentQueryGet
+    xmlns:rh="http://www.opentravel.org/OTM/resources/HospitalityResources/v1"
+    xmlns:ph-0200="http://www.opentravel.org/OTM/product/hospitality/v2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/resources/HospitalityResources/v1 ../../HospitalityContent_HospitalityResources_1_0_0.xsd">
+    <ph-0200:BasicPropertyInfo brandCode="FS" chainCode="MC"
+        cityCode="WAS" code="WASJW" name="JW Marriott Washington DC"/>
+    <rh:ProcessingInfo displayCurrency="USD" maxResponses="1234" summaryResultsInd="true"/>
+</rh:HotelDescriptiveContentQueryGet>

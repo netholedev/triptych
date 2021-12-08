@@ -1,0 +1,276 @@
+{
+  "SearchFacilityNotif" : {
+    "version" : 3,
+    "timeStamp" : "2020-01-31T10:41:03.990-05:00",
+    "PayloadStdAttributes" : {
+      "value" : null,
+      "echoToken" : "Example String Value",
+      "timeStamp" : "2011-01-24T09:45:00-06:00",
+      "target" : "Test",
+      "targetName" : "Example String Value",
+      "version" : 12,
+      "transactionIdentifier" : "Example String Value",
+      "sequenceNmbr" : "Example String Value",
+      "transactionStatusCode" : "Start",
+      "correlationID" : "Example String Value",
+      "primaryLangID" : "en",
+      "altLangID" : "es",
+      "retransmissionIndicatorInd" : true
+    },
+    "POS" : {
+      "Source" : [ {
+        "@type" : "Source",
+        "agentSine" : "Example String Value",
+        "pseudoCityCode" : "Example String Value",
+        "iSOCountry" : "IR",
+        "iSOCurrency" : "USD",
+        "agentDutyCode" : "Example String Value",
+        "airlineVendorID" : "B6",
+        "airportCode" : "IAD",
+        "firstDepartPoint" : "Example String Value",
+        "eRSP_UserID" : "Example String Value",
+        "terminalID" : "Example String Value",
+        "RequestorID" : {
+          "@type" : "RequestorID",
+          "Identifier" : {
+            "value" : "guid12345",
+            "url" : "http://www.w3.org/2001/XMLSchema",
+            "system" : "sysABC3344",
+            "organization" : "Acme"
+          }
+        },
+        "Position" : {
+          "value" : null,
+          "latitude" : "Example String Value",
+          "longitude" : "Example String Value",
+          "altitude" : "Example String Value",
+          "altitudeUnitOfMeasure_Enum" : "Miles",
+          "mapURL" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+          "formatURL" : "http://www.w3.org/2001/XMLSchema"
+        },
+        "BookingChannel" : {
+          "@type" : "BookingChannel",
+          "primaryInd" : true,
+          "CompanyName" : {
+            "value" : "Travel Adventure Partners Incorporated",
+            "division" : "Travel Division",
+            "department" : "Adventure department",
+            "shortName" : "Adventure Inc",
+            "code" : "AI",
+            "codeContext" : "Example String Value",
+            "description" : "Example String Value",
+            "quantity" : 1234,
+            "listURI" : "Example String Value"
+          },
+          "Type" : {
+            "value" : "Agent"
+          }
+        }
+      } ]
+    },
+    "GolfFacility" : [ {
+      "@type" : "GolfFacility",
+      "courseType" : "DailyFee",
+      "dressPolicy" : "Example String Value",
+      "featuredInd" : true,
+      "GolfFacilityFeatures" : {
+        "@type" : "GolfFacilityFeatures",
+        "description" : "Example String Value",
+        "FacilityHighlights" : [ {
+          "value" : "Accessible"
+        }, {
+          "value" : "Accessible"
+        } ]
+      },
+      "ClubHouse" : {
+        "@type" : "ClubHouse",
+        "ClubHouseFeatures" : [ {
+          "value" : "FitnessCenter"
+        }, {
+          "value" : "FitnessCenter"
+        } ]
+      },
+      "Course" : [ {
+        "@type" : "Course",
+        "objID" : "course_1",
+        "numberOfHoles" : 2345,
+        "par" : 3456,
+        "totalYardage" : 4567,
+        "yearBuilt" : "2011-01-24",
+        "name" : "Example String Value",
+        "golfCarRequiredInd" : true,
+        "Identifier" : {
+          "value" : "guid12345",
+          "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+          "system" : "sysABC3344",
+          "organization" : "Acme"
+        },
+        "CourseRef" : "course_1",
+        "CourseClosure" : [ {
+          "@type" : "CourseClosure",
+          "TimeSpan" : {
+            "value" : null,
+            "start" : "2016-08-22T19:32:52Z",
+            "end" : "2016-08-28T04:32:52Z"
+          }
+        } ],
+        "CourseConditions" : [ {
+          "@type" : "CourseConditions",
+          "source" : "Example String Value",
+          "anyURI" : "http://www.w3.org/2001/XMLSchema"
+        } ],
+        "CourseRestrictions" : [ {
+          "@type" : "CourseRestrictions",
+          "type" : "Example String Value",
+          "description" : "Example String Value",
+          "TimeSpan" : {
+            "value" : null,
+            "start" : "2016-08-22T19:32:52Z",
+            "end" : "2016-08-28T04:32:52Z"
+          }
+        } ],
+        "ScoreCard" : [ {
+          "@type" : "ScoreCard",
+          "courseSlope" : "60",
+          "number" : 2,
+          "par" : 3,
+          "TeePosition" : {
+            "value" : null,
+            "teePositionName" : "Champion",
+            "yardage" : 120
+          }
+        } ],
+        "OperationSchedule" : [ {
+          "daysOfWeek" : [ "Monday", "Tuesday", "Wednesday" ],
+          "additionalOperationInfoCode" : "2",
+          "frequency" : "Example String Value",
+          "text" : "Example String Value",
+          "name" : "Example String Value",
+          "DateTimeSpanWindows" : {
+            "@type" : "DateTimeSpanWindows",
+            "TimeSpan" : {
+              "value" : null,
+              "start" : "2016-08-22T19:32:52Z",
+              "end" : "2016-08-28T04:32:52Z"
+            }
+          }
+        } ],
+        "FeeStructure" : {
+          "value" : null,
+          "minRate" : 100.0000,
+          "maxRate" : 100.0000,
+          "fixedRate" : 100.0000,
+          "rateTimeUnit" : "Day",
+          "currencyCode" : "USD"
+        },
+        "CourseArchitect" : {
+          "value" : null,
+          "name" : "Example String Value",
+          "year" : "Example String Value",
+          "description" : "Example String Value",
+          "originalInd" : true
+        }
+      } ],
+      "ProShop" : {
+        "@type" : "ProShop",
+        "objID" : "proShop_1",
+        "Identifier" : {
+          "value" : "guid12345",
+          "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+          "system" : "sysABC3344",
+          "organization" : "Acme"
+        },
+        "ProShopRef" : "proShop_1",
+        "RentalEquipment" : [ {
+          "@type" : "RentalEquipment",
+          "accessibleInd" : true,
+          "Type" : {
+            "value" : "RightHandedClubs"
+          },
+          "PersonCategory" : [ {
+            "value" : "Juniors"
+          }, {
+            "value" : "Juniors"
+          } ]
+        } ],
+        "Services" : [ {
+          "value" : "ClubRegripping"
+        }, {
+          "value" : "ClubRegripping"
+        } ]
+      },
+      "PracticeFacilities" : {
+        "@type" : "PracticeFacilities",
+        "OperationSchedule" : [ {
+          "daysOfWeek" : [ "Thursday", "Friday", "Saturday" ],
+          "additionalOperationInfoCode" : "2",
+          "frequency" : "Example String Value",
+          "text" : "Example String Value",
+          "name" : "Example String Value",
+          "DateTimeSpanWindows" : {
+            "@type" : "DateTimeSpanWindows",
+            "TimeSpan" : {
+              "value" : null,
+              "start" : "2016-08-22T19:32:52Z",
+              "end" : "2016-08-28T04:32:52Z"
+            }
+          }
+        } ],
+        "DrivingRange" : [ {
+          "@type" : "DrivingRange",
+          "turfType" : "Grass",
+          "distance" : "500 ft",
+          "numberOfStations" : 10,
+          "drivingRangeType" : "Covered",
+          "nightLightingInd" : true
+        } ],
+        "FeeStructure" : {
+          "value" : null,
+          "minRate" : 100.0000,
+          "maxRate" : 100.0000,
+          "fixedRate" : 100.0000,
+          "rateTimeUnit" : "Full duration",
+          "currencyCode" : "USD"
+        },
+        "PracticeFacilityFeatures" : [ {
+          "value" : "PuttingGreen"
+        }, {
+          "value" : "PuttingGreen"
+        } ]
+      },
+      "Amenity" : [ {
+        "name" : "Example String Value",
+        "description" : "Example String Value",
+        "Code" : {
+          "value" : "Example String Value",
+          "codeContext" : "Example String Value",
+          "description" : "Example String Value",
+          "quantity" : 1234,
+          "listURI" : "Example String Value"
+        },
+        "Proximity" : {
+          "value" : "Onsite"
+        }
+      } ],
+      "Ancillary" : [ {
+        "name" : "Example String Value",
+        "description" : "Example String Value",
+        "includedInd" : true,
+        "orderableInd" : true,
+        "PricingType" : {
+          "value" : "Per unit"
+        },
+        "Code" : {
+          "value" : "Example String Value",
+          "codeContext" : "Example String Value",
+          "description" : "Example String Value",
+          "quantity" : 2345,
+          "listURI" : "Example String Value"
+        },
+        "Proximity" : {
+          "value" : "Offsite"
+        }
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prod-0500:MealsIncluded
+    xmlns:prod-0500="http://www.opentravel.org/OTM/product/v5"
+    breakfastInd="true" dinnerInd="true" eveningReceptionInd="true"
+    lunchInd="true" mealPlanCodes="Example String Value"/>

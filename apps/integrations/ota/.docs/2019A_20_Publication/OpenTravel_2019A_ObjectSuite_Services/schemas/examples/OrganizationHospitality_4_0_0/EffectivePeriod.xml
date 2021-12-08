@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orghs-0400:EffectivePeriod
+    xmlns:orghs-0400="http://www.opentravel.org/OTM/organization/hospitality/v4"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/organization/hospitality/v4 ../../OrganizationHospitality_4_0_0.xsd">
+    <orghs-0400:DateEffectiveExpire effective="2011-01-24"
+        expire="2011-07-04" expireDateExclusiveInd="true"/>
+</orghs-0400:EffectivePeriod>

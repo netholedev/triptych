@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ph:RatePlanCode
+    xmlns:ph="http://www.opentravel.org/OTM/product/hospitality/v1"
+    promotionCode="L9Z" promotionVendorCode="WT1" ratePlanCategory="POD"
+    ratePlanID="12345678" ratePlanQualifierInd="true"
+    ratePlanType="Weekly" ratePlanTypeExtension="ratePlanType_Other_Value">AAAB</ph:RatePlanCode>

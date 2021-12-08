@@ -1,0 +1,8 @@
+.DS_Store
+.yarn
+.cache/*
+
+.data/geonames/*
+
+node_modules/
+dist/

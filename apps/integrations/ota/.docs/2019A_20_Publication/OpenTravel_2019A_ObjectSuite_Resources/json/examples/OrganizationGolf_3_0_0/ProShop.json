@@ -1,0 +1,29 @@
+{
+  "ProShopSummary" : {
+    "objID" : "proShop_1",
+    "Identifier" : {
+      "value" : "guid12345",
+      "url" : "http://www.w3.org/2001/XMLSchema",
+      "system" : "sysABC3344",
+      "organization" : "Acme"
+    },
+    "ProShopRef" : "proShop_1",
+    "RentalEquipment" : [ {
+      "@type" : "RentalEquipment",
+      "accessibleInd" : true,
+      "Type" : {
+        "value" : "RightHandedClubs"
+      },
+      "PersonCategory" : [ {
+        "value" : "Juniors"
+      }, {
+        "value" : "Juniors"
+      } ]
+    } ],
+    "Services" : [ {
+      "value" : "ClubRegripping"
+    }, {
+      "value" : "ClubRegripping"
+    } ]
+  }
+}

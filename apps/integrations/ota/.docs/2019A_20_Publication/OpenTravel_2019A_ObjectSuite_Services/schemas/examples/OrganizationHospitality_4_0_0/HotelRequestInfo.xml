@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orghs-0400:HotelRequestInfo
+    xmlns:orghs-0400="http://www.opentravel.org/OTM/organization/hospitality/v4"
+    hotelStatus="Example String Value" sendDataInd="true"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/organization/hospitality/v4 ../../OrganizationHospitality_4_0_0.xsd">
+    <orghs-0400:HotelStatusCode>Closed</orghs-0400:HotelStatusCode>
+</orghs-0400:HotelRequestInfo>

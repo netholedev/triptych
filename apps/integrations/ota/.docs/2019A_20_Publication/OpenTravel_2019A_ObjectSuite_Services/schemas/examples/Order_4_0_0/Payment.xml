@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<order-0400:Payment
+    xmlns:order-0400="http://www.opentravel.org/OTM/order/v4"
+    guaranteeInd="true" objID="payment_1"
+    xmlns:fin-0400="http://www.opentravel.org/OTM/finance/v4"
+    xmlns:ota2-0500="http://www.opentravel.org/OTM/Common/v5"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/order/v4 ../../Order_4_0_0.xsd">
+    <order-0400:Identifier organization="Acme" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</order-0400:Identifier>
+    <order-0400:PaymentRef>payment_1</order-0400:PaymentRef>
+    <fin-0400:FormOfPayment costCenterID="Example String Value"
+        guaranteeID="Example String Value" objID="formOfPayment_1"
+        paymentTransactionTypeCode="charge" remark="Example String Value">
+        <fin-0400:Identifier organization="Acme" system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</fin-0400:Identifier>
+        <fin-0400:FormOfPaymentRef>formOfPayment_1</fin-0400:FormOfPaymentRef>
+        <fin-0400:Privacy optInDate="2011-01-24T09:45:00-06:00"
+            optInStatus="OptedIn" optOutDate="2011-07-04T14:15:00+06:00"
+            shareMarketInd="Yes" shareSyncInd="No"/>
+        <fin-0400:GuaranteeTypeCode>Air travel card</fin-0400:GuaranteeTypeCode>
+    </fin-0400:FormOfPayment>
+    <order-0400:Amount currencyCode="USD" minorUnit="2">80000</order-0400:Amount>
+    <ota2-0500:Person birthDate="2011-01-24" gender="Male"
+        maritalStatus_Enum="Annulled" objID="person_1">
+        <ota2-0500:Identifier organization="Acme" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</ota2-0500:Identifier>
+        <ota2-0500:OtherID organization="Acme" system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</ota2-0500:OtherID>
+        <ota2-0500:PersonRef>person_1</ota2-0500:PersonRef>
+        <ota2-0500:PersonName>
+            <ota2-0500:Prefix>Mr.</ota2-0500:Prefix>
+            <ota2-0500:Given>John</ota2-0500:Given>
+            <ota2-0500:Middle>Example String Value</ota2-0500:Middle>
+            <ota2-0500:Surname>Smith</ota2-0500:Surname>
+        </ota2-0500:PersonName>
+        <ota2-0500:Address role="Home">
+            <ota2-0500:AddressLine>111 Travers St, Dun Laoghaire Co. Dublin Ireland</ota2-0500:AddressLine>
+            <ota2-0500:BldgRoom buldingInd="true">Bldg H</ota2-0500:BldgRoom>
+            <ota2-0500:Number pO_Box="98567499" ruralRouteNmbr="88"
+                streetDirection="NNW" streetNmbrSuffix="B">563</ota2-0500:Number>
+            <ota2-0500:Street>Travers Street</ota2-0500:Street>
+            <ota2-0500:City>Dublin</ota2-0500:City>
+            <ota2-0500:County>Fairfax</ota2-0500:County>
+            <ota2-0500:StateProv name="Texas">TX</ota2-0500:StateProv>
+            <ota2-0500:Country name="Ireland">IR</ota2-0500:Country>
+            <ota2-0500:PostalCode>32165-9999</ota2-0500:PostalCode>
+        </ota2-0500:Address>
+        <ota2-0500:Telephone areaCityCode="202" countryAccessCode="01"
+            extension="237" id="telephone_1" phoneNumber="5555555" role="Home"/>
+        <ota2-0500:Email defaultInd="true" remark="Example String Value"
+            textFormat="Example String Value" validInd="true">
+            <ota2-0500:Address>Example String Value</ota2-0500:Address>
+            <ota2-0500:Type>Business</ota2-0500:Type>
+            <ota2-0500:Privacy optInDate="2011-12-05T06:00:00Z"
+                optInStatus="OptedOut"
+                optOutDate="2011-01-24T09:45:00-06:00"
+                shareMarketInd="Inherit" shareSyncInd="Yes"/>
+        </ota2-0500:Email>
+        <ota2-0500:Privacy optInDate="2011-07-04T14:15:00+06:00"
+            optInStatus="Unknown" optOutDate="2011-12-05T06:00:00Z"
+            shareMarketInd="No" shareSyncInd="Inherit"/>
+        <ota2-0500:Comments language="en">Some fee text.</ota2-0500:Comments>
+    </ota2-0500:Person>
+    <order-0400:DateTimeStamp create="2011-07-04T14:15:00+06:00"
+        creatorID="c123456789" lastModifierID="m987654321"
+        lastModify="2011-12-05T06:00:00Z" purge="2011-07-04">2011-01-24T09:45:00-06:00</order-0400:DateTimeStamp>
+</order-0400:Payment>

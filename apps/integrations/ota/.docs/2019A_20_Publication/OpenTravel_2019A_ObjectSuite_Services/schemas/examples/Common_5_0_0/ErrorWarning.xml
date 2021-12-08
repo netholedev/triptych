@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ota2-0500:ErrorWarning
+    xmlns:ota2-0500="http://www.opentravel.org/OTM/Common/v5" code="2"
+    docURL="http://www.w3.org/2001/XMLSchema" language="en"
+    nodeList="Example String Value" recordID="Example String Value"
+    shortText="Example String Value" status="Complete"
+    statusExtension="status_Other_Value" tag="Example String Value"
+    type="Advisory" typeExtension="type_Other_Value">Example String Value</ota2-0500:ErrorWarning>

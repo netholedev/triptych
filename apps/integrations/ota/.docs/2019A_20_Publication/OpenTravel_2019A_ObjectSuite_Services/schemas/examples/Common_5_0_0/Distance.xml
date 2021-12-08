@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ota2-0500:Distance
+    xmlns:ota2-0500="http://www.opentravel.org/OTM/Common/v5"
+    direction="Example String Value" distanceMax="1234"
+    distanceMeasure="Example String Value" unitOfMeasureCode="Miles">1234</ota2-0500:Distance>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sh:HospitalityDescriptiveContentNotifRS
+    xmlns:sh="http://www.opentravel.org/OTM/services/HospitalityServices/v1"
+    timeStamp="2020-01-31T11:09:34.557-05:00" version="1"
+    xmlns:ota2-0500="http://www.opentravel.org/OTM/Common/v5"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/services/HospitalityServices/v1 ../HospitalityContent_HospitalityServices_1_0_0_Trim.xsd">
+    <sh:PayloadStdAttributes altLangID="es"
+        correlationID="Example String Value"
+        echoToken="Example String Value" primaryLangID="en"
+        retransmissionIndicatorInd="true"
+        sequenceNmbr="Example String Value" target="Test"
+        targetName="Example String Value"
+        timeStamp="2011-01-24T09:45:00-06:00"
+        transactionIdentifier="Example String Value"
+        transactionStatusCode="Start" version="12"/>
+    <ota2-0500:Result>
+        <ota2-0500:Errors code="2"
+            docURL="http://www.w3.org/2001/XMLSchema" language="en"
+            nodeList="Example String Value"
+            recordID="Example String Value"
+            shortText="Example String Value" status="Complete"
+            statusExtension="status_Other_Value"
+            tag="Example String Value" type="Advisory" typeExtension="type_Other_Value">Example String Value</ota2-0500:Errors>
+        <ota2-0500:Warnings code="2"
+            docURL="http://www.OpenTravel.org/ns/OTA2/Common_v01_00"
+            language="en" nodeList="Example String Value"
+            recordID="Example String Value"
+            shortText="Example String Value" status="Incomplete"
+            statusExtension="status_Other_Value"
+            tag="Example String Value" type="Application error" typeExtension="type_Other_Value">Example String Value</ota2-0500:Warnings>
+        <ota2-0500:Status>Not processed</ota2-0500:Status>
+    </ota2-0500:Result>
+</sh:HospitalityDescriptiveContentNotifRS>

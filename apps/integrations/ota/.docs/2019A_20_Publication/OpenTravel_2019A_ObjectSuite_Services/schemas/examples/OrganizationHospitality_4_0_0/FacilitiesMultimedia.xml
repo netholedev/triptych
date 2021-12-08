@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orghs-0400:FacilitiesMultimedia
+    xmlns:orghs-0400="http://www.opentravel.org/OTM/organization/hospitality/v4"
+    xmlns:ota2-0500="http://www.opentravel.org/OTM/Common/v5"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/organization/hospitality/v4 ../../OrganizationHospitality_4_0_0.xsd">
+    <orghs-0400:FacilityMultimedia facilityName="Example String Value" lastUpdated="2011-01-24T09:45:00-06:00">
+        <ota2-0500:MultimediaText caption="Example String Value"
+            language="en" lastUpdated="2011-07-04T14:15:00+06:00"
+            objID="multimedia_1" version="Example String Value">
+            <ota2-0500:Category>Ballroom</ota2-0500:Category>
+            <ota2-0500:AdditionalDetailType>Advanced booking information</ota2-0500:AdditionalDetailType>
+            <ota2-0500:InfoType>Address</ota2-0500:InfoType>
+        </ota2-0500:MultimediaText>
+    </orghs-0400:FacilityMultimedia>
+</orghs-0400:FacilitiesMultimedia>

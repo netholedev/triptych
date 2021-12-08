@@ -1,0 +1,8 @@
+{
+  "FacilityRequestInfo" : {
+    "value" : null,
+    "sendMeetingRoomsInd" : true,
+    "sendGuestRoomsInd" : true,
+    "sendRestaurantsInd" : true
+  }
+}

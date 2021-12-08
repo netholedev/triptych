@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prod-0500:ClassOfService
+    xmlns:prod-0500="http://www.opentravel.org/OTM/product/v5"
+    code="Example String Value" count="1234" name="Example String Value"/>

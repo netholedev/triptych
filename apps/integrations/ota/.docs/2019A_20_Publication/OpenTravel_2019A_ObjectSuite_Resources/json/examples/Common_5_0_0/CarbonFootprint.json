@@ -1,0 +1,10 @@
+{
+  "CarbonFootprint" : {
+    "nonCarbonMeasurement" : "Example String Value",
+    "meetingEvent" : 1234,
+    "roomNight" : 2345,
+    "weatherNormalized" : 3456,
+    "nonCarbonImpactInd" : true,
+    "CarbonUOM" : "Miles"
+  }
+}

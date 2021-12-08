@@ -1,0 +1,9 @@
+{
+  "AffiliationInfoRequest" : {
+    "value" : null,
+    "sendDistribSystemsInd" : true,
+    "sendBrandInd" : true,
+    "sendLoyalProgramsInd" : true,
+    "sendAwardsInd" : true
+  }
+}

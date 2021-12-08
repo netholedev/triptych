@@ -1,0 +1,22 @@
+{
+  "db": {
+    "host": "localhost",
+    "port": 8529,
+    "name": "triptych",
+    "user": "root",
+    "password": "example"
+  },
+  "queue": {
+    "host": "localhost",
+    "port": 5672,
+    "user": "guest",
+    "password": "guest"
+  },
+  "smtp": {
+    "host": "smtp.gmail.com",
+    "port": 465,
+    "sender_email": "buroz@nethole.dev",
+    "sender_password": "Espesp1315.*.",
+    "secure": true
+  }
+}

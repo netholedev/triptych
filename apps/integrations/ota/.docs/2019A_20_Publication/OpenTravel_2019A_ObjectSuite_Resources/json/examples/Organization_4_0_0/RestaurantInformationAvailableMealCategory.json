@@ -1,0 +1,9 @@
+{
+  "RestaurantInformationAvailableMealCategory" : {
+    "AvailableMealCategory" : [ {
+      "value" : "Breakfast"
+    }, {
+      "value" : "Breakfast"
+    } ]
+  }
+}

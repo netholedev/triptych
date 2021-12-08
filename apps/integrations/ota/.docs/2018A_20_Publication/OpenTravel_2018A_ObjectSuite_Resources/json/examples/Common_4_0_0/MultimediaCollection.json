@@ -1,0 +1,22 @@
+{
+  "MultimediaCollection" : {
+    "lastUpdated" : "2011-01-24T09:45:00-06:00",
+    "Multimedia" : [ {
+      "@type" : "Multimedia",
+      "objID" : "multimedia_1",
+      "lastUpdated" : "2011-07-04T14:15:00+06:00",
+      "version" : "Example String Value",
+      "language" : "en",
+      "caption" : "Example String Value",
+      "Category" : {
+        "value" : "Ballroom"
+      },
+      "AdditionalDetailType" : {
+        "value" : "Advanced booking information"
+      },
+      "InfoType" : {
+        "value" : "Address"
+      }
+    } ]
+  }
+}

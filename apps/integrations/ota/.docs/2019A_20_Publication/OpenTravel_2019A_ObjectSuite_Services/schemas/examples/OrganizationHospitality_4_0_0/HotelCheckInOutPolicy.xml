@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orghs-0400:HotelCheckInOutPolicy
+    xmlns:orghs-0400="http://www.opentravel.org/OTM/organization/hospitality/v4"
+    checkInTime="16:00:00" checkOutTime="12:00:00"/>

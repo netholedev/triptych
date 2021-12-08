@@ -1,0 +1,44 @@
+{
+  "HotelDescriptiveRequestInfo" : {
+    "languageRequested" : "???",
+    "BasicPropertyInfo" : [ {
+      "@type" : "BasicPropertyInfo",
+      "code" : "WASJW",
+      "name" : "JW Marriott Washington DC",
+      "chainCode" : "MC",
+      "brandCode" : "FS",
+      "cityCode" : "WAS"
+    } ],
+    "HotelRequestInfo" : {
+      "@type" : "HotelRequestInfo",
+      "hotelStatus" : "Example String Value",
+      "sendDataInd" : true,
+      "HotelStatusCode" : {
+        "value" : "Closed"
+      }
+    },
+    "FacilityRequestInfo" : {
+      "value" : null,
+      "sendMeetingRoomsInd" : true,
+      "sendGuestRoomsInd" : true,
+      "sendRestaurantsInd" : true
+    },
+    "PolicyRequestInfo" : {
+      "value" : null,
+      "sendPoliciesInd" : true
+    },
+    "AreaRequestInfo" : {
+      "value" : null,
+      "sendRefPointsInd" : true,
+      "sendAttractionsInd" : true,
+      "sendRecreationsInd" : true
+    },
+    "AffiliationRequestInfo" : {
+      "value" : null,
+      "sendDistribSystemsInd" : true,
+      "sendBrandInd" : true,
+      "sendLoyalProgramsInd" : true,
+      "sendAwardsInd" : true
+    }
+  }
+}

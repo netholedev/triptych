@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fin-0400:LoyalLevel
+    xmlns:fin-0400="http://www.opentravel.org/OTM/finance/v4"
+    loyalLevel="Platinum" loyalLevelCode="3">Platinum</fin-0400:LoyalLevel>

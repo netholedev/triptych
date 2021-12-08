@@ -1,0 +1,776 @@
+{
+  "MeetingRoom" : {
+    "propertySystemName" : "Example String Value",
+    "roomName" : "Example String Value",
+    "sort" : 1234,
+    "meetingRoomCapacity" : 2345,
+    "access" : "Example String Value",
+    "meetingRoomLevel" : "Example String Value",
+    "irregularInd" : true,
+    "dedicatedInd" : true,
+    "featuredInd" : true,
+    "Proximity" : {
+      "value" : "Onsite"
+    },
+    "MeetingRoomType" : {
+      "value" : "Ballroom"
+    },
+    "MeetingRoomAccessory" : [ {
+      "@type" : "MeetingRoomAccessory",
+      "codeDetail" : "Example String Value",
+      "quantity" : 3456,
+      "MeetingRoomCode_Enum" : {
+        "value" : "AV Equipment"
+      },
+      "DiscountsAvailable" : {
+        "value" : "AAA"
+      },
+      "MultimediaCollection" : {
+        "@type" : "MultimediaCollection",
+        "lastUpdated" : "2011-01-24T09:45:00-06:00",
+        "Multimedia" : [ {
+          "@type" : "Multimedia",
+          "objID" : "multimedia_1",
+          "lastUpdated" : "2011-07-04T14:15:00+06:00",
+          "version" : "Example String Value",
+          "language" : "en",
+          "caption" : "Example String Value",
+          "Category" : {
+            "value" : "Ballroom"
+          },
+          "AdditionalDetailType" : {
+            "value" : "Advanced booking information"
+          },
+          "InfoType" : {
+            "value" : "Address"
+          }
+        } ]
+      },
+      "Charge" : {
+        "@type" : "Charge",
+        "chargeUnitExempt" : 1234,
+        "chargeFrequencyExempt" : 2345,
+        "maxChargeUnitApplies" : 3456,
+        "maxChargeFrequencyApplies" : 4567,
+        "minAge" : 1234,
+        "maxAge" : 2345,
+        "taxInclusiveInd" : true,
+        "mandatoryInd" : true,
+        "taxableInd" : true,
+        "ChargeFrequency" : {
+          "value" : "Weekly"
+        },
+        "ChargeUnit" : {
+          "value" : "Per unit"
+        },
+        "CurrencyAmount" : {
+          "value" : 80000,
+          "currencyCode" : "USD",
+          "minorUnit" : 2
+        },
+        "Taxes" : {
+          "@type" : "Taxes",
+          "Total" : {
+            "value" : 80000,
+            "currencyCode" : "USD",
+            "minorUnit" : 2
+          },
+          "Tax" : [ {
+            "@type" : "Tax",
+            "sequenceNbr" : "Example String Value",
+            "taxExcludedInd" : true,
+            "Amount" : {
+              "@type" : "Amount",
+              "unitPrice" : 100.0000,
+              "unitName" : "Example String Value",
+              "quantity" : 4567,
+              "percentage" : 10,
+              "description" : "Example String Value",
+              "Total" : {
+                "value" : 80000,
+                "currencyCode" : "USD",
+                "minorUnit" : 2
+              },
+              "ChargeUnit" : {
+                "value" : "Per order"
+              },
+              "ChargeFrequency" : {
+                "value" : "Per tray"
+              }
+            },
+            "EffectiveExpire" : {
+              "value" : null,
+              "effective" : "2011-01-24",
+              "expire" : "2011-07-04",
+              "expireDateExclusiveInd" : true
+            },
+            "TaxType_Enum" : {
+              "value" : "Assessment/license tax"
+            }
+          } ]
+        },
+        "Description" : {
+          "@type" : "Description",
+          "name" : "paragraph name",
+          "number" : 3456,
+          "Description" : [ {
+            "value" : "Formatted text example.",
+            "language" : "en",
+            "textFormat" : "PlainText"
+          }, "http://www.w3.org/2001/XMLSchema", {
+            "value" : null,
+            "listItem" : 1234,
+            "text2" : "Formatted text example.",
+            "language" : "en",
+            "textFormat" : "HTML"
+          } ],
+          "Image" : [ {
+            "@type" : "Image",
+            "objID" : "image_1",
+            "version" : "Example String Value",
+            "format" : "2",
+            "dimensionCategory" : "Example String Value",
+            "sort" : 4567,
+            "resolution" : 1234,
+            "colorSpace" : "Example String Value",
+            "originalIndicatorInd" : true,
+            "Identifier" : {
+              "value" : "guid12345",
+              "url" : "http://www.w3.org/2001/XMLSchema",
+              "system" : "sysABC3344",
+              "organization" : "Acme"
+            },
+            "ImageRef" : "image_1",
+            "URL" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+            "Details" : {
+              "value" : "Example String Value",
+              "author" : "Example String Value",
+              "copyrightNotice" : "Example String Value",
+              "copyrightOwner" : "Example String Value",
+              "copyrightStart" : "2011-12-05T06:00:00Z",
+              "copyrightEnd" : "2011-01-24T09:45:00-06:00",
+              "effectiveStart" : "2011-07-04T14:15:00+06:00",
+              "effectiveEnd" : "2011-12-05T06:00:00Z",
+              "applicableStart" : "2011-12-05",
+              "applicableEnd" : "2011-01-24"
+            },
+            "MultimediaDescription" : [ {
+              "@type" : "MultimediaDescription",
+              "title" : "Example String Value",
+              "language" : "en",
+              "caption" : "The Empire State Building at sunset.",
+              "FormattedTextSubSection" : [ {
+                "@type" : "FormattedTextSubSection",
+                "subTitle" : "Example String Value",
+                "subCode" : "Example String Value",
+                "subSectionNumber" : 2345,
+                "TextParagraph" : [ ]
+              } ]
+            } ],
+            "DateTimeStamp" : {
+              "value" : "2011-01-24T09:45:00-06:00",
+              "create" : "2011-07-04T14:15:00+06:00",
+              "creatorID" : "c123456789",
+              "lastModify" : "2011-12-05T06:00:00Z",
+              "lastModifierID" : "m987654321",
+              "purge" : "2011-07-04"
+            },
+            "Email" : {
+              "@type" : "Email",
+              "remark" : "Example String Value",
+              "textFormat" : "Example String Value",
+              "validInd" : true,
+              "defaultInd" : true,
+              "Address" : "Example String Value",
+              "Type" : {
+                "value" : "Business"
+              },
+              "Privacy" : {
+                "value" : null,
+                "shareMarketInd" : "Yes",
+                "shareSyncInd" : "No",
+                "optInStatus" : "OptedIn",
+                "optInDate" : "2011-01-24T09:45:00-06:00",
+                "optOutDate" : "2011-07-04T14:15:00+06:00"
+              }
+            },
+            "Dimensions" : {
+              "value" : null,
+              "unitOfMeasureCode" : "2",
+              "width" : 3456,
+              "height" : 4567,
+              "area" : 1234,
+              "length" : 2345
+            },
+            "File" : {
+              "value" : null,
+              "name" : "Example String Value",
+              "size" : 3456,
+              "originalName" : "Example String Value"
+            },
+            "Geolocation" : {
+              "value" : null,
+              "latitude" : "Example String Value",
+              "longitude" : "Example String Value",
+              "altitude" : "Example String Value",
+              "altitudeUnitOfMeasure_Enum" : "Miles",
+              "mapURL" : "http://www.w3.org/2001/XMLSchema",
+              "formatURL" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00"
+            }
+          } ],
+          "DateTimeStamp" : {
+            "value" : "2011-12-05T06:00:00Z",
+            "create" : "2011-01-24T09:45:00-06:00",
+            "creatorID" : "c123456789",
+            "lastModify" : "2011-07-04T14:15:00+06:00",
+            "lastModifierID" : "m987654321",
+            "purge" : "2011-12-05"
+          }
+        }
+      }
+    } ],
+    "MultimediaCollection" : {
+      "@type" : "MultimediaCollection",
+      "lastUpdated" : "2011-12-05T06:00:00Z",
+      "Multimedia" : [ {
+        "@type" : "Multimedia",
+        "objID" : "multimedia_2",
+        "lastUpdated" : "2011-01-24T09:45:00-06:00",
+        "version" : "Example String Value",
+        "language" : "en",
+        "caption" : "Example String Value",
+        "Category" : {
+          "value" : "Bar/Lounge"
+        },
+        "AdditionalDetailType" : {
+          "value" : "Amenity information"
+        },
+        "InfoType" : {
+          "value" : "Advisory"
+        }
+      } ]
+    },
+    "DescriptiveContentFeatureAccessibility" : [ {
+      "codeDetail" : "Example String Value",
+      "quantity" : 2345,
+      "Proximity" : {
+        "value" : "Offsite"
+      },
+      "Amount" : {
+        "value" : 80000,
+        "currencyCode" : "USD",
+        "minorUnit" : 2
+      },
+      "MultimediaCollection" : {
+        "@type" : "MultimediaCollection",
+        "lastUpdated" : "2011-07-04T14:15:00+06:00",
+        "Multimedia" : [ {
+          "@type" : "Multimedia",
+          "objID" : "multimedia_3",
+          "lastUpdated" : "2011-12-05T06:00:00Z",
+          "version" : "Example String Value",
+          "language" : "en",
+          "caption" : "Example String Value",
+          "Category" : {
+            "value" : "Basics"
+          },
+          "AdditionalDetailType" : {
+            "value" : "Areas served"
+          },
+          "InfoType" : {
+            "value" : "Alias name"
+          }
+        } ]
+      },
+      "Description" : {
+        "@type" : "Description",
+        "name" : "paragraph name",
+        "number" : 4567,
+        "Description" : [ {
+          "value" : "Formatted text example.",
+          "language" : "en",
+          "textFormat" : "PlainText"
+        }, "http://www.OpenTravel.org/ns/OTA2/Common_v01_00", {
+          "value" : null,
+          "listItem" : 3456,
+          "text2" : "Formatted text example.",
+          "language" : "en",
+          "textFormat" : "HTML"
+        } ],
+        "Image" : [ {
+          "@type" : "Image",
+          "objID" : "image_2",
+          "version" : "Example String Value",
+          "format" : "2",
+          "dimensionCategory" : "Example String Value",
+          "sort" : 1234,
+          "resolution" : 2345,
+          "colorSpace" : "Example String Value",
+          "originalIndicatorInd" : true,
+          "Identifier" : {
+            "value" : "guid12345",
+            "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+            "system" : "sysABC3344",
+            "organization" : "Acme"
+          },
+          "ImageRef" : "image_2",
+          "URL" : "http://www.w3.org/2001/XMLSchema",
+          "Details" : {
+            "value" : "Example String Value",
+            "author" : "Example String Value",
+            "copyrightNotice" : "Example String Value",
+            "copyrightOwner" : "Example String Value",
+            "copyrightStart" : "2011-01-24T09:45:00-06:00",
+            "copyrightEnd" : "2011-07-04T14:15:00+06:00",
+            "effectiveStart" : "2011-12-05T06:00:00Z",
+            "effectiveEnd" : "2011-01-24T09:45:00-06:00",
+            "applicableStart" : "2011-01-24",
+            "applicableEnd" : "2011-07-04"
+          },
+          "MultimediaDescription" : [ {
+            "@type" : "MultimediaDescription",
+            "title" : "Example String Value",
+            "language" : "en",
+            "caption" : "The Empire State Building at sunset.",
+            "FormattedTextSubSection" : [ {
+              "@type" : "FormattedTextSubSection",
+              "subTitle" : "Example String Value",
+              "subCode" : "Example String Value",
+              "subSectionNumber" : 3456,
+              "TextParagraph" : [ ]
+            } ]
+          } ],
+          "DateTimeStamp" : {
+            "value" : "2011-07-04T14:15:00+06:00",
+            "create" : "2011-12-05T06:00:00Z",
+            "creatorID" : "c123456789",
+            "lastModify" : "2011-01-24T09:45:00-06:00",
+            "lastModifierID" : "m987654321",
+            "purge" : "2011-12-05"
+          },
+          "Email" : {
+            "@type" : "Email",
+            "remark" : "Example String Value",
+            "textFormat" : "Example String Value",
+            "validInd" : true,
+            "defaultInd" : true,
+            "Address" : "Example String Value",
+            "Type" : {
+              "value" : "Listserve"
+            },
+            "Privacy" : {
+              "value" : null,
+              "shareMarketInd" : "Inherit",
+              "shareSyncInd" : "Yes",
+              "optInStatus" : "OptedOut",
+              "optInDate" : "2011-07-04T14:15:00+06:00",
+              "optOutDate" : "2011-12-05T06:00:00Z"
+            }
+          },
+          "Dimensions" : {
+            "value" : null,
+            "unitOfMeasureCode" : "2",
+            "width" : 4567,
+            "height" : 1234,
+            "area" : 2345,
+            "length" : 3456
+          },
+          "File" : {
+            "value" : null,
+            "name" : "Example String Value",
+            "size" : 4567,
+            "originalName" : "Example String Value"
+          },
+          "Geolocation" : {
+            "value" : null,
+            "latitude" : "Example String Value",
+            "longitude" : "Example String Value",
+            "altitude" : "Example String Value",
+            "altitudeUnitOfMeasure_Enum" : "Kilometers",
+            "mapURL" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+            "formatURL" : "http://www.w3.org/2001/XMLSchema"
+          }
+        } ],
+        "DateTimeStamp" : {
+          "value" : "2011-01-24T09:45:00-06:00",
+          "create" : "2011-07-04T14:15:00+06:00",
+          "creatorID" : "c123456789",
+          "lastModify" : "2011-12-05T06:00:00Z",
+          "lastModifierID" : "m987654321",
+          "purge" : "2011-01-24"
+        }
+      },
+      "AccessibilityCode" : {
+        "value" : "Accessibility to goods and services"
+      },
+      "UnitOfMeasure_Enum" : "Meters"
+    } ],
+    "DescriptiveContentFeatureSecurity" : [ {
+      "codeDetail" : "Example String Value",
+      "quantity" : 4567,
+      "Proximity" : {
+        "value" : "Nearby"
+      },
+      "Amount" : {
+        "value" : 80000,
+        "currencyCode" : "USD",
+        "minorUnit" : 2
+      },
+      "MultimediaCollection" : {
+        "@type" : "MultimediaCollection",
+        "lastUpdated" : "2011-01-24T09:45:00-06:00",
+        "Multimedia" : [ {
+          "@type" : "Multimedia",
+          "objID" : "multimedia_4",
+          "lastUpdated" : "2011-07-04T14:15:00+06:00",
+          "version" : "Example String Value",
+          "language" : "en",
+          "caption" : "Example String Value",
+          "Category" : {
+            "value" : "Beach"
+          },
+          "AdditionalDetailType" : {
+            "value" : "Booking guidelines"
+          },
+          "InfoType" : {
+            "value" : "Amenities"
+          }
+        } ]
+      },
+      "Description" : {
+        "@type" : "Description",
+        "name" : "paragraph name",
+        "number" : 1234,
+        "Description" : [ {
+          "value" : "Formatted text example.",
+          "language" : "en",
+          "textFormat" : "PlainText"
+        }, "http://www.w3.org/2001/XMLSchema", {
+          "value" : null,
+          "listItem" : 1234,
+          "text2" : "Formatted text example.",
+          "language" : "en",
+          "textFormat" : "HTML"
+        } ],
+        "Image" : [ {
+          "@type" : "Image",
+          "objID" : "image_3",
+          "version" : "Example String Value",
+          "format" : "2",
+          "dimensionCategory" : "Example String Value",
+          "sort" : 2345,
+          "resolution" : 3456,
+          "colorSpace" : "Example String Value",
+          "originalIndicatorInd" : true,
+          "Identifier" : {
+            "value" : "guid12345",
+            "url" : "http://www.w3.org/2001/XMLSchema",
+            "system" : "sysABC3344",
+            "organization" : "Acme"
+          },
+          "ImageRef" : "image_3",
+          "URL" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+          "Details" : {
+            "value" : "Example String Value",
+            "author" : "Example String Value",
+            "copyrightNotice" : "Example String Value",
+            "copyrightOwner" : "Example String Value",
+            "copyrightStart" : "2011-12-05T06:00:00Z",
+            "copyrightEnd" : "2011-01-24T09:45:00-06:00",
+            "effectiveStart" : "2011-07-04T14:15:00+06:00",
+            "effectiveEnd" : "2011-12-05T06:00:00Z",
+            "applicableStart" : "2011-07-04",
+            "applicableEnd" : "2011-12-05"
+          },
+          "MultimediaDescription" : [ {
+            "@type" : "MultimediaDescription",
+            "title" : "Example String Value",
+            "language" : "en",
+            "caption" : "The Empire State Building at sunset.",
+            "FormattedTextSubSection" : [ {
+              "@type" : "FormattedTextSubSection",
+              "subTitle" : "Example String Value",
+              "subCode" : "Example String Value",
+              "subSectionNumber" : 4567,
+              "TextParagraph" : [ ]
+            } ]
+          } ],
+          "DateTimeStamp" : {
+            "value" : "2011-01-24T09:45:00-06:00",
+            "create" : "2011-07-04T14:15:00+06:00",
+            "creatorID" : "c123456789",
+            "lastModify" : "2011-12-05T06:00:00Z",
+            "lastModifierID" : "m987654321",
+            "purge" : "2011-01-24"
+          },
+          "Email" : {
+            "@type" : "Email",
+            "remark" : "Example String Value",
+            "textFormat" : "Example String Value",
+            "validInd" : true,
+            "defaultInd" : true,
+            "Address" : "Example String Value",
+            "Type" : {
+              "value" : "Managing company"
+            },
+            "Privacy" : {
+              "value" : null,
+              "shareMarketInd" : "No",
+              "shareSyncInd" : "Inherit",
+              "optInStatus" : "Unknown",
+              "optInDate" : "2011-01-24T09:45:00-06:00",
+              "optOutDate" : "2011-07-04T14:15:00+06:00"
+            }
+          },
+          "Dimensions" : {
+            "value" : null,
+            "unitOfMeasureCode" : "2",
+            "width" : 1234,
+            "height" : 2345,
+            "area" : 3456,
+            "length" : 4567
+          },
+          "File" : {
+            "value" : null,
+            "name" : "Example String Value",
+            "size" : 1234,
+            "originalName" : "Example String Value"
+          },
+          "Geolocation" : {
+            "value" : null,
+            "latitude" : "Example String Value",
+            "longitude" : "Example String Value",
+            "altitude" : "Example String Value",
+            "altitudeUnitOfMeasure_Enum" : "Millimeters",
+            "mapURL" : "http://www.w3.org/2001/XMLSchema",
+            "formatURL" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00"
+          }
+        } ],
+        "DateTimeStamp" : {
+          "value" : "2011-12-05T06:00:00Z",
+          "create" : "2011-01-24T09:45:00-06:00",
+          "creatorID" : "c123456789",
+          "lastModify" : "2011-07-04T14:15:00+06:00",
+          "lastModifierID" : "m987654321",
+          "purge" : "2011-07-04"
+        }
+      },
+      "SecurityFeature_Enum" : {
+        "value" : "2nd lock on guest doors"
+      }
+    } ],
+    "Dimensions" : {
+      "value" : null,
+      "unitOfMeasureCode" : "2",
+      "width" : 2345,
+      "height" : 3456,
+      "area" : 4567,
+      "length" : 1234
+    },
+    "AvailableCapacities" : {
+      "@type" : "AvailableCapacities",
+      "MeetingRoomCapacity" : [ {
+        "@type" : "MeetingRoomCapacity",
+        "MeetingRoomFormat" : {
+          "value" : "Banquet"
+        },
+        "Occupancy" : {
+          "@type" : "Occupancy",
+          "RoomOccupancy" : {
+            "@type" : "RoomOccupancy",
+            "minOccupancy" : 1,
+            "maxOccupancy" : 4,
+            "standardOccupancy" : 2345,
+            "AgeQualifying" : [ {
+              "value" : "Junior"
+            }, {
+              "value" : "Junior"
+            } ]
+          },
+          "Charge" : {
+            "@type" : "Charge",
+            "chargeUnitExempt" : 2345,
+            "chargeFrequencyExempt" : 3456,
+            "maxChargeUnitApplies" : 4567,
+            "maxChargeFrequencyApplies" : 1234,
+            "minAge" : 2345,
+            "maxAge" : 3456,
+            "taxInclusiveInd" : true,
+            "mandatoryInd" : true,
+            "taxableInd" : true,
+            "ChargeFrequency" : {
+              "value" : "Stay"
+            },
+            "ChargeUnit" : {
+              "value" : "Per dozen"
+            },
+            "CurrencyAmount" : {
+              "value" : 80000,
+              "currencyCode" : "USD",
+              "minorUnit" : 2
+            },
+            "Taxes" : {
+              "@type" : "Taxes",
+              "Total" : {
+                "value" : 80000,
+                "currencyCode" : "USD",
+                "minorUnit" : 2
+              },
+              "Tax" : [ {
+                "@type" : "Tax",
+                "sequenceNbr" : "Example String Value",
+                "taxExcludedInd" : true,
+                "Amount" : {
+                  "@type" : "Amount",
+                  "unitPrice" : 100.0000,
+                  "unitName" : "Example String Value",
+                  "quantity" : 3456,
+                  "percentage" : 10,
+                  "description" : "Example String Value",
+                  "Total" : {
+                    "value" : 80000,
+                    "currencyCode" : "USD",
+                    "minorUnit" : 2
+                  },
+                  "ChargeUnit" : {
+                    "value" : "Per gallon"
+                  },
+                  "ChargeFrequency" : {
+                    "value" : "Round trip"
+                  }
+                },
+                "EffectiveExpire" : {
+                  "value" : null,
+                  "effective" : "2011-12-05",
+                  "expire" : "2011-01-24",
+                  "expireDateExclusiveInd" : true
+                },
+                "TaxType_Enum" : {
+                  "value" : "Bed tax"
+                }
+              } ]
+            },
+            "Description" : {
+              "@type" : "Description",
+              "name" : "paragraph name",
+              "number" : 4567,
+              "Description" : [ {
+                "value" : "Formatted text example.",
+                "language" : "en",
+                "textFormat" : "PlainText"
+              }, "http://www.OpenTravel.org/ns/OTA2/Common_v01_00", {
+                "value" : null,
+                "listItem" : 4567,
+                "text2" : "Formatted text example.",
+                "language" : "en",
+                "textFormat" : "HTML"
+              } ],
+              "Image" : [ {
+                "@type" : "Image",
+                "objID" : "image_4",
+                "version" : "Example String Value",
+                "format" : "2",
+                "dimensionCategory" : "Example String Value",
+                "sort" : 1234,
+                "resolution" : 2345,
+                "colorSpace" : "Example String Value",
+                "originalIndicatorInd" : true,
+                "Identifier" : {
+                  "value" : "guid12345",
+                  "url" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+                  "system" : "sysABC3344",
+                  "organization" : "Acme"
+                },
+                "ImageRef" : "image_4",
+                "URL" : "http://www.w3.org/2001/XMLSchema",
+                "Details" : {
+                  "value" : "Example String Value",
+                  "author" : "Example String Value",
+                  "copyrightNotice" : "Example String Value",
+                  "copyrightOwner" : "Example String Value",
+                  "copyrightStart" : "2011-12-05T06:00:00Z",
+                  "copyrightEnd" : "2011-01-24T09:45:00-06:00",
+                  "effectiveStart" : "2011-07-04T14:15:00+06:00",
+                  "effectiveEnd" : "2011-12-05T06:00:00Z",
+                  "applicableStart" : "2011-07-04",
+                  "applicableEnd" : "2011-12-05"
+                },
+                "MultimediaDescription" : [ {
+                  "@type" : "MultimediaDescription",
+                  "title" : "Example String Value",
+                  "language" : "en",
+                  "caption" : "The Empire State Building at sunset.",
+                  "FormattedTextSubSection" : [ {
+                    "@type" : "FormattedTextSubSection",
+                    "subTitle" : "Example String Value",
+                    "subCode" : "Example String Value",
+                    "subSectionNumber" : 3456,
+                    "TextParagraph" : [ ]
+                  } ]
+                } ],
+                "DateTimeStamp" : {
+                  "value" : "2011-01-24T09:45:00-06:00",
+                  "create" : "2011-07-04T14:15:00+06:00",
+                  "creatorID" : "c123456789",
+                  "lastModify" : "2011-12-05T06:00:00Z",
+                  "lastModifierID" : "m987654321",
+                  "purge" : "2011-01-24"
+                },
+                "Email" : {
+                  "@type" : "Email",
+                  "remark" : "Example String Value",
+                  "textFormat" : "Example String Value",
+                  "validInd" : true,
+                  "defaultInd" : true,
+                  "Address" : "Example String Value",
+                  "Type" : {
+                    "value" : "Personal"
+                  },
+                  "Privacy" : {
+                    "value" : null,
+                    "shareMarketInd" : "Yes",
+                    "shareSyncInd" : "No",
+                    "optInStatus" : "OptedIn",
+                    "optInDate" : "2011-01-24T09:45:00-06:00",
+                    "optOutDate" : "2011-07-04T14:15:00+06:00"
+                  }
+                },
+                "Dimensions" : {
+                  "value" : null,
+                  "unitOfMeasureCode" : "2",
+                  "width" : 4567,
+                  "height" : 1234,
+                  "area" : 2345,
+                  "length" : 3456
+                },
+                "File" : {
+                  "value" : null,
+                  "name" : "Example String Value",
+                  "size" : 4567,
+                  "originalName" : "Example String Value"
+                },
+                "Geolocation" : {
+                  "value" : null,
+                  "latitude" : "Example String Value",
+                  "longitude" : "Example String Value",
+                  "altitude" : "Example String Value",
+                  "altitudeUnitOfMeasure_Enum" : "Centimeters",
+                  "mapURL" : "http://www.OpenTravel.org/ns/OTA2/Common_v01_00",
+                  "formatURL" : "http://www.w3.org/2001/XMLSchema"
+                }
+              } ],
+              "DateTimeStamp" : {
+                "value" : "2011-12-05T06:00:00Z",
+                "create" : "2011-01-24T09:45:00-06:00",
+                "creatorID" : "c123456789",
+                "lastModify" : "2011-07-04T14:15:00+06:00",
+                "lastModifierID" : "m987654321",
+                "purge" : "2011-07-04"
+              }
+            }
+          }
+        }
+      } ]
+    }
+  }
+}

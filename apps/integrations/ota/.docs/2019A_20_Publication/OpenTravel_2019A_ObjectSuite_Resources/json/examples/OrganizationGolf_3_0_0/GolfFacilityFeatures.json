@@ -1,0 +1,10 @@
+{
+  "GolfFacilityFeatures" : {
+    "description" : "Example String Value",
+    "FacilityHighlights" : [ {
+      "value" : "Accessible"
+    }, {
+      "value" : "Accessible"
+    } ]
+  }
+}

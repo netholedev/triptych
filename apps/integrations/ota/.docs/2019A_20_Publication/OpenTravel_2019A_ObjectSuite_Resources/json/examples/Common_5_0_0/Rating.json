@@ -1,0 +1,11 @@
+{
+  "Rating" : {
+    "value" : "Example String Value",
+    "provider" : "Example String Value",
+    "description" : "Example String Value",
+    "ratingSymbol" : "Diamond",
+    "rating" : "Example String Value",
+    "date" : "2011-01-24",
+    "officialAppointmentInd" : true
+  }
+}

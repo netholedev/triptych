@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<order-0300:CommissionableAmount
+    xmlns:order-0300="http://www.opentravel.org/OTM/order/v3"
+    taxInclusiveInd="true"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/order/v3 ../../Order_3_0_0.xsd">
+    <order-0300:CurrencyAmountGroup currencyCode="USD" minorUnit="2">80000</order-0300:CurrencyAmountGroup>
+</order-0300:CommissionableAmount>

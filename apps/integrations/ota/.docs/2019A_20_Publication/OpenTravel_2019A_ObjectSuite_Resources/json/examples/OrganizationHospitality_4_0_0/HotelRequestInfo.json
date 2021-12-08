@@ -1,0 +1,9 @@
+{
+  "HotelRequestInfo" : {
+    "hotelStatus" : "Example String Value",
+    "sendDataInd" : true,
+    "HotelStatusCode" : {
+      "value" : "Closed"
+    }
+  }
+}

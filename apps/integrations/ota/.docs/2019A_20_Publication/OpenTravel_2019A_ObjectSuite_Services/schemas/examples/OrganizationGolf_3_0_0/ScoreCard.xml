@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orggf-0300:ScoreCard
+    xmlns:orggf-0300="http://www.opentravel.org/OTM/organization/golf/v3"
+    courseSlope="60" number="2" par="3"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/organization/golf/v3 ../../OrganizationGolf_3_0_0.xsd">
+    <orggf-0300:TeePosition teePositionName="Champion" yardage="120"/>
+</orggf-0300:ScoreCard>

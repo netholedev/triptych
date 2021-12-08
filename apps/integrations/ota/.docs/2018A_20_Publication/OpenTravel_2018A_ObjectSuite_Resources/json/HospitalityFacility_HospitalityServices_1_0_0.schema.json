@@ -1,0 +1,276 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "HospitalityFacility",
+  "x-otm-library": {
+    "ProjectName": "Hospitality Offers 013120.otp",
+    "LibraryName": "HospitalityFacility",
+    "LibraryVersion": "1.0.0",
+    "LibraryStatus": "FINAL",
+    "SourceFile": "/HospitalityFacility_1_0_0.otm",
+    "CompilerVersion": "4.0-SNAPSHOT",
+    "CompileDate": "2020-01-31T15:37:46.333-0500"
+  },
+  "definitions": {
+    "FindHospitalityAvailabilityRQ": {
+      "x-otm-entity": {
+        "EntityType": "Operation",
+        "EntityName": "HospitalityFacility_FindHospitalityAvailability"
+      },
+      "allOf": [
+        {
+          "$ref": "built-ins/OTA2_Message_v2.0.0.schema.json#/definitions/OTA2_Request_Payload"
+        },
+        {
+          "properties": {
+            "PayloadStdAttributes": {
+              "description": "Assigned Type: ota2-0400:PayloadStdAttributes",
+              "$ref": "Common_4_0_0.schema.json#/definitions/PayloadStdAttributes"
+            },
+            "POS": {
+              "description": "Assigned Type: ota2-0400:POS",
+              "$ref": "Common_4_0_0.schema.json#/definitions/POS"
+            },
+            "ProcessingInfo": {
+              "description": "Assigned Type: ota2-0400:ProcessingInfo",
+              "$ref": "Common_4_0_0.schema.json#/definitions/ProcessingInfo"
+            },
+            "FacilityQueryHotelAvail": {
+              "description": "Assigned Type: orghs-0300:Facility_Query_HotelAvail",
+              "$ref": "OrganizationHospitality_3_0_0.schema.json#/definitions/FacilityQueryHotelAvail"
+            },
+            "ExtensionPoint": {
+              "$ref": "built-ins/OTM_BuiltIns.schema.json#/definitions/ExtensionPoint"
+            }
+          }
+        }
+      ]
+    },
+    "FindHospitalityAvailabilityRS": {
+      "x-otm-entity": {
+        "EntityType": "Operation",
+        "EntityName": "HospitalityFacility_FindHospitalityAvailability"
+      },
+      "allOf": [
+        {
+          "$ref": "built-ins/OTA2_Message_v2.0.0.schema.json#/definitions/OTA2_Response_Payload"
+        },
+        {
+          "properties": {
+            "PayloadStdAttributes": {
+              "description": "Assigned Type: ota2-0400:PayloadStdAttributes",
+              "$ref": "Common_4_0_0.schema.json#/definitions/PayloadStdAttributes"
+            },
+            "Result": {
+              "description": "Assigned Type: ota2-0400:Result",
+              "$ref": "Common_4_0_0.schema.json#/definitions/Result"
+            },
+            "FacilityHotel": {
+              "type": "array",
+              "items": {
+                "$ref": "OrganizationHospitality_3_0_0.schema.json#/definitions/FacilityHotel"
+              }
+            },
+            "ExtensionPoint": {
+              "$ref": "built-ins/OTM_BuiltIns.schema.json#/definitions/ExtensionPoint"
+            }
+          }
+        }
+      ]
+    },
+    "FindHospitalityFacilitiesRQ": {
+      "x-otm-entity": {
+        "EntityType": "Operation",
+        "EntityName": "HospitalityFacility_FindHospitalityFacilities"
+      },
+      "allOf": [
+        {
+          "$ref": "built-ins/OTA2_Message_v2.0.0.schema.json#/definitions/OTA2_Request_Payload"
+        },
+        {
+          "properties": {
+            "PayloadStdAttributes": {
+              "description": "Assigned Type: ota2-0400:PayloadStdAttributes",
+              "$ref": "Common_4_0_0.schema.json#/definitions/PayloadStdAttributes"
+            },
+            "POS": {
+              "description": "Assigned Type: ota2-0400:POS",
+              "$ref": "Common_4_0_0.schema.json#/definitions/POS"
+            },
+            "ProcessingInfo": {
+              "description": "Assigned Type: ota2-0400:ProcessingInfo",
+              "$ref": "Common_4_0_0.schema.json#/definitions/ProcessingInfo"
+            },
+            "FacilityQueryHotel": {
+              "description": "Assigned Type: orghs-0300:Facility_Query_Hotel",
+              "$ref": "OrganizationHospitality_3_0_0.schema.json#/definitions/FacilityQueryHotel"
+            },
+            "ExtensionPoint": {
+              "$ref": "built-ins/OTM_BuiltIns.schema.json#/definitions/ExtensionPoint"
+            }
+          }
+        }
+      ]
+    },
+    "FindHospitalityFacilitiesRS": {
+      "x-otm-entity": {
+        "EntityType": "Operation",
+        "EntityName": "HospitalityFacility_FindHospitalityFacilities"
+      },
+      "allOf": [
+        {
+          "$ref": "built-ins/OTA2_Message_v2.0.0.schema.json#/definitions/OTA2_Response_Payload"
+        },
+        {
+          "properties": {
+            "PayloadStdAttributes": {
+              "description": "Assigned Type: ota2-0400:PayloadStdAttributes",
+              "$ref": "Common_4_0_0.schema.json#/definitions/PayloadStdAttributes"
+            },
+            "Result": {
+              "description": "Assigned Type: ota2-0400:Result",
+              "$ref": "Common_4_0_0.schema.json#/definitions/Result"
+            },
+            "FacilityHotel": {
+              "type": "array",
+              "items": {
+                "$ref": "OrganizationHospitality_3_0_0.schema.json#/definitions/FacilityHotel"
+              }
+            },
+            "ExtensionPoint": {
+              "$ref": "built-ins/OTM_BuiltIns.schema.json#/definitions/ExtensionPoint"
+            }
+          }
+        }
+      ]
+    },
+    "RetrieveHospitalityAvailabilityRQ": {
+      "x-otm-entity": {
+        "EntityType": "Operation",
+        "EntityName": "HospitalityFacility_RetrieveHospitalityAvailability"
+      },
+      "description": "Used to retreive availability for specific hotels identified in the request.  This is not an offer request, but simply a high level availability request.",
+      "allOf": [
+        {
+          "$ref": "built-ins/OTA2_Message_v2.0.0.schema.json#/definitions/OTA2_Request_Payload"
+        },
+        {
+          "properties": {
+            "PayloadStdAttributes": {
+              "description": "Assigned Type: ota2-0400:PayloadStdAttributes",
+              "$ref": "Common_4_0_0.schema.json#/definitions/PayloadStdAttributes"
+            },
+            "POS": {
+              "description": "Assigned Type: ota2-0400:POS",
+              "$ref": "Common_4_0_0.schema.json#/definitions/POS"
+            },
+            "ProcessingInfo": {
+              "description": "Assigned Type: ota2-0400:ProcessingInfo",
+              "$ref": "Common_4_0_0.schema.json#/definitions/ProcessingInfo"
+            },
+            "FacilityQueryHotelAvailRetrieve": {
+              "description": "Assigned Type: orghs-0300:Facility_Query_HotelAvailRetrieve",
+              "$ref": "OrganizationHospitality_3_0_0.schema.json#/definitions/FacilityQueryHotelAvailRetrieve"
+            },
+            "ExtensionPoint": {
+              "$ref": "built-ins/OTM_BuiltIns.schema.json#/definitions/ExtensionPoint"
+            }
+          }
+        }
+      ]
+    },
+    "RetrieveHospitalityAvailabilityRS": {
+      "x-otm-entity": {
+        "EntityType": "Operation",
+        "EntityName": "HospitalityFacility_RetrieveHospitalityAvailability"
+      },
+      "allOf": [
+        {
+          "$ref": "built-ins/OTA2_Message_v2.0.0.schema.json#/definitions/OTA2_Response_Payload"
+        },
+        {
+          "properties": {
+            "PayloadStdAttributes": {
+              "description": "Assigned Type: ota2-0400:PayloadStdAttributes",
+              "$ref": "Common_4_0_0.schema.json#/definitions/PayloadStdAttributes"
+            },
+            "Result": {
+              "description": "Assigned Type: ota2-0400:Result",
+              "$ref": "Common_4_0_0.schema.json#/definitions/Result"
+            },
+            "FacilityHotel": {
+              "type": "array",
+              "items": {
+                "$ref": "OrganizationHospitality_3_0_0.schema.json#/definitions/FacilityHotel"
+              }
+            },
+            "ExtensionPoint": {
+              "$ref": "built-ins/OTM_BuiltIns.schema.json#/definitions/ExtensionPoint"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "oneOf": [
+    {
+      "properties": {
+        "FindHospitalityAvailabilityRQ": {
+          "$ref": "#/definitions/FindHospitalityAvailabilityRQ"
+        }
+      },
+      "required": [
+        "FindHospitalityAvailabilityRQ"
+      ]
+    },
+    {
+      "properties": {
+        "FindHospitalityAvailabilityRS": {
+          "$ref": "#/definitions/FindHospitalityAvailabilityRS"
+        }
+      },
+      "required": [
+        "FindHospitalityAvailabilityRS"
+      ]
+    },
+    {
+      "properties": {
+        "FindHospitalityFacilitiesRQ": {
+          "$ref": "#/definitions/FindHospitalityFacilitiesRQ"
+        }
+      },
+      "required": [
+        "FindHospitalityFacilitiesRQ"
+      ]
+    },
+    {
+      "properties": {
+        "FindHospitalityFacilitiesRS": {
+          "$ref": "#/definitions/FindHospitalityFacilitiesRS"
+        }
+      },
+      "required": [
+        "FindHospitalityFacilitiesRS"
+      ]
+    },
+    {
+      "properties": {
+        "RetrieveHospitalityAvailabilityRQ": {
+          "$ref": "#/definitions/RetrieveHospitalityAvailabilityRQ"
+        }
+      },
+      "required": [
+        "RetrieveHospitalityAvailabilityRQ"
+      ]
+    },
+    {
+      "properties": {
+        "RetrieveHospitalityAvailabilityRS": {
+          "$ref": "#/definitions/RetrieveHospitalityAvailabilityRS"
+        }
+      },
+      "required": [
+        "RetrieveHospitalityAvailabilityRS"
+      ]
+    }
+  ]
+}

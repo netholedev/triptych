@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orggf-0300:PracticeFacilities
+    xmlns:orggf-0300="http://www.opentravel.org/OTM/organization/golf/v3"
+    xmlns:ota2-0500="http://www.opentravel.org/OTM/Common/v5"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/organization/golf/v3 ../../OrganizationGolf_3_0_0.xsd">
+    <ota2-0500:OperationSchedule additionalOperationInfoCode="2"
+        daysOfWeek="Monday Tuesday Wednesday"
+        frequency="Example String Value" name="Example String Value" text="Example String Value">
+        <ota2-0500:DateTimeSpanWindows>
+            <ota2-0500:TimeSpan end="2016-08-28T04:32:52Z" start="2016-08-22T19:32:52Z"/>
+        </ota2-0500:DateTimeSpanWindows>
+    </ota2-0500:OperationSchedule>
+    <orggf-0300:DrivingRange distance="500 ft"
+        drivingRangeType="Covered" nightLightingInd="true"
+        numberOfStations="10" turfType="Grass"/>
+    <orggf-0300:FeeStructure currencyCode="USD" fixedRate="100.0000"
+        maxRate="100.0000" minRate="100.0000" rateTimeUnit="Day"/>
+    <orggf-0300:PracticeFacilityFeatures>PuttingGreen</orggf-0300:PracticeFacilityFeatures>
+</orggf-0300:PracticeFacilities>

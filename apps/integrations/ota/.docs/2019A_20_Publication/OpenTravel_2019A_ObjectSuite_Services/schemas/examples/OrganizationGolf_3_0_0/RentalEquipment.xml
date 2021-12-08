@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orggf-0300:RentalEquipment
+    xmlns:orggf-0300="http://www.opentravel.org/OTM/organization/golf/v3"
+    accessibleInd="true"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/organization/golf/v3 ../../OrganizationGolf_3_0_0.xsd">
+    <orggf-0300:Type>RightHandedClubs</orggf-0300:Type>
+    <orggf-0300:PersonCategory>Juniors</orggf-0300:PersonCategory>
+</orggf-0300:RentalEquipment>

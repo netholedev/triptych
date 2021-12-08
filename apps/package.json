@@ -1,0 +1,14 @@
+{
+  "name": "triptych",
+  "packageManager": "yarn@3.1.1",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "libs/*",
+    "integrations/*"
+  ],
+  "scripts": {
+    "dev:supplierapi": "yarn workspaces foreach -j 200 -i -pt --include=@triptych/supplier-api run start:dev",
+    "dev:supplierapp": "yarn workspaces foreach -j 200 -i -pt --include=@triptych/supplier-app run dev"
+  }
+}

@@ -1,0 +1,13 @@
+body {
+  min-width: 375px !important;
+}
+
+.home-mask {
+  height: 34rem; 
+}
+
+@media screen and (max-width: 1024px) {
+  .home-mask {
+    height: 24rem; 
+  }  
+}

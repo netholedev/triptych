@@ -1,0 +1,12 @@
+{
+  "RoomOccupancy" : {
+    "minOccupancy" : 1,
+    "maxOccupancy" : 4,
+    "standardOccupancy" : 1234,
+    "AgeQualifying" : [ {
+      "value" : "Junior"
+    }, {
+      "value" : "Junior"
+    } ]
+  }
+}

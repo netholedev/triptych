@@ -1,0 +1,22 @@
+export enum RESTAURANT_SERVICE {
+  ACCOMMODATES_DIABETIC_SUGAR_FREE_REQUIREMENTS = 'Accommodates diabetic/sugar free requirements',
+	ACCOMMODATES_GLUTEN_FREE_REQUIREMENTS = 'Accommodates gluten free requirements',
+	ACCOMMODATES_HIGH_FIBER_REQUIREMENTS = 'Accommodates high fiber requirements',
+	ACCOMMODATES_LACTOSE_FREE_REQUIREMENTS = 'Accommodates lactose free requirements',
+	ACCOMMODATES_LOW_FAT_REQUIREMENTS = 'Accommodates low fat requirements',
+	ACCOMMODATES_LOW_POTASSIUM_REQUIREMENTS = 'Accommodates low potassium requirements',
+	ACCOMMODATES_LOW_SODIUM_REQUIREMENTS = 'Accommodates low sodium requirements',
+	BUFFET = 'Buffet',
+	CATERING = 'Catering',
+	CHILDREN_S_MENU_AVAILABLE = 'Children's menu available',
+	COOKED_TO_ORDER = 'Cooked to order',
+	DEDICATED_NON_SMOKING_SECTION = 'Dedicated non-smoking section',
+	DELIVERY_SERVICE_TO_PROPERTY_AVAILABLE = 'Delivery service to property available',
+	FULL_SERVICE = 'Full service',
+	ROOM_SERVICE = 'Room service',
+	SELF_SERVICE = 'Self service',
+	SMOKING_SECTION_AVAILABLE = 'Smoking section available',
+	SPECIAL_MEAL_SERVICES = 'Special meal services',
+	TAKE_OUT = 'Take out',
+	OTHER = 'Other_'
+}

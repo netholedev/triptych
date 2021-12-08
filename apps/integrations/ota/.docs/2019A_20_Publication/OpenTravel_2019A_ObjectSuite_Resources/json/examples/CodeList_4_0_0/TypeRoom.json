@@ -1,0 +1,43 @@
+{
+  "TypeRoom" : {
+    "standardBedQuantity" : 1234,
+    "standardOccupancy" : 2345,
+    "maxRollaways" : 3456,
+    "size" : 4567,
+    "count" : 1234,
+    "name" : "Example String Value",
+    "roomTypeCode" : "Example String Value",
+    "gDSRoomTypeCode" : "Example String Value",
+    "roomID" : "Example String Value",
+    "floor" : 2345,
+    "inventoryBlockCode" : "Example String Value",
+    "configuration" : "Example String Value",
+    "sizeMeasurement" : "Example String Value",
+    "quantity" : 3456,
+    "roomGender" : "Male",
+    "maxCribs" : 4567,
+    "nonsmokingInd" : true,
+    "compositeInd" : true,
+    "shareRoomInd" : true,
+    "RoomCategory" : {
+      "value" : "Budget"
+    },
+    "RoomLocationCode" : {
+      "value" : "Annex room"
+    },
+    "RoomView" : {
+      "value" : "Annex room"
+    },
+    "BedType" : [ {
+      "value" : "Dorm bed"
+    }, {
+      "value" : "Dorm bed"
+    } ],
+    "RoomClassification" : {
+      "value" : "1 room cabin"
+    },
+    "RoomArchitecture" : {
+      "value" : "Art deco"
+    }
+  }
+}

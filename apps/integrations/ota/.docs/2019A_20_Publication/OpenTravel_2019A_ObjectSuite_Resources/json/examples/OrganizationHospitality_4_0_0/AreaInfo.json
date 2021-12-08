@@ -1,0 +1,8 @@
+{
+  "AreaInfo" : {
+    "value" : null,
+    "sendRefPointsInd" : true,
+    "sendAttractionsInd" : true,
+    "sendRecreationsInd" : true
+  }
+}

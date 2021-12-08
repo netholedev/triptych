@@ -1,0 +1,22 @@
+export enum AGE_QUALIFYING_CODE {
+  JUNIOR = 'Junior',
+	UNDER_10 = 'Under 10',
+	YOUNGER_DRIVER = 'Younger driver',
+	YOUNG_DRIVER = 'Young driver',
+	FREE_ADULT = 'Free adult',
+	FREE_CHILD = 'Free child',
+	ADDITIONAL_OCCUPANT_WITHOUT_ADULT = 'Additional occupant without adult',
+	ADDITIONAL_OCCUPANT_WITH_ADULT = 'Additional occupant with adult',
+	SENIOR = 'Senior',
+	ADULT = 'Adult',
+	TEENAGER = 'Teenager',
+	CHILD = 'Child',
+	INFANT = 'Infant',
+	UNDER_21 = 'Under 21',
+	UNDER_17 = 'Under 17',
+	UNDER_12 = 'Under 12',
+	UNDER_2 = 'Under 2',
+	OVER_65 = 'Over 65',
+	OVER_21 = 'Over 21',
+	OTHER = 'Other_'
+}
