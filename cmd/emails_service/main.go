@@ -7,6 +7,7 @@ import (
 	"github.com/netholedev/triptych/pkg/amqp"
 	"github.com/netholedev/triptych/pkg/logger"
 	"github.com/netholedev/triptych/pkg/smtp"
+	"github.com/netholedev/triptych/pkg/utils"
 )
 
 var (
@@ -14,12 +15,6 @@ var (
 	exchangeName   = "EMAILS"
 	queueName      = "EMAIL_SEND"
 )
-
-func check(err error) {
-	if err != nil {
-		fmt.Println(loggerInstance.ProgramError(err))
-	}
-}
 
 func main() {
 	forever := make(chan bool)
@@ -56,7 +51,7 @@ func main() {
 		false,        // no-wait
 		nil,          // arguments
 	)
-	check(err)
+	utils.Check(err)
 
 	q, err := amqpConn.Channel.QueueDeclare(
 		queueName, // name
@@ -66,7 +61,7 @@ func main() {
 		false,     // no-wait
 		nil,       // arguments
 	)
-	check(err)
+	utils.Check(err)
 
 	err = amqpConn.Channel.QueueBind(
 		q.Name,       // queue name
@@ -75,7 +70,7 @@ func main() {
 		false,        // no-wait
 		nil,          // args
 	)
-	check(err)
+	utils.Check(err)
 
 	msgs, err := amqpConn.Channel.Consume(
 		q.Name, // queue
@@ -86,7 +81,7 @@ func main() {
 		false,  // no-wait
 		nil,    // args
 	)
-	check(err)
+	utils.Check(err)
 
 	go func() {
 		for d := range msgs {

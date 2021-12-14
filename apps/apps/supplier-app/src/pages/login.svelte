@@ -1,11 +1,12 @@
 <script lang="ts">
   import { useNavigate } from 'svelte-navigator';
+  import type { Writable } from 'svelte/store';
+  
   import { setTokens } from '../store';
 
   import PublicLayout from '../components/common/PublicLayout.svelte';
   import Form from '../components/ui/Form.svelte';
   import LoadingSpinner from '../components/ui/LoadingSpinner.svelte';
-  import type { Writable } from 'svelte/store';
 
   let loading: Writable<boolean>;
 
@@ -38,7 +39,7 @@
                 <input
                   type="email"
                   name="email"
-                  class="bg-gray-200 focus:outline-none bg-gray-100 block w-full py-2 px-4 rounded-full"
+                  class="bg-white border-2 border-gray-300 focus:outline-none focus:border-gray-500 transition ease-in-out delay-50 block w-full py-2 px-4 rounded-full"
                   placeholder="user@email.net"
                 />
               </div>
@@ -47,7 +48,7 @@
                 <input
                   type="password"
                   name="password"
-                  class="bg-gray-200 focus:outline-none bg-gray-100 block w-full py-2 px-4 rounded-full"
+                  class="bg-white border-2 border-gray-300 focus:outline-none focus:border-gray-500 transition ease-in-out delay-50 block w-full py-2 px-4 rounded-full"
                   placeholder="Password"
                 />
               </div>
