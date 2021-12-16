@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fin-0400:FormOfPaymentPaymentCard
+    xmlns:fin-0400="http://www.opentravel.org/OTM/finance/v4"
+    costCenterID="Example String Value"
+    guaranteeID="Example String Value" objID="formOfPayment_1"
+    paymentTransactionTypeCode="charge" remark="Example String Value"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/finance/v4 ../../Finance_4_0_0.xsd">
+    <fin-0400:Identifier organization="Acme" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</fin-0400:Identifier>
+    <fin-0400:FormOfPaymentRef>formOfPayment_1</fin-0400:FormOfPaymentRef>
+    <fin-0400:Privacy optInDate="2011-01-24T09:45:00-06:00"
+        optInStatus="OptedIn" optOutDate="2011-07-04T14:15:00+06:00"
+        shareMarketInd="Yes" shareSyncInd="No"/>
+    <fin-0400:GuaranteeTypeCode>Air travel card</fin-0400:GuaranteeTypeCode>
+    <fin-0400:PaymentCard effectiveDate="0116" expireDate="0117"
+        id="paymentCard_1" secureInd="true">
+        <fin-0400:Privacy optInDate="2011-12-05T06:00:00Z"
+            optInStatus="OptedOut"
+            optOutDate="2011-01-24T09:45:00-06:00"
+            shareMarketInd="Inherit" shareSyncInd="Yes"/>
+        <fin-0400:CardCode>AX</fin-0400:CardCode>
+        <fin-0400:CardType issuerCode="VISA" issuerCodeExtension="issuerCode_Other_Value">786</fin-0400:CardType>
+        <fin-0400:Issuer description="Visa" id="codeExternal_1"
+            name="Example String Value" uRL="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">Example String Value</fin-0400:Issuer>
+        <fin-0400:CardHolderName>Example String Value</fin-0400:CardHolderName>
+        <fin-0400:CardNumber authenticationMethod="SecurityCode"
+            encryptedValue="5dfc52b51bd35553df8592078de921bc"
+            encryptionKey="KHC32198gt4"
+            encryptionKeyMethod="RotatingKeyEnvironment_DailyKey"
+            encryptionMethod="Triple DES" mask="xxxxxxxxxxxx9922"
+            token="AEGHV234AUD54367" tokenProviderID="Shift4 (payment)">
+            <fin-0400:PlainText>Example String Value</fin-0400:PlainText>
+            <fin-0400:Warning code="2"
+                docURL="http://www.w3.org/2001/XMLSchema" language="en"
+                nodeList="Example String Value"
+                recordID="Example String Value"
+                shortText="Example String Value" status="Complete"
+                statusExtension="status_Other_Value"
+                tag="Example String Value" type="Advisory" typeExtension="type_Other_Value">Example String Value</fin-0400:Warning>
+        </fin-0400:CardNumber>
+        <fin-0400:AuthenticationVerification
+            authenticationMethod="MagneticStripe"
+            encryptedValue="5dfc52b51bd35553df8592078de921bc"
+            encryptionKey="KHC32198gt4"
+            encryptionKeyMethod="RotatingKeyEnvironment_DailyKey"
+            encryptionMethod="Triple DES" mask="xxxxxxxxxxxx9922"
+            token="AEGHV234AUD54367" tokenProviderID="Shift4 (payment)">
+            <fin-0400:PlainText>Example String Value</fin-0400:PlainText>
+            <fin-0400:Warning code="2"
+                docURL="http://www.OpenTravel.org/ns/OTA2/Common_v01_00"
+                language="en" nodeList="Example String Value"
+                recordID="Example String Value"
+                shortText="Example String Value" status="Incomplete"
+                statusExtension="status_Other_Value"
+                tag="Example String Value" type="Application error" typeExtension="type_Other_Value">Example String Value</fin-0400:Warning>
+        </fin-0400:AuthenticationVerification>
+        <fin-0400:MagneticStripe authenticationMethod="SecurityCode"
+            encryptedValue="5dfc52b51bd35553df8592078de921bc"
+            encryptionKey="KHC32198gt4"
+            encryptionKeyMethod="RotatingKeyEnvironment_DailyKey"
+            encryptionMethod="Triple DES" mask="xxxxxxxxxxxx9922"
+            token="AEGHV234AUD54367" tokenProviderID="Shift4 (payment)">
+            <fin-0400:PlainText>Example String Value</fin-0400:PlainText>
+            <fin-0400:Warning code="2"
+                docURL="http://www.w3.org/2001/XMLSchema" language="en"
+                nodeList="Example String Value"
+                recordID="Example String Value"
+                shortText="Example String Value" status="Not processed"
+                statusExtension="status_Other_Value"
+                tag="Example String Value" type="Authentication" typeExtension="type_Other_Value">Example String Value</fin-0400:Warning>
+        </fin-0400:MagneticStripe>
+        <fin-0400:SeriesCode authenticationMethod="MagneticStripe"
+            encryptedValue="5dfc52b51bd35553df8592078de921bc"
+            encryptionKey="KHC32198gt4"
+            encryptionKeyMethod="RotatingKeyEnvironment_DailyKey"
+            encryptionMethod="Triple DES" mask="xxxxxxxxxxxx9922"
+            token="AEGHV234AUD54367" tokenProviderID="Shift4 (payment)">
+            <fin-0400:PlainText>Example String Value</fin-0400:PlainText>
+            <fin-0400:Warning code="2"
+                docURL="http://www.OpenTravel.org/ns/OTA2/Common_v01_00"
+                language="en" nodeList="Example String Value"
+                recordID="Example String Value"
+                shortText="Example String Value" status="Unknown"
+                statusExtension="status_Other_Value"
+                tag="Example String Value" type="Authentication timeout" typeExtension="type_Other_Value">Example String Value</fin-0400:Warning>
+        </fin-0400:SeriesCode>
+    </fin-0400:PaymentCard>
+</fin-0400:FormOfPaymentPaymentCard>

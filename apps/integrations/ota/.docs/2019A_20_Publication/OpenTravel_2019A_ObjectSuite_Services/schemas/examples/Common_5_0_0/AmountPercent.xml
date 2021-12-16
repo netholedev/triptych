@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ota2-0500:AmountPercent
-    xmlns:ota2-0500="http://www.opentravel.org/OTM/Common/v5"
-    amount="5000" currencyCode="USD" decimalPlaces="2" percent="5"/>

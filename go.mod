@@ -12,7 +12,9 @@ require (
 require (
 	github.com/andybalholm/cascadia v1.3.1 // indirect
 	github.com/chzyer/readline v0.0.0-20180603132655-2972be24d48e // indirect
+	github.com/google/protobuf v3.19.1+incompatible // indirect
 	github.com/krolaw/zipstream v0.0.0-20180621105154-0a2661891f94 // indirect
+	github.com/remizovm/geonames v0.1.0 // indirect
 )
 
 require (

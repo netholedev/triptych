@@ -13,9 +13,9 @@ type User struct {
 	LastName                 string            `json:"last_name,omitempty"`
 	Email                    string            `json:"email,omitempty"`
 	Password                 string            `json:"password,omitempty"`
-	LastLogin                time.Time         `json:"last_login,omitempty"`
+	LastLogin                *time.Time        `json:"last_login,omitempty"`
 	CreatedAt                time.Time         `json:"created_at,omitempty"`
-	PasswordResetRequestedAt time.Time         `json:"password_reset_requested_at,omitempty"`
+	PasswordResetRequestedAt *time.Time        `json:"password_reset_requested_at,omitempty"`
 	LatestToken              string            `json:"latest_token,omitempty"`
 	RefreshToken             string            `json:"refresh_token,omitempty"`
 	PasswordResetToken       string            `json:"password_reset_token,omitempty"`

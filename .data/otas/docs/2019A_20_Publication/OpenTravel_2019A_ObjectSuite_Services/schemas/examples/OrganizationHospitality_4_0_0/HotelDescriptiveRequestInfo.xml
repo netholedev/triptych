@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orghs-0400:HotelDescriptiveRequestInfo
+    xmlns:orghs-0400="http://www.opentravel.org/OTM/organization/hospitality/v4"
+    languageRequested="en"
+    xmlns:ph-0200="http://www.opentravel.org/OTM/product/hospitality/v2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/organization/hospitality/v4 ../../OrganizationHospitality_4_0_0.xsd">
+    <ph-0200:BasicPropertyInfo brandCode="FS" chainCode="MC"
+        cityCode="WAS" code="WASJW" name="JW Marriott Washington DC"/>
+    <orghs-0400:HotelRequestInfo hotelStatus="Example String Value" sendDataInd="true">
+        <orghs-0400:HotelStatusCode>Closed</orghs-0400:HotelStatusCode>
+    </orghs-0400:HotelRequestInfo>
+    <orghs-0400:FacilityRequestInfo sendGuestRoomsInd="true"
+        sendMeetingRoomsInd="true" sendRestaurantsInd="true"/>
+    <orghs-0400:PolicyRequestInfo sendPoliciesInd="true"/>
+    <orghs-0400:AreaRequestInfo sendAttractionsInd="true"
+        sendRecreationsInd="true" sendRefPointsInd="true"/>
+    <orghs-0400:AffiliationRequestInfo sendAwardsInd="true"
+        sendBrandInd="true" sendDistribSystemsInd="true" sendLoyalProgramsInd="true"/>
+</orghs-0400:HotelDescriptiveRequestInfo>

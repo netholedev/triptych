@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<pgt-0300:PassengerPrefs
-    xmlns:pgt-0300="http://www.opentravel.org/OTM/product/Ground/v3"
-    maximumBaggage="3" maximumPassengers="3"
-    notes="Example String Value" shortDescription="Example String Value" transferRequests="GuideDog Multilingual Guide"/>

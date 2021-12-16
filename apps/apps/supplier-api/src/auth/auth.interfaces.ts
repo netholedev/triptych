@@ -8,7 +8,7 @@ export interface IProfileResponse {
 }
 
 export interface IRegisterRequest {
-  fist_name: string;
+  first_name: string;
   last_name: string;
   email: string;
   password: string;
@@ -25,7 +25,7 @@ export interface ITokenResponse {
 }
 
 export interface IAuthService {
-  register(data: IRegisterRequest, meta: Metadata): Observable<ITokenResponse>;
-  login(data: ILoginRequest, meta: Metadata): Observable<ITokenResponse>;
+  register(data: IRegisterRequest): Observable<ITokenResponse>;
+  login(data: ILoginRequest): Observable<ITokenResponse>;
   profile(data: null, meta: Metadata): Observable<IProfileResponse>;
 }

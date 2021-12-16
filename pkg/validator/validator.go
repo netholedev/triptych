@@ -56,7 +56,7 @@ func ValidateStruct(model interface{}) *exceptions.ErrorResponse {
 	if err != nil {
 		for _, err := range err.(validator.ValidationErrors) {
 			element := exceptions.ValidationError{
-				FieldName: err.Field(),
+				FieldName: strings.Join(strings.Split(err.Namespace(), ".")[1:], "."),
 				Cause:     err.Tag(),
 			}
 

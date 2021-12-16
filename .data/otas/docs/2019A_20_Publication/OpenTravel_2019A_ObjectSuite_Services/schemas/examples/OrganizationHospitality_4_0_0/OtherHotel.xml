@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orghs-0400:OtherHotel
+    xmlns:orghs-0400="http://www.opentravel.org/OTM/organization/hospitality/v4"
+    competitorInd="true"
+    xmlns:ota2-0500="http://www.opentravel.org/OTM/Common/v5"
+    xmlns:ph-0200="http://www.opentravel.org/OTM/product/hospitality/v2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/organization/hospitality/v4 ../../OrganizationHospitality_4_0_0.xsd">
+    <orghs-0400:SegmentCategory>Budget</orghs-0400:SegmentCategory>
+    <ph-0200:BasicPropertyInfo brandCode="FS" chainCode="MC"
+        cityCode="WAS" code="WASJW" name="JW Marriott Washington DC"/>
+    <ota2-0500:ContactInformation>
+        <ota2-0500:PersonName>
+            <ota2-0500:Prefix>Mr.</ota2-0500:Prefix>
+            <ota2-0500:Given>John</ota2-0500:Given>
+            <ota2-0500:Middle>Example String Value</ota2-0500:Middle>
+            <ota2-0500:Surname>Smith</ota2-0500:Surname>
+        </ota2-0500:PersonName>
+        <ota2-0500:ContactLocation>Central reservation office</ota2-0500:ContactLocation>
+        <ota2-0500:Address role="Home">
+            <ota2-0500:AddressLine>111 Travers St, Dun Laoghaire Co. Dublin Ireland</ota2-0500:AddressLine>
+            <ota2-0500:BldgRoom buldingInd="true">Bldg H</ota2-0500:BldgRoom>
+            <ota2-0500:Number pO_Box="98567499" ruralRouteNmbr="88"
+                streetDirection="NNW" streetNmbrSuffix="B">563</ota2-0500:Number>
+            <ota2-0500:Street>Travers Street</ota2-0500:Street>
+            <ota2-0500:City>Dublin</ota2-0500:City>
+            <ota2-0500:County>Fairfax</ota2-0500:County>
+            <ota2-0500:StateProv name="Texas">TX</ota2-0500:StateProv>
+            <ota2-0500:Country name="Ireland">IR</ota2-0500:Country>
+            <ota2-0500:PostalCode>32165-9999</ota2-0500:PostalCode>
+        </ota2-0500:Address>
+        <ota2-0500:Telephone areaCityCode="202" countryAccessCode="01"
+            extension="237" id="telephone_1" phoneNumber="5555555" role="Home"/>
+        <ota2-0500:Email defaultInd="true" remark="Example String Value"
+            textFormat="Example String Value" validInd="true">
+            <ota2-0500:Address>Example String Value</ota2-0500:Address>
+            <ota2-0500:Type>Business</ota2-0500:Type>
+            <ota2-0500:Privacy optInDate="2011-01-24T09:45:00-06:00"
+                optInStatus="OptedIn"
+                optOutDate="2011-07-04T14:15:00+06:00"
+                shareMarketInd="Yes" shareSyncInd="No"/>
+        </ota2-0500:Email>
+        <ota2-0500:URL defaultInd="true" type="Example String Value">http://www.w3.org/2001/XMLSchema</ota2-0500:URL>
+        <ota2-0500:CompanyName code="AI"
+            codeContext="Example String Value"
+            department="Adventure department"
+            description="Example String Value"
+            division="Travel Division" listURI="Example String Value"
+            quantity="1234" shortName="Adventure Inc">Travel Adventure Partners Incorporated</ota2-0500:CompanyName>
+    </ota2-0500:ContactInformation>
+    <ota2-0500:ReferencePoint name="Example String Value">
+        <ota2-0500:Code codeContext="Example String Value"
+            description="Example String Value"
+            listURI="Example String Value" quantity="2345">Example String Value</ota2-0500:Code>
+        <ota2-0500:Type>Airport</ota2-0500:Type>
+        <ota2-0500:Location>
+            <ota2-0500:Address role="Business">
+                <ota2-0500:AddressLine>111 Travers St, Dun Laoghaire Co. Dublin Ireland</ota2-0500:AddressLine>
+                <ota2-0500:BldgRoom buldingInd="true">Bldg H</ota2-0500:BldgRoom>
+                <ota2-0500:Number pO_Box="98567499" ruralRouteNmbr="88"
+                    streetDirection="NNW" streetNmbrSuffix="B">563</ota2-0500:Number>
+                <ota2-0500:Street>Travers Street</ota2-0500:Street>
+                <ota2-0500:City>Dublin</ota2-0500:City>
+                <ota2-0500:County>Fairfax</ota2-0500:County>
+                <ota2-0500:StateProv name="Texas">TX</ota2-0500:StateProv>
+                <ota2-0500:Country name="Ireland">IR</ota2-0500:Country>
+                <ota2-0500:PostalCode>32165-9999</ota2-0500:PostalCode>
+            </ota2-0500:Address>
+            <ota2-0500:Position altitude="Example String Value"
+                altitudeUnitOfMeasure_Enum="Miles"
+                formatURL="http://www.w3.org/2001/XMLSchema"
+                latitude="Example String Value"
+                longitude="Example String Value" mapURL="http://www.OpenTravel.org/ns/OTA2/Common_v01_00"/>
+        </ota2-0500:Location>
+    </ota2-0500:ReferencePoint>
+</orghs-0400:OtherHotel>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ota2-0400:Employee
-    xmlns:ota2-0400="http://www.opentravel.org/OTM/Common/v4"
-    description="Example String Value" employer="Example String Value"
-    id="employee_1" level="Example String Value" status="Active" title="Example String Value"/>

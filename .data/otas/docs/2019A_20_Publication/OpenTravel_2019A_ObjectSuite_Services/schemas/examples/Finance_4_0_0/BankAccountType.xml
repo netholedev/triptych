@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fin-0400:BankAccountType
+    xmlns:fin-0400="http://www.opentravel.org/OTM/finance/v4"
+    accountCode="Example String Value" description="Visa"
+    id="codeExternal_1" listBankAccountType="Savings"
+    listBankAccountTypeExtension="listBankAccountType_Other_Value"
+    name="Example String Value" uRL="http://www.w3.org/2001/XMLSchema"/>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<pgt-0300:CustomerCount
-    xmlns:pgt-0300="http://www.opentravel.org/OTM/product/Ground/v3"
-    ageQualifyingCode="A" description="Adult" quantity="2"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/product/Ground/v3 ../../Ground_3_0_0.xsd"/>

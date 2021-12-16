@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ota2-0500:Telephone
+    xmlns:ota2-0500="http://www.opentravel.org/OTM/Common/v5"
+    areaCityCode="202" countryAccessCode="01" extension="237"
+    id="telephone_1" phoneNumber="5555555" role="Home"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/Common/v5 ../../Common_5_0_0.xsd"/>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ph:RoomRateQueryRange
+    xmlns:ph="http://www.opentravel.org/OTM/product/hospitality/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/product/hospitality/v1 ../../Hospitality_1_0_0.xsd">
+    <ph:StartRate amountBeforeTax="23" currencyCode="USD">12</ph:StartRate>
+    <ph:EndRate amountBeforeTax="45" currencyCode="USD">34</ph:EndRate>
+</ph:RoomRateQueryRange>

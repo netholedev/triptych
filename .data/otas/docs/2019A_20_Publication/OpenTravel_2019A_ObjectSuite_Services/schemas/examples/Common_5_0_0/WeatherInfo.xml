@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ota2-0500:WeatherInfo
+    xmlns:ota2-0500="http://www.opentravel.org/OTM/Common/v5"
+    period="Example String Value"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/Common/v5 ../../Common_5_0_0.xsd">
+    <ota2-0500:Precipitation averagePrecipitation="12" unitOfMeasure="Miles"/>
+    <ota2-0500:Temperature averageHighTemp="1234" averageLowTemp="2345" temperatureUnit="Celsuis"/>
+</ota2-0500:WeatherInfo>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orghs-0300:AccessibilityFeatures
+    xmlns:orghs-0300="http://www.opentravel.org/OTM/organization/hospitality/v3"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/organization/hospitality/v3 ../../OrganizationHospitality_3_0_0.xsd">
+    <orghs-0300:AccessibilityFeatures>Accessibility to goods and services</orghs-0300:AccessibilityFeatures>
+</orghs-0300:AccessibilityFeatures>

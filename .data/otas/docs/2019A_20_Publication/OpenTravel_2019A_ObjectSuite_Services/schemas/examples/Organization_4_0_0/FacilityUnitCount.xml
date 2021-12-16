@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org-0400:FacilityUnitCount
+    xmlns:org-0400="http://www.opentravel.org/OTM/organization/v4"
+    accesibleGuestRoomCount="2345" accessibleMeetingRoomCount="4567"
+    guestRoomCount="1234" meetingRoomCount="3456" restaurantCount="1234"/>

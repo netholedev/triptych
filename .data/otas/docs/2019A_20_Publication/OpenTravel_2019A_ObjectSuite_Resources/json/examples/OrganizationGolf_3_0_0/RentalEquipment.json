@@ -1,0 +1,13 @@
+{
+  "RentalEquipment" : {
+    "accessibleInd" : true,
+    "Type" : {
+      "value" : "RightHandedClubs"
+    },
+    "PersonCategory" : [ {
+      "value" : "Juniors"
+    }, {
+      "value" : "Juniors"
+    } ]
+  }
+}

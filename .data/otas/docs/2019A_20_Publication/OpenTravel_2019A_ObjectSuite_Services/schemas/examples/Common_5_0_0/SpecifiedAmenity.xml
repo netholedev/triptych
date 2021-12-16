@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ota2-0500:SpecifiedAmenity
+    xmlns:ota2-0500="http://www.opentravel.org/OTM/Common/v5"
+    number="1234" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/Common/v5 ../../Common_5_0_0.xsd">
+    <ota2-0500:Amenity description="Example String Value" name="Example String Value">
+        <ota2-0500:Code codeContext="Example String Value"
+            description="Example String Value"
+            listURI="Example String Value" quantity="1234">Example String Value</ota2-0500:Code>
+        <ota2-0500:Proximity>Onsite</ota2-0500:Proximity>
+    </ota2-0500:Amenity>
+</ota2-0500:SpecifiedAmenity>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orghs-0400:FacilityQueryHotel
+    xmlns:orghs-0400="http://www.opentravel.org/OTM/organization/hospitality/v4"
+    xmlns:org-0400="http://www.opentravel.org/OTM/organization/v4"
+    xmlns:ota2-0500="http://www.opentravel.org/OTM/Common/v5"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/organization/hospitality/v4 ../../OrganizationHospitality_4_0_0.xsd">
+    <orghs-0400:HotelName>Example String Value</orghs-0400:HotelName>
+    <orghs-0400:BrandCode>Example String Value</orghs-0400:BrandCode>
+    <orghs-0400:BrandName>Example String Value</orghs-0400:BrandName>
+    <orghs-0400:ChainCode>Example String Value</orghs-0400:ChainCode>
+    <orghs-0400:ChainName>Example String Value</orghs-0400:ChainName>
+    <orghs-0400:Radius unitOfMeasure="Miles">1234</orghs-0400:Radius>
+    <ota2-0500:ReferencePointSummary name="Example String Value">
+        <ota2-0500:Code codeContext="Example String Value"
+            description="Example String Value"
+            listURI="Example String Value" quantity="1234">Example String Value</ota2-0500:Code>
+        <ota2-0500:Type>Airport</ota2-0500:Type>
+        <ota2-0500:Location>
+            <ota2-0500:Address role="Home">
+                <ota2-0500:AddressLine>111 Travers St, Dun Laoghaire Co. Dublin Ireland</ota2-0500:AddressLine>
+                <ota2-0500:BldgRoom buldingInd="true">Bldg H</ota2-0500:BldgRoom>
+                <ota2-0500:Number pO_Box="98567499" ruralRouteNmbr="88"
+                    streetDirection="NNW" streetNmbrSuffix="B">563</ota2-0500:Number>
+                <ota2-0500:Street>Travers Street</ota2-0500:Street>
+                <ota2-0500:City>Dublin</ota2-0500:City>
+                <ota2-0500:County>Fairfax</ota2-0500:County>
+                <ota2-0500:StateProv name="Texas">TX</ota2-0500:StateProv>
+                <ota2-0500:Country name="Ireland">IR</ota2-0500:Country>
+                <ota2-0500:PostalCode>32165-9999</ota2-0500:PostalCode>
+            </ota2-0500:Address>
+            <ota2-0500:Position altitude="Example String Value"
+                altitudeUnitOfMeasure_Enum="Kilometers"
+                formatURL="http://www.OpenTravel.org/ns/OTA2/Common_v01_00"
+                latitude="Example String Value"
+                longitude="Example String Value" mapURL="http://www.w3.org/2001/XMLSchema"/>
+        </ota2-0500:Location>
+    </ota2-0500:ReferencePointSummary>
+    <orghs-0400:DetailedHotelSearchCriteria aDACompliantInd="true"
+        adultsOnlyInd="true" exactMatchInd="true"
+        hotelCodeContext="Sabre" petsAllowedInd="true"
+        smokingRoomsInd="true" tTIcode="2345">
+        <orghs-0400:BedType>Dorm bed</orghs-0400:BedType>
+        <orghs-0400:HotelAmenity codeContext="Example String Value"
+            description="Example String Value"
+            listURI="Example String Value" quantity="2345">Example String Value</orghs-0400:HotelAmenity>
+        <orghs-0400:RoomAmenities codeContext="Example String Value"
+            description="Example String Value"
+            listURI="Example String Value" quantity="3456">Example String Value</orghs-0400:RoomAmenities>
+        <orghs-0400:Rating>3.5</orghs-0400:Rating>
+        <org-0400:FeatureAccessibility quantity="4567">
+            <ota2-0500:Description name="paragraph name" number="3456">
+                <ota2-0500:Text language="en" textFormat="PlainText">Formatted text example.</ota2-0500:Text>
+                <ota2-0500:Image colorSpace="Example String Value"
+                    dimensionCategory="Example String Value" format="2"
+                    objID="image_1" originalIndicatorInd="true"
+                    resolution="1234" sort="4567" version="Example String Value">
+                    <ota2-0500:Identifier organization="Acme"
+                        system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</ota2-0500:Identifier>
+                    <ota2-0500:ImageRef>image_1</ota2-0500:ImageRef>
+                    <ota2-0500:URL>http://www.OpenTravel.org/ns/OTA2/Common_v01_00</ota2-0500:URL>
+                    <ota2-0500:Details applicableEnd="2011-07-04"
+                        applicableStart="2011-01-24"
+                        author="Example String Value"
+                        copyrightEnd="2011-07-04T14:15:00+06:00"
+                        copyrightNotice="Example String Value"
+                        copyrightOwner="Example String Value"
+                        copyrightStart="2011-01-24T09:45:00-06:00"
+                        effectiveEnd="2011-01-24T09:45:00-06:00" effectiveStart="2011-12-05T06:00:00Z">Example String Value</ota2-0500:Details>
+                    <ota2-0500:MultimediaDescription
+                        caption="The Empire State Building at sunset."
+                        language="en" title="Example String Value">
+                        <ota2-0500:FormattedTextSubSection
+                            subCode="Example String Value"
+                            subSectionNumber="3456" subTitle="Example String Value">
+								<ota2-0500:TextParagraph/>
+                            </ota2-0500:FormattedTextSubSection>
+                    </ota2-0500:MultimediaDescription>
+                    <ota2-0500:DateTimeStamp
+                        create="2011-12-05T06:00:00Z"
+                        creatorID="c123456789"
+                        lastModifierID="m987654321"
+                        lastModify="2011-01-24T09:45:00-06:00" purge="2011-12-05">2011-07-04T14:15:00+06:00</ota2-0500:DateTimeStamp>
+                    <ota2-0500:Email defaultInd="true"
+                        remark="Example String Value"
+                        textFormat="Example String Value" validInd="true">
+                        <ota2-0500:Address>Example String Value</ota2-0500:Address>
+                        <ota2-0500:Type>Business</ota2-0500:Type>
+                        <ota2-0500:Privacy
+                            optInDate="2011-07-04T14:15:00+06:00"
+                            optInStatus="OptedIn"
+                            optOutDate="2011-12-05T06:00:00Z"
+                            shareMarketInd="Yes" shareSyncInd="No"/>
+                    </ota2-0500:Email>
+                    <ota2-0500:Dimensions area="1234" height="4567"
+                        length="2345" unitOfMeasureCode="2" width="3456"/>
+                    <ota2-0500:File name="Example String Value"
+                        originalName="Example String Value" size="3456"/>
+                    <ota2-0500:Geolocation
+                        altitude="Example String Value"
+                        altitudeUnitOfMeasure_Enum="Meters"
+                        formatURL="http://www.OpenTravel.org/ns/OTA2/Common_v01_00"
+                        latitude="Example String Value"
+                        longitude="Example String Value" mapURL="http://www.w3.org/2001/XMLSchema"/>
+                </ota2-0500:Image>
+                <ota2-0500:URL>http://www.w3.org/2001/XMLSchema</ota2-0500:URL>
+                <ota2-0500:ParagraphListItem language="en"
+                    listItem="1234" text2="Formatted text example." textFormat="HTML"/>
+                <ota2-0500:DateTimeStamp
+                    create="2011-07-04T14:15:00+06:00"
+                    creatorID="c123456789" lastModifierID="m987654321"
+                    lastModify="2011-12-05T06:00:00Z" purge="2011-01-24">2011-01-24T09:45:00-06:00</ota2-0500:DateTimeStamp>
+            </ota2-0500:Description>
+            <ota2-0500:Proximity>Onsite</ota2-0500:Proximity>
+            <org-0400:AccessibilityFeature>Accessibility to goods and services</org-0400:AccessibilityFeature>
+        </org-0400:FeatureAccessibility>
+        <org-0400:FeatureSecurity quantity="2345">
+            <ota2-0500:Description name="paragraph name" number="4567">
+                <ota2-0500:Text language="en" textFormat="PlainText">Formatted text example.</ota2-0500:Text>
+                <ota2-0500:Image colorSpace="Example String Value"
+                    dimensionCategory="Example String Value" format="2"
+                    objID="image_2" originalIndicatorInd="true"
+                    resolution="2345" sort="1234" version="Example String Value">
+                    <ota2-0500:Identifier organization="Acme"
+                        system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</ota2-0500:Identifier>
+                    <ota2-0500:ImageRef>image_2</ota2-0500:ImageRef>
+                    <ota2-0500:URL>http://www.w3.org/2001/XMLSchema</ota2-0500:URL>
+                    <ota2-0500:Details applicableEnd="2011-12-05"
+                        applicableStart="2011-07-04"
+                        author="Example String Value"
+                        copyrightEnd="2011-07-04T14:15:00+06:00"
+                        copyrightNotice="Example String Value"
+                        copyrightOwner="Example String Value"
+                        copyrightStart="2011-01-24T09:45:00-06:00"
+                        effectiveEnd="2011-01-24T09:45:00-06:00" effectiveStart="2011-12-05T06:00:00Z">Example String Value</ota2-0500:Details>
+                    <ota2-0500:MultimediaDescription
+                        caption="The Empire State Building at sunset."
+                        language="en" title="Example String Value">
+                        <ota2-0500:FormattedTextSubSection
+                            subCode="Example String Value"
+                            subSectionNumber="3456" subTitle="Example String Value">
+								<ota2-0500:TextParagraph/>
+                            </ota2-0500:FormattedTextSubSection>
+                    </ota2-0500:MultimediaDescription>
+                    <ota2-0500:DateTimeStamp
+                        create="2011-12-05T06:00:00Z"
+                        creatorID="c123456789"
+                        lastModifierID="m987654321"
+                        lastModify="2011-01-24T09:45:00-06:00" purge="2011-01-24">2011-07-04T14:15:00+06:00</ota2-0500:DateTimeStamp>
+                    <ota2-0500:Email defaultInd="true"
+                        remark="Example String Value"
+                        textFormat="Example String Value" validInd="true">
+                        <ota2-0500:Address>Example String Value</ota2-0500:Address>
+                        <ota2-0500:Type>Listserve</ota2-0500:Type>
+                        <ota2-0500:Privacy
+                            optInDate="2011-07-04T14:15:00+06:00"
+                            optInStatus="OptedOut"
+                            optOutDate="2011-12-05T06:00:00Z"
+                            shareMarketInd="Inherit" shareSyncInd="Yes"/>
+                    </ota2-0500:Email>
+                    <ota2-0500:Dimensions area="2345" height="1234"
+                        length="3456" unitOfMeasureCode="2" width="4567"/>
+                    <ota2-0500:File name="Example String Value"
+                        originalName="Example String Value" size="4567"/>
+                    <ota2-0500:Geolocation
+                        altitude="Example String Value"
+                        altitudeUnitOfMeasure_Enum="Millimeters"
+                        formatURL="http://www.w3.org/2001/XMLSchema"
+                        latitude="Example String Value"
+                        longitude="Example String Value" mapURL="http://www.OpenTravel.org/ns/OTA2/Common_v01_00"/>
+                </ota2-0500:Image>
+                <ota2-0500:URL>http://www.OpenTravel.org/ns/OTA2/Common_v01_00</ota2-0500:URL>
+                <ota2-0500:ParagraphListItem language="en"
+                    listItem="3456" text2="Formatted text example." textFormat="HTML"/>
+                <ota2-0500:DateTimeStamp
+                    create="2011-07-04T14:15:00+06:00"
+                    creatorID="c123456789" lastModifierID="m987654321"
+                    lastModify="2011-12-05T06:00:00Z" purge="2011-07-04">2011-01-24T09:45:00-06:00</ota2-0500:DateTimeStamp>
+            </ota2-0500:Description>
+            <ota2-0500:Proximity>Offsite</ota2-0500:Proximity>
+            <org-0400:SecurityFeature>2nd lock on guest doors</org-0400:SecurityFeature>
+        </org-0400:FeatureSecurity>
+    </orghs-0400:DetailedHotelSearchCriteria>
+</orghs-0400:FacilityQueryHotel>

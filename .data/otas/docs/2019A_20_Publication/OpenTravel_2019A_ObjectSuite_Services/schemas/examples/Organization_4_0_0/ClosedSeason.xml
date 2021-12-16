@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org-0400:ClosedSeason
+    xmlns:org-0400="http://www.opentravel.org/OTM/organization/v4"
+    xmlns:ota2-0500="http://www.opentravel.org/OTM/Common/v5"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/organization/v4 ../../Organization_4_0_0.xsd">
+    <ota2-0500:DateTimeSpanWindows>
+        <ota2-0500:TimeSpan end="2016-08-28T04:32:52Z" start="2016-08-22T19:32:52Z"/>
+    </ota2-0500:DateTimeSpanWindows>
+</org-0400:ClosedSeason>

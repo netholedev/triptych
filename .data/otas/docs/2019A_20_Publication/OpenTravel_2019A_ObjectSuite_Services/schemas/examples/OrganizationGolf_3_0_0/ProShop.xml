@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orggf-0300:ProShop
+    xmlns:orggf-0300="http://www.opentravel.org/OTM/organization/golf/v3"
+    objID="proShop_1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/organization/golf/v3 ../../OrganizationGolf_3_0_0.xsd">
+    <orggf-0300:Identifier organization="Acme" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</orggf-0300:Identifier>
+    <orggf-0300:ProShopRef>proShop_1</orggf-0300:ProShopRef>
+    <orggf-0300:RentalEquipment accessibleInd="true">
+        <orggf-0300:Type>RightHandedClubs</orggf-0300:Type>
+        <orggf-0300:PersonCategory>Juniors</orggf-0300:PersonCategory>
+    </orggf-0300:RentalEquipment>
+    <orggf-0300:Services>ClubRegripping</orggf-0300:Services>
+</orggf-0300:ProShop>

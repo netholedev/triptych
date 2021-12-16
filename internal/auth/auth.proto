@@ -2,17 +2,15 @@ syntax = "proto3";
 
 package auth;
 
-import "google/protobuf/empty.proto";
-// import "google/protobuf/any.proto";
-
 import "internal/common/service_error.proto";
+import "internal/common/empty.proto";
 
 option go_package = "github.com/netholedev/triptych/internal/auth";
 
 service AuthService {
   rpc Register (RegisterRequest) returns (TokenResponse) {}
   rpc Login (LoginRequest) returns (TokenResponse) {}
-  rpc Profile (google.protobuf.Empty) returns (ProfileResponse) {}
+  rpc Profile (common.empty.Empty) returns (ProfileResponse) {}
 }
 
 message RegisterRequest {
@@ -39,6 +37,6 @@ message TokenResult {
 }
 
 message TokenResponse {
-  bool Sucsess = 1;
+  bool success = 1;
   common.errors.ServiceError errors = 2;
 }

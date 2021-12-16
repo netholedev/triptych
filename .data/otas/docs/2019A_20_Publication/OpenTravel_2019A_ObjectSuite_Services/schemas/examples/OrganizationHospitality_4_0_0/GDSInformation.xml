@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orghs-0400:GDS_Information
+    xmlns:orghs-0400="http://www.opentravel.org/OTM/organization/hospitality/v4"
+    masterChainCode="MI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/organization/hospitality/v4 ../../OrganizationHospitality_4_0_0.xsd">
+    <orghs-0400:GDS_Codes>
+        <orghs-0400:GDS_Code chainCode="MC"
+            gDS_Name="Example String Value" gDS_PropertyCode="Example String Value"/>
+    </orghs-0400:GDS_Codes>
+    <orghs-0400:GDS_Status code="Example String Value" name="Example String Value">
+        <orghs-0400:HotelStatus>Closed</orghs-0400:HotelStatus>
+    </orghs-0400:GDS_Status>
+</orghs-0400:GDS_Information>

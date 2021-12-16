@@ -1,9 +1,0 @@
-{
-  "TransportShared" : {
-    "TransportNumber" : {
-      "value" : "Example String Value",
-      "carrier" : "Example String Value",
-      "operatingCarrier" : "Example String Value"
-    }
-  }
-}

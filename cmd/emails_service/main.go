@@ -1,10 +1,13 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"log"
 
-	"github.com/netholedev/triptych/pkg/amqp"
+	AMQP "github.com/netholedev/triptych/pkg/amqp"
+
+	"github.com/netholedev/triptych/pkg/config"
 	"github.com/netholedev/triptych/pkg/logger"
 	"github.com/netholedev/triptych/pkg/smtp"
 	"github.com/netholedev/triptych/pkg/utils"
@@ -16,31 +19,34 @@ var (
 	queueName      = "EMAIL_SEND"
 )
 
+type emailMessage struct {
+	To      string `json:"to"`
+	Subject string `json:"subject"`
+	Body    string `json:"body"`
+}
+
 func main() {
 	forever := make(chan bool)
 
-	amqpConn := new(amqp.AmqpClient)
-	amqpConn.URL = "amqp://guest:guest@localhost:5672"
+	conf, err := config.NewConfig()
+	utils.Check(err)
+
+	amqpConn := new(AMQP.AmqpClient)
+	amqpConn.URL = fmt.Sprintf("amqp://%s:%s@%s:%d/", conf.Amqp.User, conf.Amqp.Password, conf.Amqp.Host, conf.Amqp.Port)
+
+	err = amqpConn.Connect()
+	utils.Check(err)
 
 	smtpConn := new(smtp.SMTPClient)
-	smtpConn.Host = "localhost"
-	smtpConn.Port = 25
-	smtpConn.IsSecure = true
-	smtpConn.SenderName = "Naber"
-	smtpConn.SenderEmail = "..@...com"
-	smtpConn.SenderPassword = "ultrasecurepassword"
-
-	err := amqpConn.Connect()
-	if err != nil {
-		fmt.Println(loggerInstance.ProgramError(err))
-		return
-	}
+	smtpConn.Host = conf.Smtp.Host
+	smtpConn.Port = int(conf.Smtp.Port)
+	smtpConn.IsSecure = conf.Smtp.Secure
+	smtpConn.SenderName = conf.Smtp.SenderName
+	smtpConn.SenderEmail = conf.Smtp.SenderEmail
+	smtpConn.SenderPassword = conf.Smtp.SenderPassword
 
 	err = smtpConn.Connect()
-	if err != nil {
-		fmt.Println(loggerInstance.ProgramError(err))
-		return
-	}
+	utils.Check(err)
 
 	err = amqpConn.Channel.ExchangeDeclare(
 		exchangeName, // name
@@ -85,8 +91,13 @@ func main() {
 
 	go func() {
 		for d := range msgs {
-			// TODO: smtpConn.Send()
-			log.Printf("Received a message: %s", d.Body)
+			msg := emailMessage{}
+			json.Unmarshal(d.Body, &msg)
+
+			err := smtpConn.Send(msg.To, msg.Subject, msg.Body)
+			if err != nil {
+				log.Println("ERROR", err)
+			}
 		}
 	}()
 

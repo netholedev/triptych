@@ -1,0 +1,16 @@
+{
+  "OperationSchedule" : {
+    "daysOfWeek" : [ "Monday", "Tuesday", "Wednesday" ],
+    "additionalOperationInfoCode" : "2",
+    "frequency" : "Example String Value",
+    "text" : "Example String Value",
+    "DateTimeSpanWindows" : {
+      "@type" : "DateTimeSpanWindows",
+      "TimeSpan" : {
+        "value" : null,
+        "start" : "2016-08-22T19:32:52Z",
+        "end" : "2016-08-28T04:32:52Z"
+      }
+    }
+  }
+}

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<fin-0400:PaymentCardType_Issuer
-    xmlns:fin-0400="http://www.opentravel.org/OTM/finance/v4"
-    issuerCode="VISA" issuerCodeExtension="issuerCode_Other_Value">786</fin-0400:PaymentCardType_Issuer>

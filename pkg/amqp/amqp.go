@@ -4,10 +4,12 @@ package amqp
 // Inject custom logger
 
 import (
+	"fmt"
 	"log"
 	"sync"
 	"time"
 
+	"github.com/netholedev/triptych/pkg/config"
 	"github.com/streadway/amqp"
 )
 
@@ -24,6 +26,12 @@ type AmqpClient struct {
 	// InsecureSkipVerify bool
 
 	Channel *amqp.Channel
+}
+
+func NewAmqpClient(conf *config.AmqpConfig) AmqpClient {
+	return AmqpClient{
+		URL: fmt.Sprintf("amqp://%s:%s@%s:%d/", conf.User, conf.Password, conf.Host, conf.Port),
+	}
 }
 
 func (q *AmqpClient) Connect() error {

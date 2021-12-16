@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ota2-0400:LoyaltyProgram
-    xmlns:ota2-0400="http://www.opentravel.org/OTM/Common/v4"
-    id="Example String Value" loyaltyLevel="Platinum" primaryInd="true"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/Common/v4 ../../Common_4_0_0.xsd">
-    <ota2-0400:ProgramCode codeContext="Example String Value" description="Example String Value">Example String Value</ota2-0400:ProgramCode>
-    <ota2-0400:TravelSector>Air</ota2-0400:TravelSector>
-</ota2-0400:LoyaltyProgram>

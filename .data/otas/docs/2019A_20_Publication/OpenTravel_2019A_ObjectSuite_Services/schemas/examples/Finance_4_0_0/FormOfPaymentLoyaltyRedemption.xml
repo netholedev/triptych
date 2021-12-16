@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fin-0400:FormOfPaymentLoyaltyRedemption
+    xmlns:fin-0400="http://www.opentravel.org/OTM/finance/v4"
+    costCenterID="Example String Value"
+    guaranteeID="Example String Value" objID="formOfPayment_1"
+    paymentTransactionTypeCode="charge" redemptionQuantity="1000"
+    remark="Example String Value"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/finance/v4 ../../Finance_4_0_0.xsd">
+    <fin-0400:Identifier organization="Acme" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</fin-0400:Identifier>
+    <fin-0400:FormOfPaymentRef>formOfPayment_1</fin-0400:FormOfPaymentRef>
+    <fin-0400:Privacy optInDate="2011-01-24T09:45:00-06:00"
+        optInStatus="OptedIn" optOutDate="2011-07-04T14:15:00+06:00"
+        shareMarketInd="Yes" shareSyncInd="No"/>
+    <fin-0400:GuaranteeTypeCode>Air travel card</fin-0400:GuaranteeTypeCode>
+    <fin-0400:PromotionCode codeContext="Example String Value"
+        description="Example String Value"
+        listURI="Example String Value" quantity="1234">Example String Value</fin-0400:PromotionCode>
+    <fin-0400:LoyaltyCertificate certificateNumber="90374638372"
+        effectiveDate="2020-01-02" expireDate="2022-01-01"
+        expireDateExclusiveInd="true" format="Paper"
+        iD="loyaltyCertificate_1" iD_Context="Marriott Rewards"
+        memberNumber="283746397988" numberOfNights="3"
+        programName="Marriott Rewards" status="Available"/>
+</fin-0400:FormOfPaymentLoyaltyRedemption>

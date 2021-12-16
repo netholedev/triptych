@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fin-0300:FormOfPaymentCash
+    xmlns:fin-0300="http://www.opentravel.org/OTM/finance/v3"
+    cashInd="true" costCenterID="Example String Value"
+    guaranteeID="Example String Value" guaranteeIndicatorInd="true"
+    objID="formOfPayment_1" paymentTransactionTypeCode="charge"
+    remark="Example String Value"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/finance/v3 ../../Finance_3_0_0.xsd">
+    <fin-0300:Identifier organization="Acme" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</fin-0300:Identifier>
+    <fin-0300:FormOfPaymentRef>formOfPayment_1</fin-0300:FormOfPaymentRef>
+    <fin-0300:Privacy optInDate="2011-01-24T09:45:00-06:00"
+        optInStatus="OptedIn" optOutDate="2011-07-04T14:15:00+06:00"
+        shareMarketInd="Yes" shareSyncInd="No"/>
+    <fin-0300:GuaranteeTypeCode>Air travel card</fin-0300:GuaranteeTypeCode>
+</fin-0300:FormOfPaymentCash>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ota2-0500:Identifier
+    xmlns:ota2-0500="http://www.opentravel.org/OTM/Common/v5"
+    organization="Acme" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</ota2-0500:Identifier>

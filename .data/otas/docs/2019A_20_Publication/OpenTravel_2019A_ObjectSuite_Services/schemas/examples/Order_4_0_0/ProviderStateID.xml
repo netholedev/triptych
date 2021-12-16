@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<order-0400:ProviderStateID
+    xmlns:order-0400="http://www.opentravel.org/OTM/order/v4"
+    description="Example String Value" provider="Example String Value">Example String Value</order-0400:ProviderStateID>

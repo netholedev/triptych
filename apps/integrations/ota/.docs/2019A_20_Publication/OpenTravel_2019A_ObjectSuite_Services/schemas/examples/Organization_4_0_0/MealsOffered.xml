@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<org-0400:MealsOffered
-    xmlns:org-0400="http://www.opentravel.org/OTM/organization/v4"
-    breakfastOfferedInd="true" brunchOfferedInd="true"
-    dinnerOfferedInd="true" lunchOfferedInd="true"/>

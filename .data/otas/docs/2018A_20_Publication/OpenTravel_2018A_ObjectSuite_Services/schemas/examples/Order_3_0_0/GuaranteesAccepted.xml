@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<order-0300:GuaranteesAccepted
+    xmlns:order-0300="http://www.opentravel.org/OTM/order/v3"
+    addressReqInd="true" bookingSourceAllowedInd="true"
+    corpDiscountNbrAllowedInd="true" interbankNbrReqInd="true"
+    nameReqInd="true" noCardHolderInfoReqInd="true" phoneReqInd="true"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/order/v3 ../../Order_3_0_0.xsd">
+    <order-0300:Type>Air travel card</order-0300:Type>
+    <order-0300:PaymentCardCode>VI</order-0300:PaymentCardCode>
+</order-0300:GuaranteesAccepted>

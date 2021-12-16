@@ -1,0 +1,10 @@
+{
+  "FacilityUnitCount" : {
+    "value" : null,
+    "guestRoomCount" : 1234,
+    "accesibleGuestRoomCount" : 2345,
+    "meetingRoomCount" : 3456,
+    "accessibleMeetingRoomCount" : 4567,
+    "restaurantCount" : 1234
+  }
+}

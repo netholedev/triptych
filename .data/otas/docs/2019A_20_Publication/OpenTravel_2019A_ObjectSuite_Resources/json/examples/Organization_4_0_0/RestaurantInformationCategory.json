@@ -1,0 +1,9 @@
+{
+  "RestaurantInformationCategory" : {
+    "RestaurantBarCategory" : [ {
+      "value" : "Beverage"
+    }, {
+      "value" : "Beverage"
+    } ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "GolfActivitySummary" : {
+    "numberOfHoles" : 18,
+    "replayRoundQty" : 1234,
+    "maxGolferCount" : 4
+  }
+}

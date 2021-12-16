@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<fin-0400:ThreeDomainSecurity_Results
-    xmlns:fin-0400="http://www.opentravel.org/OTM/finance/v4"
-    cAVV="AAABAFaQRwAAAAAAEZBHAAAAAAA=ECI05" pAResStatus="Y"
-    signatureVerfication=""
-    transactionID="9D920E9-6FCF-4A74-A4E0-D6A591D1108F"
-    xID="2bxUs1emK0SCevbivcApzAcAAQk="
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/finance/v4 ../../Finance_4_0_0.xsd"/>

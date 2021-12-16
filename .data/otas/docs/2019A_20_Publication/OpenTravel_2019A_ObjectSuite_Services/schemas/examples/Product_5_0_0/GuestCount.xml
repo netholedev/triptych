@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prod-0500:GuestCount
+    xmlns:prod-0500="http://www.opentravel.org/OTM/product/v5"
+    age="2345" ageQualifyingCode="Example String Value">1234</prod-0500:GuestCount>

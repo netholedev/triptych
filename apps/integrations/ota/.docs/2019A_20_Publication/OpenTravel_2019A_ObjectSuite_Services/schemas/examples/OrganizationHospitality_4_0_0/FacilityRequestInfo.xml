@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<orghs-0400:FacilityRequestInfo
-    xmlns:orghs-0400="http://www.opentravel.org/OTM/organization/hospitality/v4"
-    sendGuestRoomsInd="true" sendMeetingRoomsInd="true" sendRestaurantsInd="true"/>

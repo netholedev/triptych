@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ota2-0500:Temperature
+    xmlns:ota2-0500="http://www.opentravel.org/OTM/Common/v5"
+    averageHighTemp="1234" averageLowTemp="2345" temperatureUnit="Celsuis"/>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ota2-0500:Tax xmlns:ota2-0500="http://www.opentravel.org/OTM/Common/v5"
+    sequenceNbr="Example String Value" taxExcludedInd="true"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/Common/v5 ../../Common_5_0_0.xsd">
+    <ota2-0500:Amount description="Example String Value" percentage="10"
+        quantity="1234" unitName="Example String Value" unitPrice="100.0000">
+        <ota2-0500:Total currencyCode="USD" minorUnit="2">80000</ota2-0500:Total>
+        <ota2-0500:ChargeUnit>Per unit</ota2-0500:ChargeUnit>
+        <ota2-0500:ChargeFrequency>Per order</ota2-0500:ChargeFrequency>
+    </ota2-0500:Amount>
+    <ota2-0500:EffectiveExpire effective="2011-01-24"
+        expire="2011-07-04" expireDateExclusiveInd="true"/>
+    <ota2-0500:TaxType_Enum>Assessment/license tax</ota2-0500:TaxType_Enum>
+</ota2-0500:Tax>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<prod-0400:LocationPoint
-    xmlns:prod-0400="http://www.opentravel.org/OTM/product/v4"
-    code="Example String Value" curbSideBaggageCheckInd="true"
-    kioskInd="true"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/product/v4 ../../Product_4_0_0.xsd"/>

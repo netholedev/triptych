@@ -1,0 +1,22 @@
+{
+  "GDS_Information" : {
+    "masterChainCode" : "Example String Value",
+    "GDS_Codes" : {
+      "@type" : "GDS_Codes",
+      "GDS_Code" : [ {
+        "@type" : "GDS_Code",
+        "gDS_PropertyCode" : "Example String Value",
+        "gDS_Name" : "Example String Value",
+        "chainCode" : "Example String Value"
+      } ]
+    },
+    "GDS_Status" : [ {
+      "@type" : "GDS_Status",
+      "code" : "Example String Value",
+      "name" : "Example String Value",
+      "HotelStatus" : {
+        "value" : "Closed"
+      }
+    } ]
+  }
+}

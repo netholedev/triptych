@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fin-0400:DirectBill
+    xmlns:fin-0400="http://www.opentravel.org/OTM/finance/v4"
+    billingAccount="00034723" directBill_ID="7654"
+    xmlns:ota2-0500="http://www.opentravel.org/OTM/Common/v5"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/finance/v4 ../../Finance_4_0_0.xsd">
+    <fin-0400:Privacy optInDate="2011-01-24T09:45:00-06:00"
+        optInStatus="OptedIn" optOutDate="2011-07-04T14:15:00+06:00"
+        shareMarketInd="Yes" shareSyncInd="No"/>
+    <ota2-0500:Company objID="company_1">
+        <ota2-0500:Identifier organization="Acme" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</ota2-0500:Identifier>
+        <ota2-0500:CompanyRef>company_1</ota2-0500:CompanyRef>
+        <ota2-0500:Name code="AI" codeContext="Example String Value"
+            department="Adventure department"
+            description="Example String Value"
+            division="Travel Division" listURI="Example String Value"
+            quantity="1234" shortName="Adventure Inc">Travel Adventure Partners Incorporated</ota2-0500:Name>
+        <ota2-0500:Address role="Home">
+            <ota2-0500:AddressLine>111 Travers St, Dun Laoghaire Co. Dublin Ireland</ota2-0500:AddressLine>
+            <ota2-0500:BldgRoom buldingInd="true">Bldg H</ota2-0500:BldgRoom>
+            <ota2-0500:Number pO_Box="98567499" ruralRouteNmbr="88"
+                streetDirection="NNW" streetNmbrSuffix="B">563</ota2-0500:Number>
+            <ota2-0500:Street>Travers Street</ota2-0500:Street>
+            <ota2-0500:City>Dublin</ota2-0500:City>
+            <ota2-0500:County>Fairfax</ota2-0500:County>
+            <ota2-0500:StateProv name="Texas">TX</ota2-0500:StateProv>
+            <ota2-0500:Country name="Ireland">IR</ota2-0500:Country>
+            <ota2-0500:PostalCode>32165-9999</ota2-0500:PostalCode>
+        </ota2-0500:Address>
+        <ota2-0500:Telephone areaCityCode="202" countryAccessCode="01"
+            extension="237" id="telephone_1" phoneNumber="5555555" role="Home"/>
+        <ota2-0500:Email defaultInd="true" remark="Example String Value"
+            textFormat="Example String Value" validInd="true">
+            <ota2-0500:Address>Example String Value</ota2-0500:Address>
+            <ota2-0500:Type>Business</ota2-0500:Type>
+            <ota2-0500:Privacy optInDate="2011-12-05T06:00:00Z"
+                optInStatus="OptedOut"
+                optOutDate="2011-01-24T09:45:00-06:00"
+                shareMarketInd="Inherit" shareSyncInd="Yes"/>
+        </ota2-0500:Email>
+        <ota2-0500:URL defaultInd="true" type="Example String Value">http://www.OpenTravel.org/ns/OTA2/Common_v01_00</ota2-0500:URL>
+    </ota2-0500:Company>
+</fin-0400:DirectBill>

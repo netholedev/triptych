@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ota2-0500:Rating
-    xmlns:ota2-0500="http://www.opentravel.org/OTM/Common/v5"
-    date="2011-01-24" description="Example String Value"
-    officialAppointmentInd="true" provider="Example String Value"
-    rating="Example String Value" ratingSymbol="Diamond">Example String Value</ota2-0500:Rating>

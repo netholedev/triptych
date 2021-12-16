@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<orggf-0300:GolfFacilityFeatures
-    xmlns:orggf-0300="http://www.opentravel.org/OTM/organization/golf/v3"
-    description="Example String Value"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/organization/golf/v3 ../../OrganizationGolf_3_0_0.xsd">
-    <orggf-0300:FacilityHighlights>Accessible</orggf-0300:FacilityHighlights>
-</orggf-0300:GolfFacilityFeatures>

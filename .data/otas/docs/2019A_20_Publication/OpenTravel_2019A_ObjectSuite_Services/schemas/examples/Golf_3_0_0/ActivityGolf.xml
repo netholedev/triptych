@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pg-0300:ActivityGolf
+    xmlns:pg-0300="http://www.opentravel.org/OTM/product/golf/v3"
+    start="2011-01-24T09:45:00-06:00"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/product/golf/v3 ../../Golf_3_0_0.xsd">
+    <pg-0300:GolfActivity maxGolferCount="4" numberOfHoles="18" replayRoundQty="1234"/>
+</pg-0300:ActivityGolf>

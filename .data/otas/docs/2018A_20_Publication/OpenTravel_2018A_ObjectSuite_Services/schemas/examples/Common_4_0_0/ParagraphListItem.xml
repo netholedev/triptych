@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ota2-0400:ParagraphListItem
+    xmlns:ota2-0400="http://www.opentravel.org/OTM/Common/v4"
+    language="en" listItem="1234" text2="Formatted text example." textFormat="PlainText"/>

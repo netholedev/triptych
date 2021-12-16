@@ -5,6 +5,7 @@ import { Module } from '@nestjs/common';
 import { ClientsModule, Transport } from '@nestjs/microservices';
 
 import { AuthService } from './auth.service';
+import { AuthController } from './auth.controller';
 
 @Module({
   imports: [
@@ -23,12 +24,14 @@ import { AuthService } from './auth.service';
               url: 'localhost:8000',
               package: 'auth',
               protoPath: distPath,
+              loader: { keepCase: true },
             }
           }
         },
       }
     ]),
   ],
+  controllers: [AuthController],
   providers: [AuthService],
   exports: [AuthService],
 })

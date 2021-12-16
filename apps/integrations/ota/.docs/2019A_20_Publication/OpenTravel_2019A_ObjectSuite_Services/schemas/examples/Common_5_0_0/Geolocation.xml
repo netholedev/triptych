@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ota2-0500:Geolocation
-    xmlns:ota2-0500="http://www.opentravel.org/OTM/Common/v5"
-    altitude="Example String Value" altitudeUnitOfMeasure_Enum="Miles"
-    formatURL="http://www.OpenTravel.org/ns/OTA2/Common_v01_00"
-    latitude="Example String Value" longitude="Example String Value" mapURL="http://www.w3.org/2001/XMLSchema"/>

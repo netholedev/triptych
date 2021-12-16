@@ -1,0 +1,20 @@
+{
+  "SpecifiedAmenity" : {
+    "number" : 1234,
+    "Amenity" : {
+      "@type" : "Amenity",
+      "name" : "Example String Value",
+      "description" : "Example String Value",
+      "Code" : {
+        "value" : "Example String Value",
+        "codeContext" : "Example String Value",
+        "description" : "Example String Value",
+        "quantity" : 1234,
+        "listURI" : "Example String Value"
+      },
+      "Proximity" : {
+        "value" : "Onsite"
+      }
+    }
+  }
+}

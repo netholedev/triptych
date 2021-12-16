@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ph-0200:RoomOccupancy
-    xmlns:ph-0200="http://www.opentravel.org/OTM/product/hospitality/v2"
-    maxOccupancy="4" minOccupancy="1" standardOccupancy="1234"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/product/hospitality/v2 ../../Hospitality_2_0_0.xsd">
-    <ph-0200:AgeQualifying>Junior</ph-0200:AgeQualifying>
-</ph-0200:RoomOccupancy>

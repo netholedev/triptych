@@ -1,0 +1,10 @@
+{
+  "RestaurantInformationCuisine" : {
+    "mainInd" : true,
+    "CuisineType" : [ {
+      "value" : "Afghan"
+    }, {
+      "value" : "Afghan"
+    } ]
+  }
+}

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<fin-0400:TaxRegistrationDetails
-    xmlns:fin-0400="http://www.opentravel.org/OTM/finance/v4"
-    recipientAddress="1 Maple St, New York, NY 20190"
-    recipientName="John Doe" taxID="9878909"/>

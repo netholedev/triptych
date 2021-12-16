@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pgt-0300:ProductQueriesGround
+    xmlns:pgt-0300="http://www.opentravel.org/OTM/product/Ground/v3"
+    xmlns:order-0400="http://www.opentravel.org/OTM/order/v4"
+    xmlns:ota2-0500="http://www.opentravel.org/OTM/Common/v5"
+    xmlns:prod-0500="http://www.opentravel.org/OTM/product/v5"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/product/Ground/v3 ../../Ground_3_0_0.xsd">
+    <order-0400:PriceModifiers>
+        <order-0400:Promotion code="Example String Value"
+            name="Example String Value" promotionVendorCode="Example String Value Example String Value Example String Value">Example String Value</order-0400:Promotion>
+        <order-0400:RateQualifier code="Example String Value"
+            description="Example String Value"
+            rateAuthorizationCode="Example String Value"
+            rateID="Example String Value" ratePeriod="Hourly">Example String Value</order-0400:RateQualifier>
+        <ota2-0500:PersonIdentifier objID="person_1">
+            <ota2-0500:Identifier organization="Acme"
+                system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</ota2-0500:Identifier>
+            <ota2-0500:OtherID organization="Acme" system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</ota2-0500:OtherID>
+            <ota2-0500:PersonRef>person_1</ota2-0500:PersonRef>
+        </ota2-0500:PersonIdentifier>
+        <order-0400:ProductRef>product_1</order-0400:ProductRef>
+    </order-0400:PriceModifiers>
+    <ota2-0500:LoyaltyProgram id="Example String Value"
+        loyaltyLevel="Platinum" primaryInd="true">
+        <ota2-0500:ProgramCode codeContext="Example String Value"
+            description="Example String Value"
+            listURI="Example String Value" quantity="1234">Example String Value</ota2-0500:ProgramCode>
+        <ota2-0500:TravelSector>Air</ota2-0500:TravelSector>
+    </ota2-0500:LoyaltyProgram>
+    <pgt-0300:GroundServiceQuery>
+        <prod-0500:Departure asDirectedInd="true" dateTime="2016-11-28T14:14:00">
+            <prod-0500:LocationPointChoiceAddress name="Example String Value">
+                <ota2-0500:Location>
+                    <ota2-0500:Address role="Home">
+                        <ota2-0500:AddressLine>111 Travers St, Dun Laoghaire Co. Dublin Ireland</ota2-0500:AddressLine>
+                        <ota2-0500:BldgRoom buldingInd="true">Bldg H</ota2-0500:BldgRoom>
+                        <ota2-0500:Number pO_Box="98567499"
+                            ruralRouteNmbr="88" streetDirection="NNW" streetNmbrSuffix="B">563</ota2-0500:Number>
+                        <ota2-0500:Street>Travers Street</ota2-0500:Street>
+                        <ota2-0500:City>Dublin</ota2-0500:City>
+                        <ota2-0500:County>Fairfax</ota2-0500:County>
+                        <ota2-0500:StateProv name="Texas">TX</ota2-0500:StateProv>
+                        <ota2-0500:Country name="Ireland">IR</ota2-0500:Country>
+                        <ota2-0500:PostalCode>32165-9999</ota2-0500:PostalCode>
+                    </ota2-0500:Address>
+                    <ota2-0500:Position altitude="Example String Value"
+                        altitudeUnitOfMeasure_Enum="Miles"
+                        formatURL="http://www.OpenTravel.org/ns/OTA2/Common_v01_00"
+                        latitude="Example String Value"
+                        longitude="Example String Value" mapURL="http://www.w3.org/2001/XMLSchema"/>
+                </ota2-0500:Location>
+                <prod-0500:Identifier organization="Acme"
+                    system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</prod-0500:Identifier>
+            </prod-0500:LocationPointChoiceAddress>
+        </prod-0500:Departure>
+        <prod-0500:Arrival asDirectedInd="true" dateTime="2016-11-28T14:14:00">
+            <prod-0500:LocationPointChoiceAddress name="Example String Value">
+                <ota2-0500:Location>
+                    <ota2-0500:Address role="Business">
+                        <ota2-0500:AddressLine>111 Travers St, Dun Laoghaire Co. Dublin Ireland</ota2-0500:AddressLine>
+                        <ota2-0500:BldgRoom buldingInd="true">Bldg H</ota2-0500:BldgRoom>
+                        <ota2-0500:Number pO_Box="98567499"
+                            ruralRouteNmbr="88" streetDirection="NNW" streetNmbrSuffix="B">563</ota2-0500:Number>
+                        <ota2-0500:Street>Travers Street</ota2-0500:Street>
+                        <ota2-0500:City>Dublin</ota2-0500:City>
+                        <ota2-0500:County>Fairfax</ota2-0500:County>
+                        <ota2-0500:StateProv name="Texas">TX</ota2-0500:StateProv>
+                        <ota2-0500:Country name="Ireland">IR</ota2-0500:Country>
+                        <ota2-0500:PostalCode>32165-9999</ota2-0500:PostalCode>
+                    </ota2-0500:Address>
+                    <ota2-0500:Position altitude="Example String Value"
+                        altitudeUnitOfMeasure_Enum="Kilometers"
+                        formatURL="http://www.w3.org/2001/XMLSchema"
+                        latitude="Example String Value"
+                        longitude="Example String Value" mapURL="http://www.OpenTravel.org/ns/OTA2/Common_v01_00"/>
+                </ota2-0500:Location>
+                <prod-0500:Identifier organization="Acme"
+                    system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</prod-0500:Identifier>
+            </prod-0500:LocationPointChoiceAddress>
+        </prod-0500:Arrival>
+        <pgt-0300:CustomerCount ageQualifyingCode="A"
+            description="Adult" quantity="2"/>
+        <pgt-0300:TransportTransfer type="Private">
+            <prod-0500:TransportNumber carrier="Example String Value" operatingCarrier="Example String Value">Example String Value</prod-0500:TransportNumber>
+            <pgt-0300:ClassOfService code="Example String Value"
+                count="1234" name="Example String Value"/>
+            <pgt-0300:PassengerPrefs maximumBaggage="3"
+                maximumPassengers="3" notes="Example String Value"
+                shortDescription="Example String Value" transferRequests="GuideDog Multilingual Guide"/>
+            <pgt-0300:OperatorCompany>
+                <pgt-0300:Identifier organization="Acme"
+                    system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</pgt-0300:Identifier>
+                <ota2-0500:Description name="paragraph name" number="2345">
+                    <ota2-0500:Text language="en" textFormat="PlainText">Formatted text example.</ota2-0500:Text>
+                    <ota2-0500:Image colorSpace="Example String Value"
+                        dimensionCategory="Example String Value"
+                        format="2" objID="image_1"
+                        originalIndicatorInd="true" resolution="4567"
+                        sort="3456" version="Example String Value">
+                        <ota2-0500:Identifier organization="Acme"
+                            system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</ota2-0500:Identifier>
+                        <ota2-0500:ImageRef>image_1</ota2-0500:ImageRef>
+                        <ota2-0500:URL>http://www.w3.org/2001/XMLSchema</ota2-0500:URL>
+                        <ota2-0500:Details applicableEnd="2011-07-04"
+                            applicableStart="2011-01-24"
+                            author="Example String Value"
+                            copyrightEnd="2011-07-04T14:15:00+06:00"
+                            copyrightNotice="Example String Value"
+                            copyrightOwner="Example String Value"
+                            copyrightStart="2011-01-24T09:45:00-06:00"
+                            effectiveEnd="2011-01-24T09:45:00-06:00" effectiveStart="2011-12-05T06:00:00Z">Example String Value</ota2-0500:Details>
+                        <ota2-0500:MultimediaDescription
+                            caption="The Empire State Building at sunset."
+                            language="en" title="Example String Value">
+                            <ota2-0500:FormattedTextSubSection
+                                subCode="Example String Value"
+                                subSectionNumber="4567" subTitle="Example String Value">
+						<ota2-0500:TextParagraph/>
+                    </ota2-0500:FormattedTextSubSection>
+                        </ota2-0500:MultimediaDescription>
+                        <ota2-0500:DateTimeStamp
+                            create="2011-12-05T06:00:00Z"
+                            creatorID="c123456789"
+                            lastModifierID="m987654321"
+                            lastModify="2011-01-24T09:45:00-06:00" purge="2011-12-05">2011-07-04T14:15:00+06:00</ota2-0500:DateTimeStamp>
+                        <ota2-0500:Email defaultInd="true"
+                            remark="Example String Value"
+                            textFormat="Example String Value" validInd="true">
+                            <ota2-0500:Address>Example String Value</ota2-0500:Address>
+                            <ota2-0500:Type>Business</ota2-0500:Type>
+                            <ota2-0500:Privacy
+                                optInDate="2011-07-04T14:15:00+06:00"
+                                optInStatus="OptedIn"
+                                optOutDate="2011-12-05T06:00:00Z"
+                                shareMarketInd="Yes" shareSyncInd="No"/>
+                        </ota2-0500:Email>
+                        <ota2-0500:Dimensions area="4567" height="3456"
+                            length="1234" unitOfMeasureCode="2" width="2345"/>
+                        <ota2-0500:File name="Example String Value"
+                            originalName="Example String Value" size="2345"/>
+                        <ota2-0500:Geolocation
+                            altitude="Example String Value"
+                            altitudeUnitOfMeasure_Enum="Meters"
+                            formatURL="http://www.w3.org/2001/XMLSchema"
+                            latitude="Example String Value"
+                            longitude="Example String Value" mapURL="http://www.OpenTravel.org/ns/OTA2/Common_v01_00"/>
+                    </ota2-0500:Image>
+                    <ota2-0500:URL>http://www.OpenTravel.org/ns/OTA2/Common_v01_00</ota2-0500:URL>
+                    <ota2-0500:ParagraphListItem language="en"
+                        listItem="2345" text2="Formatted text example." textFormat="HTML"/>
+                    <ota2-0500:DateTimeStamp
+                        create="2011-07-04T14:15:00+06:00"
+                        creatorID="c123456789"
+                        lastModifierID="m987654321"
+                        lastModify="2011-12-05T06:00:00Z" purge="2011-01-24">2011-01-24T09:45:00-06:00</ota2-0500:DateTimeStamp>
+                </ota2-0500:Description>
+                <pgt-0300:CompanyName code="AI"
+                    codeContext="Example String Value"
+                    department="Adventure department"
+                    description="Example String Value"
+                    division="Travel Division"
+                    listURI="Example String Value" quantity="3456" shortName="Adventure Inc">Travel Adventure Partners Incorporated</pgt-0300:CompanyName>
+                <pgt-0300:URL defaultInd="true" type="Example String Value">http://www.w3.org/2001/XMLSchema</pgt-0300:URL>
+            </pgt-0300:OperatorCompany>
+            <pgt-0300:Vehicle bkgClass="Business" category="Luxury"
+                modelYear="2016" objID="vehicle_1" seats="4">
+                <pgt-0300:Identifier organization="Acme"
+                    system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</pgt-0300:Identifier>
+                <pgt-0300:VehicleRef>vehicle_1</pgt-0300:VehicleRef>
+                <ota2-0500:Description name="paragraph name" number="3456">
+                    <ota2-0500:Text language="en" textFormat="PlainText">Formatted text example.</ota2-0500:Text>
+                    <ota2-0500:Image colorSpace="Example String Value"
+                        dimensionCategory="Example String Value"
+                        format="2" objID="image_2"
+                        originalIndicatorInd="true" resolution="1234"
+                        sort="4567" version="Example String Value">
+                        <ota2-0500:Identifier organization="Acme"
+                            system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</ota2-0500:Identifier>
+                        <ota2-0500:ImageRef>image_2</ota2-0500:ImageRef>
+                        <ota2-0500:URL>http://www.OpenTravel.org/ns/OTA2/Common_v01_00</ota2-0500:URL>
+                        <ota2-0500:Details applicableEnd="2011-12-05"
+                            applicableStart="2011-07-04"
+                            author="Example String Value"
+                            copyrightEnd="2011-07-04T14:15:00+06:00"
+                            copyrightNotice="Example String Value"
+                            copyrightOwner="Example String Value"
+                            copyrightStart="2011-01-24T09:45:00-06:00"
+                            effectiveEnd="2011-01-24T09:45:00-06:00" effectiveStart="2011-12-05T06:00:00Z">Example String Value</ota2-0500:Details>
+                        <ota2-0500:MultimediaDescription
+                            caption="The Empire State Building at sunset."
+                            language="en" title="Example String Value">
+                            <ota2-0500:FormattedTextSubSection
+                                subCode="Example String Value"
+                                subSectionNumber="4567" subTitle="Example String Value">
+						<ota2-0500:TextParagraph/>
+                    </ota2-0500:FormattedTextSubSection>
+                        </ota2-0500:MultimediaDescription>
+                        <ota2-0500:DateTimeStamp
+                            create="2011-12-05T06:00:00Z"
+                            creatorID="c123456789"
+                            lastModifierID="m987654321"
+                            lastModify="2011-01-24T09:45:00-06:00" purge="2011-01-24">2011-07-04T14:15:00+06:00</ota2-0500:DateTimeStamp>
+                        <ota2-0500:Email defaultInd="true"
+                            remark="Example String Value"
+                            textFormat="Example String Value" validInd="true">
+                            <ota2-0500:Address>Example String Value</ota2-0500:Address>
+                            <ota2-0500:Type>Listserve</ota2-0500:Type>
+                            <ota2-0500:Privacy
+                                optInDate="2011-07-04T14:15:00+06:00"
+                                optInStatus="OptedOut"
+                                optOutDate="2011-12-05T06:00:00Z"
+                                shareMarketInd="Inherit" shareSyncInd="Yes"/>
+                        </ota2-0500:Email>
+                        <ota2-0500:Dimensions area="1234" height="4567"
+                            length="2345" unitOfMeasureCode="2" width="3456"/>
+                        <ota2-0500:File name="Example String Value"
+                            originalName="Example String Value" size="3456"/>
+                        <ota2-0500:Geolocation
+                            altitude="Example String Value"
+                            altitudeUnitOfMeasure_Enum="Millimeters"
+                            formatURL="http://www.OpenTravel.org/ns/OTA2/Common_v01_00"
+                            latitude="Example String Value"
+                            longitude="Example String Value" mapURL="http://www.w3.org/2001/XMLSchema"/>
+                    </ota2-0500:Image>
+                    <ota2-0500:URL>http://www.w3.org/2001/XMLSchema</ota2-0500:URL>
+                    <ota2-0500:ParagraphListItem language="en"
+                        listItem="4567" text2="Formatted text example." textFormat="HTML"/>
+                    <ota2-0500:DateTimeStamp
+                        create="2011-07-04T14:15:00+06:00"
+                        creatorID="c123456789"
+                        lastModifierID="m987654321"
+                        lastModify="2011-12-05T06:00:00Z" purge="2011-07-04">2011-01-24T09:45:00-06:00</ota2-0500:DateTimeStamp>
+                </ota2-0500:Description>
+                <pgt-0300:Luggage language="en" luggageType="Medium" remark="Some fee text.">2</pgt-0300:Luggage>
+                <ota2-0500:Amenity description="Example String Value" name="Example String Value">
+                    <ota2-0500:Code codeContext="Example String Value"
+                        description="Example String Value"
+                        listURI="Example String Value" quantity="1234">Example String Value</ota2-0500:Code>
+                    <ota2-0500:Proximity>Onsite</ota2-0500:Proximity>
+                </ota2-0500:Amenity>
+            </pgt-0300:Vehicle>
+            <pgt-0300:Driver number="Example String Value" objID="driver_1">
+                <pgt-0300:Identifier organization="Acme"
+                    system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</pgt-0300:Identifier>
+                <pgt-0300:DriverRef>driver_1</pgt-0300:DriverRef>
+                <ota2-0500:PersonName>
+                    <ota2-0500:Prefix>Mr.</ota2-0500:Prefix>
+                    <ota2-0500:Given>John</ota2-0500:Given>
+                    <ota2-0500:Middle>Example String Value</ota2-0500:Middle>
+                    <ota2-0500:Surname>Smith</ota2-0500:Surname>
+                </ota2-0500:PersonName>
+                <ota2-0500:TelephoneDetail areaCityCode="202"
+                    countryAccessCode="01" defaultInd="true"
+                    extension="237" id="telephone_1" pIN="1234"
+                    phoneNumber="5555555"
+                    remark="Don't call after 10:00PM" role="Home">
+                    <ota2-0500:Privacy
+                        optInDate="2011-01-24T09:45:00-06:00"
+                        optInStatus="Unknown"
+                        optOutDate="2011-07-04T14:15:00+06:00"
+                        shareMarketInd="No" shareSyncInd="Inherit"/>
+                    <ota2-0500:PhoneLocationType>Brand reservations office</ota2-0500:PhoneLocationType>
+                    <ota2-0500:PhoneTechType>Voice</ota2-0500:PhoneTechType>
+                    <ota2-0500:PhoneUseType>Contact</ota2-0500:PhoneUseType>
+                </ota2-0500:TelephoneDetail>
+                <ota2-0500:TelephoneDetail areaCityCode="202"
+                    countryAccessCode="01" defaultInd="true"
+                    extension="237" id="telephone_2" pIN="1234"
+                    phoneNumber="5555555"
+                    remark="Don't call after 10:00PM" role="Office">
+                    <ota2-0500:Privacy optInDate="2011-12-05T06:00:00Z"
+                        optInStatus="OptedIn"
+                        optOutDate="2011-01-24T09:45:00-06:00"
+                        shareMarketInd="Yes" shareSyncInd="No"/>
+                    <ota2-0500:PhoneLocationType>Central reservations office</ota2-0500:PhoneLocationType>
+                    <ota2-0500:PhoneTechType>Fax</ota2-0500:PhoneTechType>
+                    <ota2-0500:PhoneUseType>Daytime contact</ota2-0500:PhoneUseType>
+                </ota2-0500:TelephoneDetail>
+                <ota2-0500:TelephoneDetail areaCityCode="202"
+                    countryAccessCode="01" defaultInd="true"
+                    extension="237" id="telephone_3" pIN="1234"
+                    phoneNumber="5555555"
+                    remark="Don't call after 10:00PM" role="Mobile">
+                    <ota2-0500:Privacy
+                        optInDate="2011-07-04T14:15:00+06:00"
+                        optInStatus="OptedOut"
+                        optOutDate="2011-12-05T06:00:00Z"
+                        shareMarketInd="Inherit" shareSyncInd="Yes"/>
+                    <ota2-0500:PhoneLocationType>Home</ota2-0500:PhoneLocationType>
+                    <ota2-0500:PhoneTechType>Pager</ota2-0500:PhoneTechType>
+                    <ota2-0500:PhoneUseType>Emergency contact</ota2-0500:PhoneUseType>
+                </ota2-0500:TelephoneDetail>
+                <ota2-0500:TelephoneDetail areaCityCode="202"
+                    countryAccessCode="01" defaultInd="true"
+                    extension="237" id="telephone_4" pIN="1234"
+                    phoneNumber="5555555"
+                    remark="Don't call after 10:00PM" role="Other">
+                    <ota2-0500:Privacy
+                        optInDate="2011-01-24T09:45:00-06:00"
+                        optInStatus="Unknown"
+                        optOutDate="2011-07-04T14:15:00+06:00"
+                        shareMarketInd="No" shareSyncInd="Inherit"/>
+                    <ota2-0500:PhoneLocationType>Managing company</ota2-0500:PhoneLocationType>
+                    <ota2-0500:PhoneTechType>TTY</ota2-0500:PhoneTechType>
+                    <ota2-0500:PhoneUseType>Evening contact</ota2-0500:PhoneUseType>
+                </ota2-0500:TelephoneDetail>
+                <pgt-0300:SpokenLanguages alternateLanguages="es fr de" primaryLanguage="en"/>
+                <pgt-0300:Review language="en" text="5: Excellent" textFormat="PlainText"/>
+            </pgt-0300:Driver>
+            <pgt-0300:LanguageInfo primaryLanguageInd="true" requestedInd="true">en</pgt-0300:LanguageInfo>
+            <pgt-0300:Comments language="en">Some fee text.</pgt-0300:Comments>
+            <ota2-0500:ContactPerson contactType="Example String Value"
+                defaultInd="true" emergencyFlagInd="true" relation="Example String Value">
+                <ota2-0500:Person birthDate="2011-12-05" gender="Male"
+                    maritalStatus_Enum="Annulled" objID="person_2">
+                    <ota2-0500:Identifier organization="Acme"
+                        system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</ota2-0500:Identifier>
+                    <ota2-0500:OtherID organization="Acme"
+                        system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</ota2-0500:OtherID>
+                    <ota2-0500:PersonRef>person_1</ota2-0500:PersonRef>
+                    <ota2-0500:PersonName>
+                        <ota2-0500:Prefix>Mr.</ota2-0500:Prefix>
+                        <ota2-0500:Given>John</ota2-0500:Given>
+                        <ota2-0500:Middle>Example String Value</ota2-0500:Middle>
+                        <ota2-0500:Surname>Smith</ota2-0500:Surname>
+                    </ota2-0500:PersonName>
+                    <ota2-0500:Address role="Destination">
+                        <ota2-0500:AddressLine>111 Travers St, Dun Laoghaire Co. Dublin Ireland</ota2-0500:AddressLine>
+                        <ota2-0500:BldgRoom buldingInd="true">Bldg H</ota2-0500:BldgRoom>
+                        <ota2-0500:Number pO_Box="98567499"
+                            ruralRouteNmbr="88" streetDirection="NNW" streetNmbrSuffix="B">563</ota2-0500:Number>
+                        <ota2-0500:Street>Travers Street</ota2-0500:Street>
+                        <ota2-0500:City>Dublin</ota2-0500:City>
+                        <ota2-0500:County>Fairfax</ota2-0500:County>
+                        <ota2-0500:StateProv name="Texas">TX</ota2-0500:StateProv>
+                        <ota2-0500:Country name="Ireland">IR</ota2-0500:Country>
+                        <ota2-0500:PostalCode>32165-9999</ota2-0500:PostalCode>
+                    </ota2-0500:Address>
+                    <ota2-0500:Telephone areaCityCode="202"
+                        countryAccessCode="01" extension="237"
+                        id="telephone_5" phoneNumber="5555555" role="Home"/>
+                    <ota2-0500:Email defaultInd="true"
+                        remark="Example String Value"
+                        textFormat="Example String Value" validInd="true">
+                        <ota2-0500:Address>Example String Value</ota2-0500:Address>
+                        <ota2-0500:Type>Managing company</ota2-0500:Type>
+                        <ota2-0500:Privacy
+                            optInDate="2011-12-05T06:00:00Z"
+                            optInStatus="OptedIn"
+                            optOutDate="2011-01-24T09:45:00-06:00"
+                            shareMarketInd="Yes" shareSyncInd="No"/>
+                    </ota2-0500:Email>
+                    <ota2-0500:Privacy
+                        optInDate="2011-07-04T14:15:00+06:00"
+                        optInStatus="OptedOut"
+                        optOutDate="2011-12-05T06:00:00Z"
+                        shareMarketInd="Inherit" shareSyncInd="Yes"/>
+                    <ota2-0500:Comments language="en">Some fee text.</ota2-0500:Comments>
+                </ota2-0500:Person>
+                <ota2-0500:CommunicationMethodCode>Fax</ota2-0500:CommunicationMethodCode>
+                <ota2-0500:DocumentDistribMethodCode>Email</ota2-0500:DocumentDistribMethodCode>
+                <ota2-0500:CompanyName code="AI"
+                    codeContext="Example String Value"
+                    department="Adventure department"
+                    description="Example String Value"
+                    division="Travel Division"
+                    listURI="Example String Value" quantity="2345" shortName="Adventure Inc">Travel Adventure Partners Incorporated</ota2-0500:CompanyName>
+                <ota2-0500:Location>Airport</ota2-0500:Location>
+            </ota2-0500:ContactPerson>
+            <ota2-0500:OperationSchedule additionalOperationInfoCode="2"
+                daysOfWeek="Monday Tuesday Wednesday"
+                frequency="Example String Value"
+                name="Example String Value" text="Example String Value">
+                <ota2-0500:DateTimeSpanWindows>
+                    <ota2-0500:TimeSpan end="2016-08-28T04:32:52Z" start="2016-08-22T19:32:52Z"/>
+                </ota2-0500:DateTimeSpanWindows>
+            </ota2-0500:OperationSchedule>
+        </pgt-0300:TransportTransfer>
+        <pgt-0300:Luggage language="en" luggageType="Medium" remark="Some fee text.">2</pgt-0300:Luggage>
+        <pgt-0300:PassengerPrefs maximumBaggage="3"
+            maximumPassengers="3" notes="Example String Value"
+            shortDescription="Example String Value" transferRequests="UnaccompaniedMinor PersonalGreeter MeetAndGreet"/>
+        <order-0400:Gratuity mandatoryInd="true">
+            <ota2-0500:AmountOrPercentAmount/>
+        </order-0400:Gratuity>
+        <pgt-0300:MeetAndGreet complimentaryInd="true" greetingSignName="John Smith"/>
+        <pgt-0300:LanguageInfo primaryLanguageInd="true" requestedInd="true">en</pgt-0300:LanguageInfo>
+        <pgt-0300:Comments language="en" textFormat="HTML">Formatted text example.</pgt-0300:Comments>
+        <prod-0500:ProductAncillary objID="product_1">
+            <prod-0500:Identifier organization="Acme"
+                system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</prod-0500:Identifier>
+            <prod-0500:ProductRef>product_1</prod-0500:ProductRef>
+            <prod-0500:AssociatedProductIdentifier objID="associatedProduct_1">
+                <prod-0500:Identifier organization="Acme"
+                    system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</prod-0500:Identifier>
+                <prod-0500:ProductRef>product_1</prod-0500:ProductRef>
+            </prod-0500:AssociatedProductIdentifier>
+            <ota2-0500:Ancillary description="Example String Value"
+                includedInd="true" name="Example String Value" orderableInd="true">
+                <ota2-0500:PricingType>Per unit</ota2-0500:PricingType>
+                <ota2-0500:Code codeContext="Example String Value"
+                    description="Example String Value"
+                    listURI="Example String Value" quantity="3456">Example String Value</ota2-0500:Code>
+                <ota2-0500:Proximity>Offsite</ota2-0500:Proximity>
+            </ota2-0500:Ancillary>
+        </prod-0500:ProductAncillary>
+    </pgt-0300:GroundServiceQuery>
+</pgt-0300:ProductQueriesGround>

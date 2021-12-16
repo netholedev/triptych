@@ -6,17 +6,18 @@
     "user": "root",
     "password": "example"
   },
-  "queue": {
+  "amqp": {
     "host": "localhost",
     "port": 5672,
     "user": "guest",
     "password": "guest"
   },
   "smtp": {
-    "host": "smtp.gmail.com",
+    "host": "smtp.yandex.com.tr",
     "port": 465,
-    "sender_email": "buroz@nethole.dev",
-    "sender_password": "Espesp1315.*.",
+    "sender_email": "noreply@tatilmaximum.com.tr",
+    "sender_password": "espesp13",
+    "sender_name": "Tatil Maximum",
     "secure": true
   }
 }

@@ -1,0 +1,8 @@
+{
+  "Temperature" : {
+    "value" : null,
+    "averageHighTemp" : 1234,
+    "averageLowTemp" : 2345,
+    "temperatureUnit" : "Celsuis"
+  }
+}

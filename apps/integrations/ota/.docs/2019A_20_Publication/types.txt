@@ -1,8 +1,0 @@
-EnumerationClosed: "_Other" barındırmayan Enum tipi
-EnumerationOpen: "_Other" barındıran Enum tipi
-ValueWithAttributes: XML içinde attr alan value içeren bişey
-
-// Objects
-CoreObject
-BusinessObject
-ChoiceObject

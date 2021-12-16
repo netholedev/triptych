@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<order-0400:ActionRequest
+    xmlns:order-0400="http://www.opentravel.org/OTM/order/v4"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/order/v4 ../../Order_4_0_0.xsd">
+    <order-0400:URI>Example String Value</order-0400:URI>
+    <order-0400:RequestID>Example String Value</order-0400:RequestID>
+    <order-0400:Description>Example String Value</order-0400:Description>
+</order-0400:ActionRequest>

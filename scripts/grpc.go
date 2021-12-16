@@ -26,5 +26,4 @@ func main() {
 	utils.Check(err)
 
 	fmt.Println(repl2.GetErrors())
-	fmt.Println(repl2.GetSucsess())
 }

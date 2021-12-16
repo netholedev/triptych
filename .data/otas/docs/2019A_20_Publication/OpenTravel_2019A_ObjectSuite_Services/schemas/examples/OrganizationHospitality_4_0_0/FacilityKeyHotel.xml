@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orghs-0400:FacilityKeyHotel
+    xmlns:orghs-0400="http://www.opentravel.org/OTM/organization/hospitality/v4"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/organization/hospitality/v4 ../../OrganizationHospitality_4_0_0.xsd">
+    <orghs-0400:FacilityCode>Example String Value</orghs-0400:FacilityCode>
+    <orghs-0400:ChainCode>Example String Value</orghs-0400:ChainCode>
+    <orghs-0400:BrandCode>Example String Value</orghs-0400:BrandCode>
+</orghs-0400:FacilityKeyHotel>

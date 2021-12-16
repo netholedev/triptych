@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ota2-0400:RequestorID
+    xmlns:ota2-0400="http://www.opentravel.org/OTM/Common/v4"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/Common/v4 ../../Common_4_0_0.xsd">
+    <ota2-0400:Identifier organization="Acme" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</ota2-0400:Identifier>
+</ota2-0400:RequestorID>

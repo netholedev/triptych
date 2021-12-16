@@ -1,1 +1,1 @@
-go run cmd/supplier_api/main.go --config configs/triptych.dev.json
+go run cmd/accounts_service/main.go --config configs/triptych.dev.json

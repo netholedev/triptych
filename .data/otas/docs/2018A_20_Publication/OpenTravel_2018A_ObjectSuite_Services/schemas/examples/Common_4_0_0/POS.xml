@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ota2-0400:POS xmlns:ota2-0400="http://www.opentravel.org/OTM/Common/v4"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/Common/v4 ../../Common_4_0_0.xsd">
+    <ota2-0400:Source agentDutyCode="Example String Value"
+        agentSine="Example String Value" airlineVendorID="B6"
+        airportCode="IAD" eRSP_UserID="Example String Value"
+        firstDepartPoint="Example String Value" iSOCountry="IR"
+        iSOCurrency="USD" pseudoCityCode="Example String Value" terminalID="Example String Value">
+        <ota2-0400:RequestorID>
+            <ota2-0400:Identifier organization="Acme"
+                system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</ota2-0400:Identifier>
+        </ota2-0400:RequestorID>
+        <ota2-0400:Position altitude="Example String Value"
+            altitudeUnitOfMeasure_Enum="Miles"
+            formatURL="http://www.w3.org/2001/XMLSchema"
+            latitude="Example String Value"
+            longitude="Example String Value" mapURL="http://www.OpenTravel.org/ns/OTA2/Common_v01_00"/>
+        <ota2-0400:BookingChannel primaryInd="true">
+            <ota2-0400:CompanyName code="AI"
+                codeContext="Example String Value"
+                department="Adventure department"
+                description="Example String Value"
+                division="Travel Division" shortName="Adventure Inc">Travel Adventure Partners Incorporated</ota2-0400:CompanyName>
+            <ota2-0400:Type>Agent</ota2-0400:Type>
+        </ota2-0400:BookingChannel>
+    </ota2-0400:Source>
+</ota2-0400:POS>

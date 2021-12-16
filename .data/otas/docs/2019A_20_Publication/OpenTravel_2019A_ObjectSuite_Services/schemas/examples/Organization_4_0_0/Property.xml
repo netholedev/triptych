@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org-0400:Property
+    xmlns:org-0400="http://www.opentravel.org/OTM/organization/v4"
+    companyName="Example String Value" name="Example String Value"
+    objID="property_1"
+    xmlns:ota2-0500="http://www.opentravel.org/OTM/Common/v5"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/organization/v4 ../../Organization_4_0_0.xsd">
+    <org-0400:Identifier organization="Acme" system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</org-0400:Identifier>
+    <org-0400:PropertyRef>property_1</org-0400:PropertyRef>
+    <ota2-0500:Address role="Home">
+        <ota2-0500:AddressLine>111 Travers St, Dun Laoghaire Co. Dublin Ireland</ota2-0500:AddressLine>
+        <ota2-0500:BldgRoom buldingInd="true">Bldg H</ota2-0500:BldgRoom>
+        <ota2-0500:Number pO_Box="98567499" ruralRouteNmbr="88"
+            streetDirection="NNW" streetNmbrSuffix="B">563</ota2-0500:Number>
+        <ota2-0500:Street>Travers Street</ota2-0500:Street>
+        <ota2-0500:City>Dublin</ota2-0500:City>
+        <ota2-0500:County>Fairfax</ota2-0500:County>
+        <ota2-0500:StateProv name="Texas">TX</ota2-0500:StateProv>
+        <ota2-0500:Country name="Ireland">IR</ota2-0500:Country>
+        <ota2-0500:PostalCode>32165-9999</ota2-0500:PostalCode>
+    </ota2-0500:Address>
+    <org-0400:URL>http://www.OpenTravel.org/ns/OTA2/Common_v01_00</org-0400:URL>
+    <ota2-0500:Telephone areaCityCode="202" countryAccessCode="01"
+        extension="237" id="telephone_1" phoneNumber="5555555" role="Home"/>
+    <ota2-0500:Email defaultInd="true" remark="Example String Value"
+        textFormat="Example String Value" validInd="true">
+        <ota2-0500:Address>Example String Value</ota2-0500:Address>
+        <ota2-0500:Type>Business</ota2-0500:Type>
+        <ota2-0500:Privacy optInDate="2011-01-24T09:45:00-06:00"
+            optInStatus="OptedIn" optOutDate="2011-07-04T14:15:00+06:00"
+            shareMarketInd="Yes" shareSyncInd="No"/>
+    </ota2-0500:Email>
+    <ota2-0500:MultimediaCollection lastUpdated="2011-12-05T06:00:00Z">
+        <ota2-0500:MultimediaText caption="Example String Value"
+            language="en" lastUpdated="2011-01-24T09:45:00-06:00"
+            objID="multimedia_1" version="Example String Value">
+            <ota2-0500:Category>Ballroom</ota2-0500:Category>
+            <ota2-0500:AdditionalDetailType>Advanced booking information</ota2-0500:AdditionalDetailType>
+            <ota2-0500:InfoType>Address</ota2-0500:InfoType>
+        </ota2-0500:MultimediaText>
+    </ota2-0500:MultimediaCollection>
+    <org-0400:Rating date="2011-01-24"
+        description="Example String Value" officialAppointmentInd="true"
+        provider="Example String Value" rating="Example String Value" ratingSymbol="Diamond">Example String Value</org-0400:Rating>
+</org-0400:Property>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prod-0500:ProductQueriesTransportation
+    xmlns:prod-0500="http://www.opentravel.org/OTM/product/v5"
+    xmlns:order-0400="http://www.opentravel.org/OTM/order/v4"
+    xmlns:ota2-0500="http://www.opentravel.org/OTM/Common/v5"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/product/v5 ../../Product_5_0_0.xsd">
+    <order-0400:PriceModifiers>
+        <order-0400:Promotion code="Example String Value"
+            name="Example String Value" promotionVendorCode="Example String Value Example String Value Example String Value">Example String Value</order-0400:Promotion>
+        <order-0400:RateQualifier code="Example String Value"
+            description="Example String Value"
+            rateAuthorizationCode="Example String Value"
+            rateID="Example String Value" ratePeriod="Hourly">Example String Value</order-0400:RateQualifier>
+        <ota2-0500:PersonIdentifier objID="person_1">
+            <ota2-0500:Identifier organization="Acme"
+                system="sysABC3344" url="http://www.w3.org/2001/XMLSchema">guid12345</ota2-0500:Identifier>
+            <ota2-0500:OtherID organization="Acme" system="sysABC3344" url="http://www.OpenTravel.org/ns/OTA2/Common_v01_00">guid12345</ota2-0500:OtherID>
+            <ota2-0500:PersonRef>person_1</ota2-0500:PersonRef>
+        </ota2-0500:PersonIdentifier>
+    </order-0400:PriceModifiers>
+    <ota2-0500:LoyaltyProgram id="Example String Value"
+        loyaltyLevel="Platinum" primaryInd="true">
+        <ota2-0500:ProgramCode codeContext="Example String Value"
+            description="Example String Value"
+            listURI="Example String Value" quantity="1234">Example String Value</ota2-0500:ProgramCode>
+        <ota2-0500:TravelSector>Air</ota2-0500:TravelSector>
+    </ota2-0500:LoyaltyProgram>
+</prod-0500:ProductQueriesTransportation>

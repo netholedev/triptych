@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ota2-0500:PowerUsage
-    xmlns:ota2-0500="http://www.opentravel.org/OTM/Common/v5"
-    quantity="12" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/Common/v5 ../../Common_5_0_0.xsd">
-    <ota2-0500:PowerType>Diesel</ota2-0500:PowerType>
-    <ota2-0500:PowerUOM>Miles</ota2-0500:PowerUOM>
-</ota2-0500:PowerUsage>

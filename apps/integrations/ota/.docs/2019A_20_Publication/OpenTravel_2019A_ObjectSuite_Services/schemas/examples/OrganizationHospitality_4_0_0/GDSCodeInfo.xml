@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<orghs-0400:GDS_CodeInfo
-    xmlns:orghs-0400="http://www.opentravel.org/OTM/organization/hospitality/v4"
-    agencyName="Example String Value"
-    pseudoCityCode="Example String Value"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/organization/hospitality/v4 ../../OrganizationHospitality_4_0_0.xsd"/>

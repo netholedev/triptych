@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ota2-0500:ExtraPersonInfo
+    xmlns:ota2-0500="http://www.opentravel.org/OTM/Common/v5"
+    maxAge="2345" minAge="1234"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/Common/v5 ../../Common_5_0_0.xsd">
+    <ota2-0500:MaxExtra>3456</ota2-0500:MaxExtra>
+</ota2-0500:ExtraPersonInfo>

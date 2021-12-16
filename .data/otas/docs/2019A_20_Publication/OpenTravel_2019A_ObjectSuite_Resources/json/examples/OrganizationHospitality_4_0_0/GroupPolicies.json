@@ -1,0 +1,11 @@
+{
+  "GroupPolicies" : {
+    "maxNumberOfRooms" : 1234,
+    "LocalDMCRole" : "Required",
+    "GroupPolicy" : [ {
+      "@type" : "GroupPolicy",
+      "contractLanguage" : "???",
+      "contractCurrency" : "USD"
+    } ]
+  }
+}

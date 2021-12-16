@@ -49,7 +49,7 @@ func (c *SMTPClient) Connect() error {
 		return err
 	}
 
-	auth := smtp.PlainAuth("", c.Host, c.SenderPassword, host)
+	auth := smtp.PlainAuth("", c.SenderEmail, c.SenderPassword, host)
 
 	conn, err := c.createConn(host, servername, c.IsSecure)
 	if err != nil {
@@ -68,7 +68,7 @@ func (c *SMTPClient) Connect() error {
 
 	c.client = cl
 	c.from = mail.Address{
-		Name:    c.SenderName,
+		Name:    "",
 		Address: c.SenderEmail,
 	}
 

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pg-0300:GolferCount
+    xmlns:pg-0300="http://www.opentravel.org/OTM/product/golf/v3"
+    accessibleInd="true" ageQualifyingCode="Junior"
+    ageQualifyingCodeExtension="ageQualifyingCode_Other_Value"
+    golferType="ClubMember" handicap="18">1234</pg-0300:GolferCount>

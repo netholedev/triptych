@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prod-0400:Meal
+    xmlns:prod-0400="http://www.opentravel.org/OTM/product/v4"
+    mealCode="B" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/product/v4 ../../Product_4_0_0.xsd">
+    <prod-0400:ClassOfService code="Example String Value" count="1234" name="Example String Value"/>
+</prod-0400:Meal>

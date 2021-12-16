@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orghs-0400:GDS_Code
+    xmlns:orghs-0400="http://www.opentravel.org/OTM/organization/hospitality/v4"
+    chainCode="MI" gDS_Name="Example String Value"
+    gDS_PropertyCode="Example String Value"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/organization/hospitality/v4 ../../OrganizationHospitality_4_0_0.xsd"/>

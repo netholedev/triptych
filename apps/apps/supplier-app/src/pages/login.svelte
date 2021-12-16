@@ -57,7 +57,7 @@
                 <button
                   disabled={$loading}
                   type="submit"
-                  class="flex justify-center items-center focus:outline-none bg-red-500 text-white font-bold tracking-wider block w-full p-2 rounded-full hover:bg-red-700"
+                  class="flex justify-center items-center focus:outline-none bg-red-500 hover:bg-red-400 text-white font-bold tracking-wider block w-full p-2 rounded-full"
                 >
                   {#if $loading}
                     <LoadingSpinner size={8} />

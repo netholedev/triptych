@@ -1,0 +1,7 @@
+{
+  "LocationPointSummary" : {
+    "code" : "Example String Value",
+    "kioskInd" : true,
+    "curbSideBaggageCheckInd" : true
+  }
+}

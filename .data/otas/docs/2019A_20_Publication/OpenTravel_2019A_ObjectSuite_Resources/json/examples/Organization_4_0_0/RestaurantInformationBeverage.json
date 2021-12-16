@@ -1,0 +1,9 @@
+{
+  "RestaurantInformationBeverage" : {
+    "Beverage" : [ {
+      "value" : "Bourbon"
+    }, {
+      "value" : "Bourbon"
+    } ]
+  }
+}
