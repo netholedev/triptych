@@ -4,5 +4,4 @@
 
 .data/geonames/*
 
-node_modules/
 dist/
