@@ -39,4 +39,5 @@ message TokenResult {
 message TokenResponse {
   bool success = 1;
   common.errors.ServiceError errors = 2;
+  TokenResult result = 3;
 }
