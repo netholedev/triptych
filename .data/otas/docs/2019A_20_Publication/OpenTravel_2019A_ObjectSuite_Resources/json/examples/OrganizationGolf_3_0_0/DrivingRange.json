@@ -1,9 +1,0 @@
-{
-  "DrivingRange" : {
-    "turfType" : "Grass",
-    "distance" : "500 ft",
-    "numberOfStations" : 10,
-    "drivingRangeType" : "Covered",
-    "nightLightingInd" : true
-  }
-}

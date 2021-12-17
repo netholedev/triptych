@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ota2-0500:CurrencyAmount
-    xmlns:ota2-0500="http://www.opentravel.org/OTM/Common/v5"
-    currencyCode="USD" minorUnit="2">80000</ota2-0500:CurrencyAmount>

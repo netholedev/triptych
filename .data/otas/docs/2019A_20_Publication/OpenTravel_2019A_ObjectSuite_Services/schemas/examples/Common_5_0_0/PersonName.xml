@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ota2-0500:PersonName
-    xmlns:ota2-0500="http://www.opentravel.org/OTM/Common/v5"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/Common/v5 ../../Common_5_0_0.xsd">
-    <ota2-0500:Prefix>Mr.</ota2-0500:Prefix>
-    <ota2-0500:Given>John</ota2-0500:Given>
-    <ota2-0500:Middle>Example String Value</ota2-0500:Middle>
-    <ota2-0500:Surname>Smith</ota2-0500:Surname>
-</ota2-0500:PersonName>

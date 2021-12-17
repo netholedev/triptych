@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ota2-0500:LocationCode
-    xmlns:ota2-0500="http://www.opentravel.org/OTM/Common/v5"
-    city="Lancaster" codeContext="Example String Value" country="US" stateProvince="PA">Example String Value</ota2-0500:LocationCode>

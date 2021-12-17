@@ -6,22 +6,24 @@ import (
 	"net"
 	"net/mail"
 	"net/smtp"
-	"sync"
+
+	"github.com/netholedev/triptych/pkg/config"
 )
 
 type SMTPClient struct {
-	sync.Mutex
+	// TODO reconnect if connection fails
+	// sync.Mutex
 
-	Host     string
-	Port     int
-	IsSecure bool
-
-	SenderName     string
-	SenderEmail    string
-	SenderPassword string
+	config *config.SmtpConfig
 
 	client *smtp.Client
 	from   mail.Address
+}
+
+func NewSMTPClient(conf *config.SmtpConfig) SMTPClient {
+	return SMTPClient{
+		config: conf,
+	}
 }
 
 func (c *SMTPClient) createConn(host, servername string, isSecure bool) (net.Conn, error) {
@@ -39,19 +41,19 @@ func (c *SMTPClient) createConn(host, servername string, isSecure bool) (net.Con
 }
 
 func (c *SMTPClient) Connect() error {
-	c.Lock()
-	defer c.Unlock()
+	// c.Lock()
+	// defer c.Unlock()
 
-	servername := fmt.Sprintf("%v:%d", c.Host, c.Port)
+	servername := fmt.Sprintf("%v:%d", c.config.Host, c.config.Port)
 
 	host, _, err := net.SplitHostPort(servername)
 	if err != nil {
 		return err
 	}
 
-	auth := smtp.PlainAuth("", c.SenderEmail, c.SenderPassword, host)
+	auth := smtp.PlainAuth("", c.config.SenderEmail, c.config.SenderPassword, host)
 
-	conn, err := c.createConn(host, servername, c.IsSecure)
+	conn, err := c.createConn(host, servername, c.config.Secure)
 	if err != nil {
 		return err
 	}
@@ -69,7 +71,7 @@ func (c *SMTPClient) Connect() error {
 	c.client = cl
 	c.from = mail.Address{
 		Name:    "",
-		Address: c.SenderEmail,
+		Address: c.config.SenderEmail,
 	}
 
 	return nil

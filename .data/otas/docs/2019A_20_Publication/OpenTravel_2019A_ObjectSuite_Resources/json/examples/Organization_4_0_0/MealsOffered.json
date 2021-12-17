@@ -1,9 +1,0 @@
-{
-  "MealsOffered" : {
-    "value" : null,
-    "breakfastOfferedInd" : true,
-    "lunchOfferedInd" : true,
-    "brunchOfferedInd" : true,
-    "dinnerOfferedInd" : true
-  }
-}

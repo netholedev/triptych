@@ -16,9 +16,10 @@ import (
 type AmqpClient struct {
 	sync.Mutex
 
-	URL string
+	config *config.AmqpConfig
 
 	UseTLS bool
+
 	// TODO ...
 	// SSLCA              string `toml:"ssl_ca"`
 	// SSLCert            string `toml:"ssl_cert"`
@@ -30,7 +31,7 @@ type AmqpClient struct {
 
 func NewAmqpClient(conf *config.AmqpConfig) AmqpClient {
 	return AmqpClient{
-		URL: fmt.Sprintf("amqp://%s:%s@%s:%d/", conf.User, conf.Password, conf.Host, conf.Port),
+		config: conf,
 	}
 }
 
@@ -43,10 +44,12 @@ func (q *AmqpClient) Connect() error {
 
 	if q.UseTLS {
 		// TODO !!
-		// connection, err = amqp.DialTLS(q.URL, tls)
+		// url := fmt.Sprintf("amqps://%s:%s@%s:%d/", q.config.User, q.config.Password, q.config.Host, q.config.Port)
+		// connection, err = amqp.DialTLS(url, tls)
 		return nil
 	} else {
-		connection, err = amqp.Dial(q.URL)
+		url := fmt.Sprintf("amqp://%s:%s@%s:%d/", q.config.User, q.config.Password, q.config.Host, q.config.Port)
+		connection, err = amqp.Dial(url)
 	}
 
 	if err != nil {
@@ -59,6 +62,7 @@ func (q *AmqpClient) Connect() error {
 	}
 
 	q.Channel = channel
+
 	go func() {
 		log.Printf("Closing: %s", <-connection.NotifyClose(make(chan *amqp.Error)))
 		log.Printf("Trying to reconnect...")
@@ -68,5 +72,6 @@ func (q *AmqpClient) Connect() error {
 			time.Sleep(5 * time.Second)
 		}
 	}()
+
 	return nil
 }

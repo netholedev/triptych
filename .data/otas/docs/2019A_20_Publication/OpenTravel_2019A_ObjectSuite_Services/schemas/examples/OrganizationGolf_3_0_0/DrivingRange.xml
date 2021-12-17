@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<orggf-0300:DrivingRange
-    xmlns:orggf-0300="http://www.opentravel.org/OTM/organization/golf/v3"
-    distance="500 ft" drivingRangeType="Covered" nightLightingInd="true"
-    numberOfStations="10" turfType="Grass"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/organization/golf/v3 ../../OrganizationGolf_3_0_0.xsd"/>

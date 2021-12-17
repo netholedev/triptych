@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<orghs-0300:Recreation
-    xmlns:orghs-0300="http://www.opentravel.org/OTM/organization/hospitality/v3"
-    recreationDescription="Example String Value"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/organization/hospitality/v3 ../../OrganizationHospitality_3_0_0.xsd">
-    <orghs-0300:Code>Animal watching</orghs-0300:Code>
-</orghs-0300:Recreation>

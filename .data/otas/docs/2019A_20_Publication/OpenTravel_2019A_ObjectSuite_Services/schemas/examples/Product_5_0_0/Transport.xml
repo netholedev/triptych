@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<prod-0500:TransportShared
-    xmlns:prod-0500="http://www.opentravel.org/OTM/product/v5"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/product/v5 ../../Product_5_0_0.xsd">
-    <prod-0500:TransportNumber carrier="Example String Value" operatingCarrier="Example String Value">Example String Value</prod-0500:TransportNumber>
-</prod-0500:TransportShared>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<prod-0400:OtherServiceInfo
-    xmlns:prod-0400="http://www.opentravel.org/OTM/product/v4"
-    code="CART" text="Example String Value"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/product/v4 ../../Product_4_0_0.xsd">
-    <prod-0400:Operator code="AI" codeContext="Example String Value"
-        department="Adventure department"
-        description="Example String Value" division="Travel Division" shortName="Adventure Inc">Travel Adventure Partners Incorporated</prod-0400:Operator>
-</prod-0400:OtherServiceInfo>

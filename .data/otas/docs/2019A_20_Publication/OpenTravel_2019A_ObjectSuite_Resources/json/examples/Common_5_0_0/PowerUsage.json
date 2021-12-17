@@ -1,9 +1,0 @@
-{
-  "PowerUsage" : {
-    "quantity" : 12,
-    "PowerType" : {
-      "value" : "Diesel"
-    },
-    "PowerUOM" : "Miles"
-  }
-}

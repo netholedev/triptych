@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<prod-0400:PropertyInfo
-    xmlns:prod-0400="http://www.opentravel.org/OTM/product/v4"
-    code="Example String Value"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/product/v4 ../../Product_4_0_0.xsd"/>

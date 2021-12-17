@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ph-0200:BasicPropertyInfo
-    xmlns:ph-0200="http://www.opentravel.org/OTM/product/hospitality/v2"
-    brandCode="FS" chainCode="MC" cityCode="WAS" code="WASJW"
-    name="JW Marriott Washington DC"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/product/hospitality/v2 ../../Hospitality_2_0_0.xsd"/>

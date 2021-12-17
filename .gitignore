@@ -1,7 +1,2 @@
-.DS_Store
-.yarn
-.cache/*
-
-.data/geonames/*
-
-dist/
+.old
+vendor/

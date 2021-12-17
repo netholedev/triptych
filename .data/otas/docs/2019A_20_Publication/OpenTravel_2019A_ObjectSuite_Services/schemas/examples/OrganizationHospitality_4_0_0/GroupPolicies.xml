@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<orghs-0400:GroupPolicies
-    xmlns:orghs-0400="http://www.opentravel.org/OTM/organization/hospitality/v4"
-    maxNumberOfRooms="1234"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/organization/hospitality/v4 ../../OrganizationHospitality_4_0_0.xsd">
-    <orghs-0400:LocalDMCRole>Required</orghs-0400:LocalDMCRole>
-    <orghs-0400:GroupPolicy contractCurrency="USD" contractLanguage="en"/>
-</orghs-0400:GroupPolicies>

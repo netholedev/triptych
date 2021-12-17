@@ -1,9 +1,0 @@
-{
-  "AmountOrPercentAmount" : {
-    "CurrencyAmount" : {
-      "value" : 80000,
-      "currencyCode" : "USD",
-      "minorUnit" : 2
-    }
-  }
-}

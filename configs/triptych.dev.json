@@ -1,5 +1,5 @@
 {
-  "db": {
+  "arango": {
     "host": "localhost",
     "port": 8529,
     "name": "triptych",

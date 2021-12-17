@@ -1,7 +1,0 @@
-syntax = "proto3";
-
-package users;
-
-option go_package = "github.com/netholedev/triptych/internal/users";
-
-service UsersService {}

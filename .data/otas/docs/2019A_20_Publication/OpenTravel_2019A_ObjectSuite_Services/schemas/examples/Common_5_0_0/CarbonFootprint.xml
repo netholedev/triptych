@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ota2-0500:CarbonFootprint
-    xmlns:ota2-0500="http://www.opentravel.org/OTM/Common/v5"
-    meetingEvent="1234" nonCarbonImpactInd="true"
-    nonCarbonMeasurement="Example String Value" roomNight="2345"
-    weatherNormalized="3456"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/Common/v5 ../../Common_5_0_0.xsd">
-    <ota2-0500:CarbonUOM>Miles</ota2-0500:CarbonUOM>
-</ota2-0500:CarbonFootprint>

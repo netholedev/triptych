@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<order-0400:DeadlineTimePeriod
-    xmlns:order-0400="http://www.opentravel.org/OTM/order/v4"
-    deadlineType="BeforeArrival" maxPeriod="2345" minPeriod="1234"
-    timePeriod="Example String Value"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTM/order/v4 ../../Order_4_0_0.xsd"/>

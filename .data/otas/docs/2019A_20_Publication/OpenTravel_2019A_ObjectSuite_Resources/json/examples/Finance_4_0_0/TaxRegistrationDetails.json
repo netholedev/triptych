@@ -1,8 +1,0 @@
-{
-  "TaxRegistrationDetails" : {
-    "value" : null,
-    "taxID" : "9878909",
-    "recipientName" : "John Doe",
-    "recipientAddress" : "1 Maple St, New York, NY 20190"
-  }
-}

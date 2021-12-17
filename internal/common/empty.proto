@@ -1,7 +1,0 @@
-syntax = "proto3";
-
-package common.empty;
-
-option go_package = "github.com/netholedev/triptych/internal/common";
-
-message Empty {}
