@@ -1,8 +1,0 @@
-export enum BedSizes {
-  CRIB = 'CRIB',
-  FULL_SIZE = 'FULL_SIZE',
-  KING_SIZE = 'KING_SIZE',
-  QUEEN_SIZE = 'QUEEN_SIZE',
-  TWIN_SIZE = 'TWIN_SIZE',
-  TWIN_XL_SIZE = 'TWIN_XL_SIZE',
-}

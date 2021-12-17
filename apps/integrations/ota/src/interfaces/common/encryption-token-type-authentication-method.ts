@@ -1,4 +1,0 @@
-export enum ENCRYPTION_TOKEN_TYPE_AUTHENTICATION_METHOD {
-  SECURITY_CODE = 'SecurityCode',
-	MAGNETIC_STRIPE = 'MagneticStripe'
-}

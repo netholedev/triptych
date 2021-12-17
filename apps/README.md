@@ -1,2 +1,0 @@
-# triptych
-## monorepo
