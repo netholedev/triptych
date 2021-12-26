@@ -9,6 +9,10 @@ import (
 	"google.golang.org/grpc/metadata"
 )
 
+var protectedMethods = []string{
+	"/users.UsersService/Profile",
+}
+
 type Interceptors struct {
 	usersService users.UsersService
 }
@@ -21,35 +25,48 @@ func NewServiceInterceptors(us users.UsersService) *Interceptors {
 
 func (in *Interceptors) AuthorizationInterceptor() grpc.UnaryServerInterceptor {
 	return func(ctx context.Context, req interface{}, info *grpc.UnaryServerInfo, handler grpc.UnaryHandler) (interface{}, error) {
-		meta, ok := metadata.FromIncomingContext(ctx)
-		if !ok {
-			return nil, errors.New("could not grab metadata from context")
+		found := false
+
+		for _, method := range protectedMethods {
+			if method == info.FullMethod {
+				found = true
+				break
+			}
 		}
 
-		var values []string
-		var token string
-
-		if ok {
-			values = meta.Get("authorization")
-		}
-
-		if len(values) > 0 && len(values[0]) > 7 {
-			token = values[0][7:]
-
-			foundUser, err := in.usersService.ValidateWithToken(ctx, token)
-			if err != nil {
-				return nil, errors.New("token parse error")
+		if found {
+			meta, ok := metadata.FromIncomingContext(ctx)
+			if !ok {
+				return nil, errors.New("could not grab metadata from context")
 			}
 
-			if foundUser != nil {
-				meta.Set("user", foundUser.Id.Key())
-				newCtx := metadata.NewIncomingContext(ctx, meta)
-				return handler(newCtx, req)
+			var values []string
+			var token string
+
+			if ok {
+				values = meta.Get("authorization")
 			}
 
-			return nil, errors.New("user not found")
+			if len(values) > 0 && len(values[0]) > 7 {
+				token = values[0][7:]
+
+				foundUser, err := in.usersService.ValidateWithToken(ctx, token)
+				if err != nil {
+					return nil, errors.New("token parse error")
+				}
+
+				if foundUser != nil {
+					meta.Set("user", foundUser.Id.Key())
+					newCtx := metadata.NewIncomingContext(ctx, meta)
+					return handler(newCtx, req)
+				}
+
+				return nil, errors.New("user not found")
+			}
+
+			return nil, errors.New("no token provided")
 		}
 
-		return nil, errors.New("no token provided")
+		return handler(ctx, req)
 	}
 }

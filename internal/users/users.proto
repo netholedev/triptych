@@ -9,6 +9,7 @@ option go_package = "github.com/netholedev/triptych/internal/users";
 
 service UsersService {
   rpc Register (RegisterRequest) returns (TokenResponse) {}
+  rpc ConfirmRegistration (ConfirmRegistrationRequest) returns (ConfirmRegistrationResponse) {}
   rpc Login (LoginRequest) returns (TokenResponse) {}
   rpc Profile (common.empty.Empty) returns (ProfileResponse) {}
 }
@@ -20,15 +21,31 @@ message RegisterRequest {
 	string password = 4;
 }
 
+message ConfirmRegistrationRequest {
+  string token = 1;
+}
+
+message ConfirmRegistrationResponse {
+  bool success = 1;
+  common.errors.ServiceError errors = 2;
+}
+
 message LoginRequest {
 	string email = 1;
 	string password = 2;
 }
 
-message ProfileResponse {
+message ProfileResult {
   string email = 1;
   string first_name = 2;
   string last_name = 3;
+}
+
+
+message ProfileResponse {
+  bool success = 1;
+  common.errors.ServiceError errors = 2;
+  ProfileResult result = 3;
 }
 
 message TokenResult {

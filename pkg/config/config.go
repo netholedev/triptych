@@ -24,12 +24,13 @@ type AmqpConfig struct {
 }
 
 type SmtpConfig struct {
-	SenderName     string `json:"sender_name"`
-	SenderEmail    string `json:"sender_email"`
-	SenderPassword string `json:"sender_password"`
-	Host           string `json:"host"`
-	Port           int64  `json:"port"`
-	Secure         bool   `json:"secure"`
+	SenderName  string `json:"sender_name"`
+	SenderEmail string `json:"sender_email"`
+	Username    string `json:"username"`
+	Password    string `json:"password"`
+	Host        string `json:"host"`
+	Port        int64  `json:"port"`
+	Secure      bool   `json:"secure"`
 }
 
 type Config struct {

@@ -51,7 +51,7 @@ func (c *SMTPClient) Connect() error {
 		return err
 	}
 
-	auth := smtp.PlainAuth("", c.config.SenderEmail, c.config.SenderPassword, host)
+	auth := smtp.PlainAuth("", c.config.Username, c.config.Password, host)
 
 	conn, err := c.createConn(host, servername, c.config.Secure)
 	if err != nil {

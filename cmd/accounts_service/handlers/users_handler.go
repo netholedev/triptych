@@ -118,9 +118,33 @@ func (handler *UsersHandler) Register(ctx context.Context, dto *users.RegisterRe
 
 // TODO !!!
 func (handler *UsersHandler) Login(ctx context.Context, dto *users.LoginRequest) (*users.TokenResponse, error) {
-	var err error
-	response := new(users.TokenResponse)
-	return response, err
+	loginDto := domain.UserLoginDto{}
+
+	loginDto.Email = dto.GetEmail()
+	loginDto.Password = dto.GetPassword()
+
+	resp := &users.TokenResponse{
+		Result:  &users.TokenResult{},
+		Success: false,
+	}
+
+	err := validator.ValidateStruct(&loginDto)
+	if err != nil {
+		resp.Errors = common.ParseErrors(err)
+		return resp, nil
+	}
+
+	loggedUser, err := handler.usersService.Login(ctx, &loginDto)
+	if err != nil {
+		resp.Errors = common.ParseErrors(err)
+		return resp, nil
+	}
+
+	resp.Success = true
+	resp.Result.Token = loggedUser.LatestToken
+	resp.Result.RefreshToken = loggedUser.RefreshToken
+
+	return resp, nil
 }
 
 // TODO !!!
@@ -128,4 +152,22 @@ func (handler *UsersHandler) Profile(ctx context.Context, _ *common.Empty) (*use
 	var err error
 	response := new(users.ProfileResponse)
 	return response, err
+}
+
+func (handler *UsersHandler) ConfirmRegistration(ctx context.Context, dto *users.ConfirmRegistrationRequest) (*users.ConfirmRegistrationResponse, error) {
+	token := dto.GetToken()
+
+	resp := &users.ConfirmRegistrationResponse{
+		Success: false,
+	}
+
+	success, err := handler.usersService.ConfirmRegistration(ctx, token)
+	if err != nil {
+		resp.Errors = common.ParseErrors(err)
+		return resp, nil
+	}
+
+	resp.Success = success
+
+	return resp, nil
 }

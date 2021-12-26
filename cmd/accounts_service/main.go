@@ -5,6 +5,7 @@ import (
 	"net"
 
 	"github.com/netholedev/triptych/cmd/accounts_service/handlers"
+	"github.com/netholedev/triptych/cmd/accounts_service/interceptors"
 	"github.com/netholedev/triptych/internal/users"
 	"github.com/netholedev/triptych/pkg/config"
 	"github.com/netholedev/triptych/pkg/storage"
@@ -33,11 +34,13 @@ func main() {
 	err = usersHandlerImpl.Inject(usersService, &conf.Amqp)
 	utils.Check(err)
 
+	usersServiceInterceptors := interceptors.NewServiceInterceptors(usersService)
+
 	tcpServer, err := net.Listen("tcp", ":8000")
 	utils.Check(err)
 
 	grpcImpl := grpc.NewServer(
-	// grpc.UnaryInterceptor(usersServiceImpl.AuthorizationInterceptor()),
+		grpc.UnaryInterceptor(usersServiceInterceptors.AuthorizationInterceptor()),
 	)
 
 	users.RegisterUsersServiceServer(grpcImpl, usersHandlerImpl)
