@@ -1,9 +1,13 @@
+#!/bin/bash
 
-platforms=("windows/amd64" "windows/386" "darwin/amd64" "linux/amd64")
+# platforms=("windows/amd64" "windows/386" "darwin/amd64" "linux/amd64")
+platforms=("linux/amd64")
+
+empty=""
 
 for dict in ./cmd/*; do
   if [ -d "${dict}" ]; then
-    project="${dict//"./cmd/"/}"
+    project="${dict//.\/cmd\/$empty}"
     path="${dict}/main.go"
 
     for platform in "${platforms[@]}"
@@ -18,7 +22,7 @@ for dict in ./cmd/*; do
 
         echo '[Building]' $output_name
 
-        env GOOS=$GOOS GOARCH=$GOARCH go build -a -installsuffix cgo -o "./dist/${output_name}" $path
+        env GOOS=$GOOS GOARCH=$GOARCH CGO_ENABLED=0 go build -a -o "./dist/${output_name}" $path
         if [ $? -ne 0 ]; then
             echo 'An error has occurred! Aborting the script execution...'
             exit 1

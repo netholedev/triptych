@@ -5,7 +5,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"log"
-	"time"
 
 	"github.com/netholedev/triptych/internal/common"
 	"github.com/netholedev/triptych/internal/users"
@@ -62,12 +61,16 @@ func (handler *UsersHandler) Register(ctx context.Context, dto *users.RegisterRe
 	registerDto.FirstName = dto.GetFirstName()
 	registerDto.LastName = dto.GetLastName()
 	registerDto.Password = dto.GetPassword()
-	registerDto.Subscription = domain.Subscription{
-		Status:    true,
-		AppType:   domain.ServiceTypeSupplierProgram, // TODO: diğer servisler bağlandığında ne olacak?
-		StartDate: time.Now(),
-		EndDate:   time.Now().AddDate(1, 0, 0),
-	}
+
+	/*
+		// TODO: ...
+		registerDto.Subscription = domain.Subscription{
+			Status:    true,
+			AppType:   domain.ServiceTypeSupplierProgram,
+			StartDate: time.Now(),
+			EndDate:   time.Now().AddDate(1, 0, 0),
+		}
+	*/
 
 	resp := &users.TokenResponse{
 		Success: false,
@@ -147,13 +150,6 @@ func (handler *UsersHandler) Login(ctx context.Context, dto *users.LoginRequest)
 	return resp, nil
 }
 
-// TODO !!!
-func (handler *UsersHandler) Profile(ctx context.Context, _ *common.Empty) (*users.ProfileResponse, error) {
-	var err error
-	response := new(users.ProfileResponse)
-	return response, err
-}
-
 func (handler *UsersHandler) ConfirmRegistration(ctx context.Context, dto *users.ConfirmRegistrationRequest) (*users.ConfirmRegistrationResponse, error) {
 	token := dto.GetToken()
 
@@ -170,4 +166,11 @@ func (handler *UsersHandler) ConfirmRegistration(ctx context.Context, dto *users
 	resp.Success = success
 
 	return resp, nil
+}
+
+// TODO !!!
+func (handler *UsersHandler) Profile(ctx context.Context, _ *common.Empty) (*users.ProfileResponse, error) {
+	var err error
+	response := new(users.ProfileResponse)
+	return response, err
 }

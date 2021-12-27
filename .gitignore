@@ -2,3 +2,5 @@
 vendor/
 
 *.pb.go
+
+config/*.prod.json

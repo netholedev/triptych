@@ -20,15 +20,15 @@ type User struct {
 	RefreshToken             string            `json:"refresh_token,omitempty"`
 	PasswordResetToken       string            `json:"password_reset_token,omitempty"`
 	ConfirmationToken        string            `json:"confirmation_token,omitempty"`
-	Subscriptions            []Subscription    `json:"subscriptions,omitempty"`
+	// Subscriptions            []Subscription    `json:"subscriptions,omitempty"`
 }
 
 type UserRegisterDto struct {
-	FirstName    string       `json:"first_name" validate:"required,min=2,max=32"`
-	LastName     string       `json:"last_name" validate:"required,min=2,max=32"`
-	Email        string       `json:"email" validate:"required,email"`
-	Password     string       `json:"password" validate:"required,weak_password,min=6,max=32"`
-	Subscription Subscription `json:"subscription"`
+	FirstName string `json:"first_name" validate:"required,min=2,max=32"`
+	LastName  string `json:"last_name" validate:"required,min=2,max=32"`
+	Email     string `json:"email" validate:"required,email"`
+	Password  string `json:"password" validate:"required,weak_password,min=6,max=32"`
+	// Subscription Subscription `json:"subscription"`
 }
 
 type UserLoginDto struct {

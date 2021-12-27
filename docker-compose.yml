@@ -1,0 +1,40 @@
+version: '3.8'
+
+networks:
+  app_network:
+    driver: 'bridge'
+
+volumes:
+  arango_volume:
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - 8000:8000
+    networks:
+      - 'app_network'
+
+  rabbitmq:
+    image: 'rabbitmq:management-alpine'
+    restart: always
+    ports:
+      - 5672:5672
+      - 15672:15672
+    networks:
+      - 'app_network'
+
+  arangodb:
+    image: arangodb/arangodb:latest
+    restart: unless-stopped
+    environment:
+      ARANGO_ROOT_PASSWORD: 'example'
+    networks:
+      - 'app_network'
+    ports:
+      - 8529:8529
+    # volumes:
+    #   - arango_volume:/var/lib/arangodb3
