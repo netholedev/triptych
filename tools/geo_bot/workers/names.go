@@ -122,10 +122,6 @@ func FetchNames(exportPath string, baseUrl string, alternateMode bool) {
 	links := getNameLinks(baseUrl)
 
 	for _, l := range links {
-		if l.countryName != "TR" {
-			continue
-		}
-
 		log.Println("[FETCHING] Current Country:", l.countryName)
 
 		zipPath := fmt.Sprintf(".cache/zips/%v.zip", l.countryName)
