@@ -6,7 +6,7 @@ type Geoname struct {
 	Id                    int       `csv:"geonameid" json:"geoname_id"`
 	Name                  string    `csv:"name" json:"name"`
 	AsciiName             string    `csv:"asciiname" json:"ascii_name"`
-	AlternateNames        string    `csv:"alternatenames"`
+	AlternateNames        string    `csv:"alternatenames" json:"alternate_names"`
 	Latitude              string    `csv:"latitude" json:"latitude"`
 	Longitude             string    `csv:"longitude" json:"longitude"`
 	FeatureClass          string    `csv:"feature class" json:"feature_class"`
@@ -48,14 +48,14 @@ type GeoCountry struct {
 	Population         uint64  `csv:"Population" json:"population"`                   // Population
 	Continent          string  `csv:"Continent" json:"continent"`                     // Continent
 	Tld                string  `csv:"tld" json:"tld"`                                 // tld
-	CurrencyCode       string  `csv:"CurrencyCode json:"currency_code"`               // CurrencyCode
+	CurrencyCode       string  `csv:"CurrencyCode" json:"currency_code"`              // CurrencyCode
 	CurrencyName       string  `csv:"CurrencyName" json:"currency_name"`              // CurrencyName
 	Phone              string  `csv:"Phone" json:"phone"`                             // Phone
 	PostalCodeFormat   string  `csv:"Postal Code Format" json:"postal_code_format"`   // Postal Code Format
 	PostalCodeRegex    string  `csv:"PostalCode Regex" json:"postal_code_regex"`      // Postal Code Regex
-	Languages          string  `csv:"Languages"`                                      // Languages
+	Languages          string  `csv:"Languages" json:"languages"`                     // Languages
 	GeonameID          int     `csv:"geonameid" json:"geoname_id"`                    // geonameid
-	Neighbours         string  `csv:"neighbours"`                                     // neighbours
+	Neighbours         string  `csv:"neighbours" json:"neighbours"`                   // neighbours
 	EquivalentFipsCode string  `csv:"EquivalentFipsCode" json:"equivalent_fips_code"` // EquivalentFipsCode
 
 	// LanguagesJson  []string `json:"languages"`

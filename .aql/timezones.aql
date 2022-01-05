@@ -1,0 +1,7 @@
+FOR zone IN timezones
+    RETURN {
+        _id: zone._id,
+        name: zone.time_zone_id,
+        country: zone.country_code,
+        gmt: zone.gmt_offset
+    }

@@ -11,61 +11,6 @@ import (
 	"github.com/netholedev/triptych/pkg/utils"
 )
 
-func parseIntoJson(f *os.File, alternateMode bool) []byte {
-	reader := csv.NewReader(f)
-	reader.Comma = '\t'
-
-	var userHeader []string
-
-	if alternateMode {
-		userHeader, _ = csvutil.Header(domain.GeoAlternateName{}, "csv")
-	} else {
-		userHeader, _ = csvutil.Header(domain.Geoname{}, "csv")
-	}
-
-	dec, _ := csvutil.NewDecoder(reader, userHeader...)
-
-	var js []byte
-
-	if alternateMode {
-		var names []domain.GeoAlternateName
-
-		for {
-			var row domain.GeoAlternateName
-
-			if err := dec.Decode(&row); err == io.EOF {
-				break
-			}
-			names = append(names, row)
-
-			jsBuff, err := json.Marshal(names)
-			utils.Check(err)
-
-			js = jsBuff
-		}
-	} else {
-		var names []domain.Geoname
-
-		for {
-			var row domain.Geoname
-
-			if err := dec.Decode(&row); err == io.EOF {
-				break
-			}
-			names = append(names, row)
-
-			jsBuff, err := json.Marshal(names)
-			utils.Check(err)
-
-			js = jsBuff
-
-			// log.Println("[PARSED]", row.Name)
-		}
-	}
-
-	return js
-}
-
 func FetchHierarchy(baseUrl string) {
 	err := os.MkdirAll(".cache/zips", 0777)
 	utils.Check(err)

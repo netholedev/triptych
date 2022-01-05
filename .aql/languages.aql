@@ -1,0 +1,7 @@
+FOR lang IN languages
+    FILTER LENGTH(lang.iso1) > 1
+    RETURN {
+      _id: lang._id,
+      name: lang.name,
+      iso: lang.iso1
+    }

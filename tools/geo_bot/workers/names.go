@@ -57,7 +57,7 @@ func getNameLinks(page string) []nameLink {
 	return list
 }
 
-func parseNameIntoJson(f *os.File, alternateMode bool) []byte {
+func parseNameIntoJson(f *os.File, alternateMode bool, countryName string) []byte {
 	reader := csv.NewReader(f)
 	reader.Comma = '\t'
 
@@ -76,6 +76,8 @@ func parseNameIntoJson(f *os.File, alternateMode bool) []byte {
 	if alternateMode {
 		var names []domain.GeoAlternateName
 
+		i := 1
+
 		for {
 			var row domain.GeoAlternateName
 
@@ -88,9 +90,14 @@ func parseNameIntoJson(f *os.File, alternateMode bool) []byte {
 			utils.Check(err)
 
 			js = jsBuff
+
+			log.Println("[PARSED]", fmt.Sprintf("[%v]", countryName), fmt.Sprintf("[ID: %d]", row.Id), fmt.Sprintf("[LINE: %d]", i), row.AlternateName)
+			i++
 		}
 	} else {
 		var names []domain.Geoname
+
+		i := 1
 
 		for {
 			var row domain.Geoname
@@ -105,7 +112,8 @@ func parseNameIntoJson(f *os.File, alternateMode bool) []byte {
 
 			js = jsBuff
 
-			// log.Println("[PARSED]", row.Name)
+			log.Println("[PARSED]", fmt.Sprintf("[%v]", countryName), fmt.Sprintf("[ID: %d]", row.Id), fmt.Sprintf("[LINE: %d]", i), row.Name)
+			i++
 		}
 	}
 
@@ -122,6 +130,17 @@ func FetchNames(exportPath string, baseUrl string, alternateMode bool) {
 	links := getNameLinks(baseUrl)
 
 	for _, l := range links {
+		// TODO: delete later
+		/*
+			if string(l.countryName[0]) == "A" ||
+				string(l.countryName[0]) == "B" {
+				continue
+			}
+		*/
+		if l.countryName != "TR" {
+			continue
+		}
+
 		log.Println("[FETCHING] Current Country:", l.countryName)
 
 		zipPath := fmt.Sprintf(".cache/zips/%v.zip", l.countryName)
@@ -141,7 +160,7 @@ func FetchNames(exportPath string, baseUrl string, alternateMode bool) {
 		txtFile, err := os.Open(txtPath)
 		utils.Check(err)
 
-		jsonBuff := parseIntoJson(txtFile, alternateMode)
+		jsonBuff := parseNameIntoJson(txtFile, alternateMode, l.countryName)
 
 		f, err := os.Create(jsonPath)
 		utils.Check(err)

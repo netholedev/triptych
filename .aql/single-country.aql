@@ -1,0 +1,30 @@
+FOR country IN countries
+    FILTER country.iso == "TR"
+    LET timezone = (
+        FOR zone IN timezones 
+            FILTER zone.country_code == country.iso 
+            RETURN {
+                name: zone.time_zone_id,
+                offset: zone.gmt_offset
+            }
+    )
+    
+    LET l = FIRST(SPLIT(country.languages, "," ))
+    LET lang = LENGTH(l) > 2 ? FIRST(SPLIT(l, "-" )) : l
+    
+    RETURN {
+        geoname_id: country.geoname_id,
+        language: lang,
+        timezone: FIRST(timezone),
+        code: country.iso,
+        name: country.country,
+        currency: {
+            name: country.currency_name,
+            code: country.currency_code
+        },
+        phone: country.phone,
+        postal_code: {
+            regex: country.postal_code_regex,
+            format: country.postal_code_format
+        }
+    }
